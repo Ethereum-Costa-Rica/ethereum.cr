@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Flex, Button, Text } from "@chakra-ui/react";
 
 import EthCrLogo from "../../public/eth-cr.svg";
-import HeroBg from "../../public/hero.svg";
+
 const Hero = () => {
   return (
     <Flex

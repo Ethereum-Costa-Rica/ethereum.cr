@@ -1,10 +1,44 @@
+import Image from "next/image";
+import { Flex, Button, Text } from "@chakra-ui/react";
+
+import EthCrLogo from "../../public/eth-cr.svg";
+import HeroBg from "../../public/hero.svg";
 const Hero = () => {
-
   return (
-    <div>
-      This is the hero
-    </div>
-  )
-}
+    <Flex
+      paddingTop={10}
+      px="90px"
+      direction="column"
+      justifyContent="space-evenly"
+      backgroundImage="url('/hero.svg')"
+      backgroundRepeat="no-repeat"
+      backgroundSize="auto 104vh"
+      backgroundPosition="80% 0%"
+    >
+      <Flex direction="row" justifyContent="space-between" alignItems="center">
+        <Image
+          height={103}
+          width={180}
+          src={EthCrLogo}
+          alt="Ethereum Costa Rica"
+        />
+        <Button variant="outline" borderColor="red.500" color="red.500">Quiero unirme</Button>
+      </Flex>
 
-export default Hero
+      <Flex direction="row" alignItems="center" justifyContent="space-between" height={1000}>
+        <Flex direction="column">
+          <Text fontSize="50px" fontWeight={700} maxW={700} lineHeight="100%">
+            Tu comunidad de <br /> Ethereum en <Text as="span" color="red">Costa Rica</Text>
+          </Text>
+          <Text color="gray.500" maxW={674}>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor <br /> do amet
+            sint elit officia consequat.
+          </Text>
+          <Button mt="32px" maxW="142px" backgroundColor="red.500" color="white">Quiero unirme</Button>
+        </Flex>
+      </Flex>
+    </Flex>
+  );
+};
+
+export default Hero;

@@ -22,7 +22,7 @@ const Hero = () => {
           src={EthCrLogo}
           alt="Ethereum Costa Rica"
         />
-        <Button variant="outline" borderColor="red.500" color="red.500">Quiero unirme</Button>
+        <Button color="red" colorScheme='red' variant='outline' as="a" href="https://t.me/EthereumCR">Quiero unirme</Button>
       </Flex>
 
       <Flex direction="row" alignItems="center" justifyContent="space-between" height={1000}>
@@ -34,7 +34,7 @@ const Hero = () => {
             Amet minim mollit non deserunt ullamco est sit aliqua dolor <br /> do amet
             sint elit officia consequat.
           </Text>
-          <Button mt="32px" maxW="142px" backgroundColor="red.500" color="white">Quiero unirme</Button>
+          <Button mt="32px" maxW="142px" backgroundColor="red.500" color="white" as="a" href="https://t.me/EthereumCR">Quiero unirme</Button>
         </Flex>
       </Flex>
     </Flex>

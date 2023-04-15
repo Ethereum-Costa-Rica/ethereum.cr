@@ -1,16 +1,19 @@
 import Image from "next/image";
-import { Flex, Button, Text } from "@chakra-ui/react";
+import { Flex, Button, Text, useBreakpoint } from "@chakra-ui/react";
 
 import EthCrLogo from "../../public/eth-cr.svg";
 
 const Hero = () => {
+  const breakpoint = useBreakpoint()
+  const _breakpoints = ['sm', 'md']
+
   return (
     <Flex
       paddingTop={10}
-      px="90px"
+      px={[25, 50, 90]}
       direction="column"
       justifyContent="space-evenly"
-      backgroundImage="url('/hero.svg')"
+      backgroundImage={!_breakpoints.includes(breakpoint) ? "url('/hero.svg')" : ''}
       backgroundRepeat="no-repeat"
       backgroundSize="auto 104vh"
       backgroundPosition="80% 0%"

@@ -2,10 +2,15 @@ import Image from "next/image";
 import { Flex, Button, Text, useBreakpoint } from "@chakra-ui/react";
 
 import EthCrLogo from "../../public/eth-cr.svg";
+import { useEffect } from "react";
 
 const Hero = () => {
   const breakpoint = useBreakpoint()
-  const _breakpoints = ['sm', 'md']
+  const _breakpoints = ['base', 'xs', 'sm', 'md']
+
+  useEffect(() => {
+    console.log(breakpoint)
+  }, [breakpoint])
 
   return (
     <Flex

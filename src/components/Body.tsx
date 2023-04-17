@@ -21,10 +21,10 @@ const Body = () => {
             src={CRIcon}
             alt="Costa Rica Icon"
           />
-          <Text fontSize="3xl" fontWeight={700} maxW={700} lineHeight="100%" color="white" mt={7} mb={4}>
-            No importa en <br />que provincia estés
+          <Text fontSize="3xl" textAlign="center" fontWeight={700} maxW={270} lineHeight="100%" color="white" mt={7} mb={4}>
+            No importa en que provincia estés
           </Text>
-          <Text fontSize='xl' color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
+          <Text fontSize='xl' textAlign="center" color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
         </Container>
         <Spacer />
         <Container centerContent>
@@ -34,10 +34,10 @@ const Body = () => {
             src={socialIcon}
             alt="Social Icon"
           />
-          <Text fontSize="3xl" fontWeight={700} maxW={700} lineHeight="100%" color="white" mt={7} mb={4}>
-            Conecta con <br />personas increíbles
+          <Text fontSize="3xl" textAlign="center" fontWeight={700} maxW={275} lineHeight="100%" color="white" mt={7} mb={4}>
+            Conecta con personas increíbles
           </Text>
-          <Text fontSize='xl' color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
+          <Text fontSize='xl' textAlign="center" color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
         </Container>
         <Spacer />
       </Flex>
@@ -47,55 +47,84 @@ const Body = () => {
         px="90px"
         direction="column"
         justifyContent="space-evenly"
-        backgroundImage="url('/hero.svg')"
-        backgroundRepeat="no-repeat"
-        backgroundSize="auto 104vh"
-        backgroundPosition="80% 0%"
+        position="relative"
       >
+        <Box
+          position="absolute"
+          top={0}
+          left={0}
+          bottom={0}
+          right={0}
+          backgroundImage="url('/hero2.svg')"
+          backgroundRepeat="no-repeat"
+          backgroundSize="auto 104vh"
+          backgroundPosition="95% -85%"
+          zIndex={-1}
+        />
+        <Box
+          position="absolute"
+          top={0}
+          left={0}
+          bottom={0}
+          right={0}
+          backgroundImage="url('/hero1.svg')"
+          backgroundRepeat="no-repeat"
+          backgroundSize="auto 104vh"
+          backgroundPosition="15% 350%"
+          zIndex={-2}
+        />
         <Flex direction="row" alignItems="center" justifyContent="center" height={760}>
           <Flex direction="column">
             <Center>
-              <Box mb="16">
+              <Box mb="32">
                 <Text fontSize="5xl" fontWeight={700} maxW={700} lineHeight="100%">
-                  Conecta con la comunidad
+                  Conecta con la <Text as="span" color="red">comunidad</Text>
                 </Text>
               </Box>
             </Center>
-            <Flex justifyContent="space-between">
-              <Box p='4'>
-                <Image
-                  width={57}
-                  height={56}
-                  src={discordIcon}
-                  alt="Discord Icon"
-                />
-              </Box>
-              <Box p='4'>
-                <Image
-                  width={57}
-                  height={56}
-                  src={facebookIcon}
-                  alt="Facebook Icon"
-                />
-              </Box>
-              <Box p='4'>
-                <Image
-                  width={57}
-                  height={56}
-                  src={meetupIcon}
-                  alt="Meetup Icon"
-                />
-              </Box>
-              <Box p='4'>
-                <Image
-                  width={57}
-                  height={56}
-                  src={telegramIcon}
-                  alt="Telegram Icon"
-                />
-              </Box>
+            <Flex justifyContent="space-between"  mb="44" marginInline="75px">
+              <Button
+                p="4"
+                bg="transparent"
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+                as="a"
+                href="https://t.me/EthereumCR"
+              >
+                <Image src={discordIcon} alt="Discord Icon" />
+              </Button>
+              <Button
+                p="4"
+                bg="transparent"
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+                as="a"
+                href="https://twitter.com/ethereumcr"
+              >
+                <Image src={facebookIcon} alt="Facebook Icon" />
+              </Button>
+              <Button
+                p="4"
+                bg="transparent"
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+                as="a"
+                href="https://www.meetup.com/es/ethereumcr/"
+              >
+                <Image src={meetupIcon} alt="Meetup Icon" />
+              </Button>
+              <Button
+                p="4"
+                bg="transparent"
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+                as="a"
+                href="https://t.me/EthereumCR"
+              >
+                <Image src={telegramIcon} alt="Telegram Icon" />
+              </Button>
             </Flex>
-            <Center mt="16">
+            <Center mb="8">
               <Image
                 width={87}
                 height={134}

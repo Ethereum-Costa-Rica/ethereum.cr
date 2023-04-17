@@ -14,7 +14,7 @@ const Footer = () => {
         <Flex direction="row" justifyContent="space-between" alignItems="center">
           <Box>
             <Flex alignItems="center" mb={-3}>
-              <Text fontSize='4xl' color="red">Ethereum</Text>
+              <Text fontSize='4xl'>Ethereum</Text>
               <Text fontSize='4xl' color="red" ml={2} as='b'>Costa Rica</Text>
             </Flex>
             <Text fontSize='xl' mb={5}>Creado con amor por la comunidad</Text>

@@ -1,11 +1,11 @@
-import { Flex, Box, Text, Button, Wrap, WrapItem, Center } from "@chakra-ui/react";
+import { Flex, Text, Button, Wrap, WrapItem } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
     <div>
       <Wrap justify='space-between' px="90px" pt={10} pb={10} backgroundColor="#EDF2F7">
         <WrapItem>
-        <Flex direction="column">
+          <Flex direction="column">
             <Flex alignItems="center" mb={-3}>
               <Text fontSize='4xl'>Ethereum<Text fontSize='4xl' color="red" ml={2} as='b'>Costa Rica</Text>
               </Text>

@@ -1,4 +1,4 @@
-import { Text, Flex, Spacer, Box, Container, Center, Button, useBreakpoint, Wrap, WrapItem } from '@chakra-ui/react';
+import { Text, Flex, Box, Container, Center, Button, useBreakpoint, Wrap, WrapItem } from '@chakra-ui/react';
 import { useEffect } from "react";
 import Image from 'next/image';
 import CRIcon from "../../public/cr-icon.svg";
@@ -31,22 +31,22 @@ const Body = () => {
             <Text fontSize="3xl" textAlign="center" fontWeight={700} maxW={270} lineHeight="100%" color="white" mt={7} mb={4}>
               No importa en que provincia estés
             </Text>
-            <Text fontSize='xl' textAlign="center" color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
+            <Text fontSize='xl' textAlign="center" color="white">Realizamos actividades presenciales y online. ¡Queremos que crezcan las comunidades locales alrededor del país también!</Text>
           </Container>
         </WrapItem>
         <WrapItem>
-        <Container centerContent mb="150px" mt="150px">
-          <Image
-            width={97}
-            height={93}
-            src={socialIcon}
-            alt="Social Icon"
-          />
-          <Text fontSize="3xl" textAlign="center" fontWeight={700} maxW={275} lineHeight="100%" color="white" mt={7} mb={4}>
-            Conecta con personas increíbles
-          </Text>
-          <Text fontSize='xl' textAlign="center" color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
-        </Container>
+          <Container centerContent mb="150px" mt="150px">
+            <Image
+              width={97}
+              height={93}
+              src={socialIcon}
+              alt="Social Icon"
+            />
+            <Text fontSize="3xl" textAlign="center" fontWeight={700} maxW={275} lineHeight="100%" color="white" mt={7} mb={4}>
+              Conecta con personas increíbles
+            </Text>
+            <Text fontSize='xl' textAlign="center" color="white">Personas abiertas y colaborativas. Algunos expertos en sus campos, otros entusiastas, todos buscando crecer y aprender en comunidad.</Text>
+          </Container>
         </WrapItem>
       </Wrap>
 
@@ -83,14 +83,12 @@ const Body = () => {
         />
         <Flex direction="row" alignItems="center" justifyContent="center" height={760}>
           <Flex direction="column">
-            <Center>
-              <Box mb="32">
-                <Text fontSize="5xl" fontWeight={700} maxW={700} lineHeight="100%">
-                  Conecta con la <Text as="span" color="red">comunidad</Text>
-                </Text>
-              </Box>
-            </Center>
-            <Flex justifyContent="space-between" mb="44" marginInline="75px">
+            <Box mb="32">
+              <Text fontSize="5xl" fontWeight={700} maxW={700} lineHeight="100%" align="center">
+                Conecta con la <Text as="span" color="red">comunidad</Text>
+              </Text>
+            </Box>
+            <Flex justifyContent="space-between" mb="44">
               <Button
                 p="4"
                 bg="transparent"

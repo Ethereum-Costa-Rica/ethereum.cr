@@ -39,8 +39,7 @@ const Hero = () => {
             Tu comunidad de <br /> Ethereum en <Text as="span" color="red">Costa Rica</Text>
           </Text>
           <Text color="gray.500" maxW={674}>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor <br /> do amet
-            sint elit officia consequat.
+            Un espacio abierto para todas las personas para aprender de Web3, Ethereum y blockchain. Entusiastas, constructores, artistas, activistas sociales. Una tecnología para la coordinación humana.
           </Text>
           <Button mt="32px" maxW="142px" backgroundColor="red.500" color="white" as="a" href="https://t.me/EthereumCR">Quiero unirme</Button>
         </Flex>

@@ -1,4 +1,5 @@
-import { Text, Flex, Spacer, Box, Container, Center, Button } from '@chakra-ui/react';
+import { Text, Flex, Spacer, Box, Container, Center, Button, useBreakpoint, Wrap, WrapItem } from '@chakra-ui/react';
+import { useEffect } from "react";
 import Image from 'next/image';
 import CRIcon from "../../public/cr-icon.svg";
 import socialIcon from "../../public/social-icon.svg";
@@ -9,25 +10,32 @@ import meetupIcon from "../../public/meetup-icon.svg";
 import telegramIcon from "../../public/telegram-icon.svg"
 
 const Body = () => {
+  const breakpoint = useBreakpoint()
+  const _breakpoints = ['base', 'xs', 'sm', 'md']
+
+  useEffect(() => {
+    console.log(breakpoint)
+  }, [breakpoint])
 
   return (
     <div>
-      <Flex minWidth='initial' alignItems='center' gap='2' backgroundColor="#0F2841" h='500px'>
-        <Spacer />
-        <Container centerContent>
-          <Image
-            width={97}
-            height={93}
-            src={CRIcon}
-            alt="Costa Rica Icon"
-          />
-          <Text fontSize="3xl" textAlign="center" fontWeight={700} maxW={270} lineHeight="100%" color="white" mt={7} mb={4}>
-            No importa en que provincia estés
-          </Text>
-          <Text fontSize='xl' textAlign="center" color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
-        </Container>
-        <Spacer />
-        <Container centerContent>
+      <Wrap minWidth='initial' alignItems='stretch' spacing='30px' justify='center' backgroundColor="#0F2841">
+        <WrapItem>
+          <Container centerContent mt="150px">
+            <Image
+              width={97}
+              height={93}
+              src={CRIcon}
+              alt="Costa Rica Icon"
+            />
+            <Text fontSize="3xl" textAlign="center" fontWeight={700} maxW={270} lineHeight="100%" color="white" mt={7} mb={4}>
+              No importa en que provincia estés
+            </Text>
+            <Text fontSize='xl' textAlign="center" color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
+          </Container>
+        </WrapItem>
+        <WrapItem>
+        <Container centerContent mb="150px" mt="150px">
           <Image
             width={97}
             height={93}
@@ -39,8 +47,8 @@ const Body = () => {
           </Text>
           <Text fontSize='xl' textAlign="center" color="white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint elit officia.</Text>
         </Container>
-        <Spacer />
-      </Flex>
+        </WrapItem>
+      </Wrap>
 
       <Flex
         paddingTop={10}
@@ -55,7 +63,7 @@ const Body = () => {
           left={0}
           bottom={0}
           right={0}
-          backgroundImage="url('/hero2.svg')"
+          backgroundImage={!_breakpoints.includes(breakpoint) ? "url('/hero2.svg')" : ''}
           backgroundRepeat="no-repeat"
           backgroundSize="auto 104vh"
           backgroundPosition="95% -85%"
@@ -67,7 +75,7 @@ const Body = () => {
           left={0}
           bottom={0}
           right={0}
-          backgroundImage="url('/hero1.svg')"
+          backgroundImage={!_breakpoints.includes(breakpoint) ? "url('/hero1.svg')" : ''}
           backgroundRepeat="no-repeat"
           backgroundSize="auto 104vh"
           backgroundPosition="15% 350%"
@@ -82,7 +90,7 @@ const Body = () => {
                 </Text>
               </Box>
             </Center>
-            <Flex justifyContent="space-between"  mb="44" marginInline="75px">
+            <Flex justifyContent="space-between" mb="44" marginInline="75px">
               <Button
                 p="4"
                 bg="transparent"

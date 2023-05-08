@@ -4,8 +4,7 @@ import Image from 'next/image';
 import CRIcon from "../../public/cr-icon.svg";
 import socialIcon from "../../public/social-icon.svg";
 import EthCrIcon from "../../public/ethcr-icon.svg";
-import discordIcon from "../../public/discord-icon.svg";
-import facebookIcon from "../../public/facebook-icon.svg";
+import linkedinIcon from "../../public/linkedin-icon.svg";
 import meetupIcon from "../../public/meetup-icon.svg";
 import telegramIcon from "../../public/telegram-icon.svg"
 
@@ -97,7 +96,7 @@ const Body = () => {
                 as="a"
                 href="https://t.me/EthereumCR"
               >
-                <Image src={discordIcon} alt="Discord Icon" />
+                <Image src={telegramIcon} alt="Telegram Icon" />
               </Button>
               <Button
                 p="4"
@@ -105,9 +104,9 @@ const Body = () => {
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
                 as="a"
-                href="https://twitter.com/ethereumcr"
+                href="https://www.linkedin.com/company/ethereum-costa-rica/"
               >
-                <Image src={facebookIcon} alt="Facebook Icon" />
+                <Image src={linkedinIcon} alt="LinkedIn Icon" />
               </Button>
               <Button
                 p="4"
@@ -118,16 +117,6 @@ const Body = () => {
                 href="https://www.meetup.com/es/ethereumcr/"
               >
                 <Image src={meetupIcon} alt="Meetup Icon" />
-              </Button>
-              <Button
-                p="4"
-                bg="transparent"
-                _hover={{ bg: "transparent" }}
-                _active={{ bg: "transparent" }}
-                as="a"
-                href="https://t.me/EthereumCR"
-              >
-                <Image src={telegramIcon} alt="Telegram Icon" />
               </Button>
             </Flex>
             <Center mb="8">

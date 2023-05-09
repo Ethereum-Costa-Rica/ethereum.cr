@@ -7,8 +7,8 @@ import { useEffect } from "react";
 const Hero = () => {
   const breakpoint = useBreakpoint()
   const _breakpoints = ['base', 'xs', 'sm', 'md']
-  const textToCopy = "0x5EAD82e959D8218f6003526AB8d457972B679C41";
-  const { onCopy, hasCopied } = useClipboard(textToCopy);
+  const wallet = "0x5EAD82e959D8218f6003526AB8d457972B679C41";
+  const { onCopy, hasCopied } = useClipboard(wallet);
   const toast = useToast();
 
   useEffect(() => {

@@ -1,6 +1,25 @@
-import { Flex, Text, Button, Wrap, WrapItem } from "@chakra-ui/react";
+import { Flex, Text, Button, Wrap, WrapItem, useToast, useClipboard } from "@chakra-ui/react";
 
 const Footer = () => {
+  const wallet = "0x5EAD82e959D8218f6003526AB8d457972B679C41";
+  const { onCopy, hasCopied } = useClipboard(wallet);
+  const toast = useToast();
+
+  const handleButtonClick = () => {
+    onCopy();
+    showToast();
+  };
+
+  const showToast = () => {
+    toast({
+      title: "Dirección copiada",
+      description: "Cualquier ayuda nos será de utilidad!",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
+  };
+
   return (
     <div>
       <Wrap justify='space-between' px="90px" pt={10} pb={10} backgroundColor="#EDF2F7">
@@ -15,7 +34,14 @@ const Footer = () => {
           </Flex>
         </WrapItem>
         <WrapItem>
-          <Button mt="32px" maxW="142px" color="red" colorScheme='red' variant='outline'>Donar con crypto</Button>
+          <Button
+            color="red"
+            colorScheme="red"
+            variant="outline"
+            onClick={handleButtonClick}
+          >
+            {hasCopied ? "Copiado!" : "Donar con crypto"}
+          </Button>
         </WrapItem>
       </Wrap>
     </div>

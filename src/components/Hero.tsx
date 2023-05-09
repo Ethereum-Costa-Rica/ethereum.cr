@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Flex, Button, Text, useBreakpoint } from "@chakra-ui/react";
+import { Flex, Button, Text, useBreakpoint, useToast, useClipboard } from "@chakra-ui/react";
 
 import EthCrLogo from "../../public/eth-cr.svg";
 import { useEffect } from "react";
@@ -7,10 +7,28 @@ import { useEffect } from "react";
 const Hero = () => {
   const breakpoint = useBreakpoint()
   const _breakpoints = ['base', 'xs', 'sm', 'md']
+  const textToCopy = "0x5EAD82e959D8218f6003526AB8d457972B679C41";
+  const { onCopy, hasCopied } = useClipboard(textToCopy);
+  const toast = useToast();
 
   useEffect(() => {
     console.log(breakpoint)
   }, [breakpoint])
+
+  const handleButtonClick = () => {
+    onCopy();
+    showToast();
+  };
+
+  const showToast = () => {
+    toast({
+      title: "Dirección copiada",
+      description: "Cualquier ayuda nos será de utilidad!",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
+  };
 
   return (
     <Flex
@@ -30,7 +48,14 @@ const Hero = () => {
           src={EthCrLogo}
           alt="Ethereum Costa Rica"
         />
-        <Button color="red" colorScheme='red' variant='outline' as="a" href="https://t.me/EthereumCR">Quiero unirme</Button>
+        <Button
+          color="red"
+          colorScheme="red"
+          variant="outline"
+          onClick={handleButtonClick}
+        >
+          {hasCopied ? "Copiado!" : "Donar con crypto"}
+        </Button>
       </Flex>
 
       <Flex direction="row" alignItems="center" justifyContent="space-between" height={1000}>

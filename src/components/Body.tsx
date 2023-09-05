@@ -4,9 +4,11 @@ import Image from 'next/image';
 import CRIcon from "../../public/cr-icon.svg";
 import socialIcon from "../../public/social-icon.svg";
 import EthCrIcon from "../../public/ethcr-icon.svg";
+import telegramIcon from "../../public/telegram-icon.svg";
+import xIcon from "../../public/x-icon.svg";
+import facebookIcon from "../../public/facebook-icon.svg"
 import linkedinIcon from "../../public/linkedin-icon.svg";
 import meetupIcon from "../../public/meetup-icon.svg";
-import telegramIcon from "../../public/telegram-icon.svg"
 
 const Body = () => {
   const breakpoint = useBreakpoint()
@@ -94,6 +96,7 @@ const Body = () => {
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
                 as="a"
+                target="_blank"
                 href="https://t.me/EthereumCR"
               >
                 <Image src={telegramIcon} alt="Telegram Icon" />
@@ -104,6 +107,29 @@ const Body = () => {
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
                 as="a"
+                target="_blank"
+                href="https://x.com/ethereumcr"
+              >
+                <Image src={xIcon} alt="x Icon" />
+              </Button>
+              <Button
+                p="4"
+                bg="transparent"
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+                as="a"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100095125751451&mibextid=nW3QTL"
+              >
+                <Image src={facebookIcon} alt="Facebook Icon" />
+              </Button>
+              <Button
+                p="4"
+                bg="transparent"
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
+                as="a"
+                target="_blank"
                 href="https://www.linkedin.com/company/ethereum-costa-rica/"
               >
                 <Image src={linkedinIcon} alt="LinkedIn Icon" />
@@ -114,6 +140,7 @@ const Body = () => {
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
                 as="a"
+                target="_blank"
                 href="https://www.meetup.com/es/ethereumcr/"
               >
                 <Image src={meetupIcon} alt="Meetup Icon" />

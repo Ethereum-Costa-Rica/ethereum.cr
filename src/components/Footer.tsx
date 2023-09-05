@@ -1,4 +1,5 @@
-import { Flex, Text, Button, Wrap, WrapItem, useToast, useClipboard } from "@chakra-ui/react";
+import { Flex, Text, Wrap, WrapItem, useToast, useClipboard } from "@chakra-ui/react";
+import  ButtonDonations  from "./ButtonDonations";
 
 const Footer = () => {
   const wallet = "0x5EAD82e959D8218f6003526AB8d457972B679C41";
@@ -34,14 +35,7 @@ const Footer = () => {
           </Flex>
         </WrapItem>
         <WrapItem>
-          <Button
-            color="red"
-            colorScheme="red"
-            variant="outline"
-            onClick={handleButtonClick}
-          >
-            {hasCopied ? "Copiado!" : "Donar con crypto"}
-          </Button>
+          <ButtonDonations />
         </WrapItem>
       </Wrap>
     </div>

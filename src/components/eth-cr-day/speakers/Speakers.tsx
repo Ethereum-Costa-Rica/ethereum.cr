@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Box } from "@chakra-ui/react";
+import { Flex, Text, Image, Box, Button } from "@chakra-ui/react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -7,6 +7,36 @@ import { SpeakersData } from "./data";
 import { SpeakerType } from "../models";
 
 const Speakers = () => {
+  const renderArrowPrev = (clickHandler: () => void, hasPrev: boolean) => {
+    return (
+      hasPrev && (
+        <Button
+          className="control-arrow"
+          onClick={clickHandler}
+          height="100%"
+          bg="transparent"
+        >
+          <Image src="./ArrowLeft.svg" />
+        </Button>
+      )
+    );
+  };
+
+  const renderArrowNext = (clickHandler: () => void, hasPrev: boolean) => {
+    return (
+      hasPrev && (
+        <Button
+          className="control-arrow control-next"
+          onClick={clickHandler}
+          height="100%"
+          bg="transparent"
+        >
+          <Image src="./ArrowRight.svg" />
+        </Button>
+      )
+    );
+  };
+
   return (
     <Flex
       direction="column"
@@ -20,9 +50,16 @@ const Speakers = () => {
           &nbsp;conferencistas
         </Text>
       </Flex>
-      <Carousel>
-        {SpeakersData.map((speaker: SpeakerType) => (
-          <Flex direction="row" justify="center">
+      <Carousel
+        renderArrowPrev={renderArrowPrev}
+        renderArrowNext={renderArrowNext}
+        showArrows
+        showIndicators={false}
+        showThumbs={false}
+        showStatus={false}
+      >
+        {SpeakersData.map((speaker: SpeakerType, index: number) => (
+          <Flex key={index} direction="row" justify="center">
             <Box boxSize="md">
               <Image
                 borderRadius="full"

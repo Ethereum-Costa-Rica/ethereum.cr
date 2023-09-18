@@ -22,9 +22,9 @@ const Speakers = () => {
     );
   };
 
-  const renderArrowNext = (clickHandler: () => void, hasPrev: boolean) => {
+  const renderArrowNext = (clickHandler: () => void, hasNext: boolean) => {
     return (
-      hasPrev && (
+      hasNext && (
         <Button
           className="control-arrow control-next"
           onClick={clickHandler}

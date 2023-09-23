@@ -8,7 +8,7 @@ interface EventBodyProps {
 
 const EventBody = ({ title, schedule, description }: EventBodyProps) => {
   return (
-    <Box marginLeft="40px" textAlign="center">
+    <Box marginLeft={[0, 0, 0, "40px", "40px"]} textAlign="center">
       <Text fontSize="30px" fontWeight={700}>
         {title}
       </Text>

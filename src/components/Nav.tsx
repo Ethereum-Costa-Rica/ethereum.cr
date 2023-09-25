@@ -3,8 +3,6 @@ import EthCrLogo from "./eth-cr-logo";
 import  ButtonDonations  from "./ButtonDonations";
 
 const Nav = () => {
-  const handleButtonClick = () => {};
-
   return (
     <Flex direction="row" justifyContent="space-between" alignItems="center">
       <EthCrLogo />

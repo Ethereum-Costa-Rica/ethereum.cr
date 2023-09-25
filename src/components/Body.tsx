@@ -9,6 +9,8 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import BackgroundWrapperCommunity from "./BackgroundWrapperCommunity";
+import Banner from "@/components/eth-cr-day/banner";
 import { useEffect } from "react";
 import Image from "next/image";
 import CRIcon from "../../public/cr-icon.svg";
@@ -33,9 +35,10 @@ const Body = () => {
       <Wrap
         minWidth="initial"
         alignItems="stretch"
-        spacing="30px"
+        spacing='144px'
         justify="center"
         backgroundColor="#0F2841"
+        mb="50px"
       >
         <WrapItem>
           <Container centerContent mt="150px">
@@ -80,42 +83,10 @@ const Body = () => {
           </Container>
         </WrapItem>
       </Wrap>
-
-      <Flex
-        paddingTop={10}
-        px="90px"
-        direction="column"
-        justifyContent="space-evenly"
-        position="relative"
-      >
-        <Box
-          position="absolute"
-          top={0}
-          left={0}
-          bottom={0}
-          right={0}
-          backgroundImage={
-            !_breakpoints.includes(breakpoint) ? "url('/hero2.svg')" : ""
-          }
-          backgroundRepeat="no-repeat"
-          backgroundSize="auto 104vh"
-          backgroundPosition="95% -85%"
-          zIndex={-1}
-        />
-        <Box
-          position="absolute"
-          top={0}
-          left={0}
-          bottom={0}
-          right={0}
-          backgroundImage={
-            !_breakpoints.includes(breakpoint) ? "url('/hero1.svg')" : ""
-          }
-          backgroundRepeat="no-repeat"
-          backgroundSize="auto 104vh"
-          backgroundPosition="15% 350%"
-          zIndex={-2}
-        />
+      <Box mt="125px">
+        <Banner />
+      </Box>
+      <BackgroundWrapperCommunity>
         <Flex
           direction="row"
           alignItems="center"
@@ -203,7 +174,7 @@ const Body = () => {
             </Center>
           </Flex>
         </Flex>
-      </Flex>
+      </BackgroundWrapperCommunity>
     </div>
   );
 };

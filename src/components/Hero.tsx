@@ -28,16 +28,6 @@ const Hero = () => {
   //   showToast();
   // };
 
-  const showToast = () => {
-    toast({
-      title: "Dirección copiada",
-      description: "Cualquier ayuda nos será de utilidad!",
-      status: "success",
-      duration: 9000,
-      isClosable: true,
-    });
-  };
-
   return (
     <BackgroundWrapper>
       <Nav />

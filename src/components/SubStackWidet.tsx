@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const SubstackWidget = () => {
   useEffect(() => {
     (window as Window).CustomSubstackWidget = {
-      substackUrl: "brolag.substack.com",
+      substackUrl: "ethereumcostarica.substack.com",
       placeholder: "ejemplo@gmail.com",
       buttonText: "Suscribite",
       theme: "custom",

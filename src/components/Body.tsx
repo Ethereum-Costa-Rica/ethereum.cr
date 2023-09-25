@@ -21,6 +21,7 @@ import xIcon from "../../public/x-icon.svg";
 import facebookIcon from "../../public/facebook-icon.svg";
 import linkedinIcon from "../../public/linkedin-icon.svg";
 import meetupIcon from "../../public/meetup-icon.svg";
+import SubstackWidget from './SubStackWidet';
 
 const Body = () => {
   const breakpoint = useBreakpoint();
@@ -35,7 +36,7 @@ const Body = () => {
       <Wrap
         minWidth="initial"
         alignItems="stretch"
-        spacing='144px'
+        spacing="144px"
         justify="center"
         backgroundColor="#0F2841"
         mb="50px"
@@ -44,9 +45,8 @@ const Body = () => {
           <Container centerContent mt="150px">
             <Image width={97} height={93} src={CRIcon} alt="Costa Rica Icon" />
             <Text
-              fontSize="3xl"
+              variant="card-title"
               textAlign="center"
-              fontWeight={700}
               maxW={270}
               lineHeight="100%"
               color="white"
@@ -107,7 +107,7 @@ const Body = () => {
                 </Text>
               </Text>
             </Box>
-            <Flex justifyContent="space-between" mb="44">
+            <Flex justifyContent="space-between" mb="36">
               <Button
                 p="4"
                 bg="transparent"
@@ -163,6 +163,17 @@ const Body = () => {
               >
                 <Image src={meetupIcon} alt="Meetup Icon" />
               </Button>
+            </Flex>
+            <Flex
+              direction="column"
+              alignItems="center"
+              justifyContent="center"
+              mb="44"
+            >
+              <Text variant="sub-title" mb={4}>
+                Suscribite a nuestro boletín
+              </Text>
+              <SubstackWidget />
             </Flex>
             <Center mb="8">
               <Image

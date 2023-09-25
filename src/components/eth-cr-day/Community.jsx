@@ -19,8 +19,7 @@ const Community = () => {
         <Center>
           <Box>
             <Text
-              fontSize="5xl"
-              fontWeight={700}
+              variant="main-title"
               lineHeight="100%"
               align="center"
             >

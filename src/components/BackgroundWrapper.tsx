@@ -16,7 +16,7 @@ const BackgroundWrapper = ({ children }: Props) => {
   return (
     <Flex
       paddingTop={10}
-      px={[25, 50, 90]}
+      px={{ sm: 15, md: 30, lg: 90 }}
       direction="column"
       justifyContent="space-evenly"
       backgroundImage={checkBgInclusion()}

@@ -44,7 +44,7 @@ const Speakers = () => {
       alignItems="center"
       bg="white"
     >
-      <Flex direction="row" mb="6">
+      <Flex direction="row" wrap="wrap" justify="center" mb="6">
         <Text variant="h1">Conoce a los</Text>
         <Text variant="h1" color="brand.primary">
           &nbsp;conferencistas
@@ -57,9 +57,17 @@ const Speakers = () => {
         showIndicators={false}
         showThumbs={false}
         showStatus={false}
+        width="100vw"
       >
         {SpeakersData.map((speaker: SpeakerType, index: number) => (
-          <Flex key={index} direction="row" justify="center">
+          <Flex
+            maxW="100%"
+            key={index}
+            direction="row"
+            wrap="wrap"
+            justify="center"
+            px={{ sm: 5, md: 10 }}
+          >
             <Box boxSize="md">
               <Image
                 borderRadius="full"
@@ -69,17 +77,19 @@ const Speakers = () => {
             </Box>
             <Flex
               direction="column"
-              maxW="50%"
+              maxW="700px"
+              wrap="wrap"
+              w="auto"
               alignItems="center"
               justifyContent="center"
               bg="white"
-              mx="8"
+              mx={{ sm: 0, md: "8", lg: "8" }}
             >
               <Text variant="h2">{speaker.name}</Text>
               <Text variant="subtitle" color="brand.primary" mb="4">
                 {speaker.title}
               </Text>
-              <Text variant="body" align="center">
+              <Text w="100%" variant="body" align="center">
                 {speaker.description}
               </Text>
               <Flex

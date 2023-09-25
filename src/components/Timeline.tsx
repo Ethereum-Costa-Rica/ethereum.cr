@@ -24,8 +24,7 @@ const Timeline = () => {
         <Box>
           <Text
             marginBottom="80px"
-            fontSize="5xl"
-            fontWeight={700}
+            variant="main-title"
             maxW={700}
             lineHeight="100%"
             align="center"

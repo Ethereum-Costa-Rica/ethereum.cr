@@ -22,14 +22,14 @@ const ButtonDonations = () => {
 
   return (
     <div>
-          <Button
-            color="red"
-            colorScheme="red"
-            variant="outline"
-            onClick={handleButtonClick}
-          >
-            {hasCopied ? "Copiado!" : "Donar con crypto"}
-          </Button>
+      <Button
+        color="red"
+        colorScheme="red"
+        variant="outline"
+        onClick={handleButtonClick}
+      >
+        {hasCopied ? "Copiado!" : "Donar con crypto"}
+      </Button>
     </div>
   );
 };

@@ -35,7 +35,7 @@ const BackgroundWrapperCommunity = ({ children }: Props) => {
           backgroundImage={checkBgInclusion2()}
           backgroundRepeat="no-repeat"
           backgroundSize="auto 75vh"
-          backgroundPosition="95% 225%"
+          backgroundPosition="95% 143%"
           zIndex={-1}
         />
         <Flex
@@ -48,8 +48,8 @@ const BackgroundWrapperCommunity = ({ children }: Props) => {
           backgroundImage={checkBgInclusion1()}
           backgroundRepeat="no-repeat"
           backgroundSize="auto 104vh"
-          backgroundPosition="5% 0%"
-          zIndex={-2}
+          backgroundPosition="5% 100%"
+          zIndex={-1}
         />
         {children}
       </Flex>

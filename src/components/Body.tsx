@@ -21,7 +21,7 @@ import xIcon from "../../public/x-icon.svg";
 import facebookIcon from "../../public/facebook-icon.svg";
 import linkedinIcon from "../../public/linkedin-icon.svg";
 import meetupIcon from "../../public/meetup-icon.svg";
-import SubstackWidget from './SubStackWidet';
+import SubstackWidget from "./SubStackWidet";
 
 const Body = () => {
   const breakpoint = useBreakpoint();
@@ -87,16 +87,11 @@ const Body = () => {
         <Banner />
       </Box>
       <BackgroundWrapperCommunity>
-        <Flex
-          direction="row"
-          alignItems="center"
-          justifyContent="center"
-          height={760}
-        >
+        <Flex direction="row" alignItems="center" justifyContent="center">
           <Flex direction="column">
             <Box mb="32">
               <Text
-                variant="main-title"
+                variant="main-title-alternative"
                 maxW={700}
                 lineHeight="100%"
                 align="center"
@@ -175,7 +170,7 @@ const Body = () => {
               </Text>
               <SubstackWidget />
             </Flex>
-            <Center mb="8">
+            <Center mb="36">
               <Image
                 width={87}
                 height={134}

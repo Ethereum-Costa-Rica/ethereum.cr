@@ -35,6 +35,11 @@ const theme = extendTheme({
           fontWeight: 700,
           color: "red.500",
         },
+        "main-title-alternative": {
+          fontSize: "50px",
+          fontWeight: 700,
+          color: "#0F2841",
+        },
         h1: {
           fontSize: "50px",
           fontWeight: 700,

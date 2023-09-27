@@ -38,7 +38,7 @@ const Hero = () => {
         height={1000}
       >
         <Flex direction="column">
-          <Text variant="main-title" maxW={700} lineHeight="100%">
+          <Text variant="main-title-alternative" maxW={700} lineHeight="100%">
             Tu comunidad de <br /> Ethereum en{" "}
             <Text as="span" color="red">
               Costa Rica

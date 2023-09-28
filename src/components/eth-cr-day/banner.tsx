@@ -17,7 +17,7 @@ const Banner = () => {
       <Button
             maxW="142px"
             as="a"
-            href="#"
+            href="/day"
             color="red"
             colorScheme="red"
             variant="outline"

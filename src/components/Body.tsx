@@ -10,7 +10,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import BackgroundWrapperCommunity from "./BackgroundWrapperCommunity";
-import Banner from "@/components/eth-cr-day/banner";
+import Banner from "@/components/eth-cr-day/Banner";
 import { useEffect } from "react";
 import Image from "next/image";
 import CRIcon from "../../public/cr-icon.svg";

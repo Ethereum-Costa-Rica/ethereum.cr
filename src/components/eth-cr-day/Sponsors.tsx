@@ -22,7 +22,7 @@ const Sponsors = () => {
         </Center>
         <Grid
           templateColumns="repeat(3, 1fr)"
-          gap={10}
+          gap={20}
           alignItems="center"
           justifyItems="center"
         >

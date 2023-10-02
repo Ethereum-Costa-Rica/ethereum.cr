@@ -1,20 +1,24 @@
-import BackgroundWrapper from "@/components/BackgroundWrapper";
+import BackgroundWrapperDay from "@/components/BackgroundWrapperDay";
 import Nav from "@/components/Nav";
 import Speakers from "@/components/eth-cr-day/speakers/Speakers";
 import BannerDay from "@/components/eth-cr-day/BannerDay";
 import Community from "@/components/eth-cr-day/Community";
+import Space from "@/components/eth-cr-day/Space";
 import Sponsors from "@/components/eth-cr-day/Sponsors";
 import Footer from "@/components/Footer";
 
 export default function EthCrDay() {
   return (
-    <BackgroundWrapper>
-      <Nav />
+    <div>
+      <BackgroundWrapperDay>
+        <Nav />
+      </BackgroundWrapperDay>
       <BannerDay />
       <Community />
       <Speakers />
+      <Space />
       <Sponsors />
       <Footer />
-    </BackgroundWrapper>
+    </div>
   );
 }

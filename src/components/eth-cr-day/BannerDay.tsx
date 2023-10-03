@@ -1,20 +1,29 @@
-import { Flex, Text, Center, Button, Box } from "@chakra-ui/react";
+import { Flex, Text, Center, Button, useMediaQuery } from "@chakra-ui/react";
 import EthCrLogo from "../eth-cr-logo";
 import EthCrDayLogo from "../eth-cr-day-logo";
 import ButtonDonations from "../ButtonDonations";
 
 const Banner = () => {
+  const [isLargerThan1090] = useMediaQuery("(min-width: 1090px)");
+
   return (
     <Flex direction="column" justify="space-evenly" w="full">
       <Center>
         <EthCrDayLogo />
       </Center>
-      <Flex direction="row" justify="space-evenly" alignItems="center">
-        <Text as="b" fontSize="xl">
+      <Flex
+        direction={isLargerThan1090 ? "row" : "column"}
+        wrap="wrap"
+        justify="space-evenly"
+        alignItems="center"
+        maxW="1376px"
+        m="auto"
+      >
+        <Text as="b" fontSize="xl" mx={8} my={4}>
           Una iniciativa promovida y desarrollada por
         </Text>
         <EthCrLogo />
-        <Text as="b" fontSize="xl">
+        <Text as="b" fontSize="xl" m={8} my={4}>
           trabajando con amor para la comunidad
         </Text>
       </Flex>

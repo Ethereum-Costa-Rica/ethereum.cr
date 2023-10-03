@@ -10,7 +10,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import BackgroundWrapperCommunity from "./BackgroundWrapperCommunity";
-import Banner from "@/components/eth-cr-day/Banner";
+import Banner from "@/components/eth-cr-day/banner";
 import { useEffect } from "react";
 import Image from "next/image";
 import CRIcon from "../../public/cr-icon.svg";
@@ -25,7 +25,6 @@ import SubstackWidget from "./SubStackWidet";
 
 const Body = () => {
   const breakpoint = useBreakpoint();
-  const _breakpoints = ["base", "xs", "sm", "md"];
 
   useEffect(() => {
     console.log(breakpoint);

@@ -1,4 +1,11 @@
-import { Flex, Text, Image, Box, Button } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Image,
+  Box,
+  Button,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -7,6 +14,8 @@ import { SpeakersData } from "./data";
 import { SpeakerType } from "../models";
 
 const Speakers = () => {
+  const [isLargerThan1210] = useMediaQuery("(min-width: 1210px)");
+
   const renderArrowPrev = (clickHandler: () => void, hasPrev: boolean) => {
     return (
       hasPrev && (
@@ -16,7 +25,7 @@ const Speakers = () => {
           height="100%"
           bg="transparent"
         >
-          <Image src="./ArrowLeft.svg" />
+          <Image src="./ArrowLeft.svg" alt="Left" />
         </Button>
       )
     );
@@ -31,7 +40,7 @@ const Speakers = () => {
           height="100%"
           bg="transparent"
         >
-          <Image src="./ArrowRight.svg" />
+          <Image src="./ArrowRight.svg" alt="Right" />
         </Button>
       )
     );
@@ -57,7 +66,7 @@ const Speakers = () => {
         showIndicators={false}
         showThumbs={false}
         showStatus={false}
-        width="100vw"
+        width={isLargerThan1210 ? "1210px" : "100vw"}
       >
         {SpeakersData.map((speaker: SpeakerType, index: number) => (
           <Flex

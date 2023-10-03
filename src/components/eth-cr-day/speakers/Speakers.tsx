@@ -54,8 +54,8 @@ const Speakers = () => {
       bg="white"
     >
       <Flex direction="row" wrap="wrap" justify="center" mb="6">
-        <Text variant="h1">Conoce a los</Text>
-        <Text variant="h1" color="brand.primary">
+        <Text variant={{ sm: "h2", md: "h1" }}>Conoce a los</Text>
+        <Text variant={{ sm: "h2", md: "h1" }} color="brand.primary">
           &nbsp;conferencistas
         </Text>
       </Flex>

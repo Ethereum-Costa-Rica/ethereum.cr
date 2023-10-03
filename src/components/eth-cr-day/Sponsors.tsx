@@ -5,7 +5,7 @@ const Sponsors = () => {
     <Box maxW="1228px" m="auto" pb="100px">
       <Center>
         <Box py="75px">
-          <Text variant="h1" align="center">
+          <Text variant={{ sm: "h2", md: "h1" }} align="center">
             Official Sponsors
           </Text>
         </Box>

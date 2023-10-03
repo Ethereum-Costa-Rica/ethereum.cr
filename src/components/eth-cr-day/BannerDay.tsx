@@ -43,9 +43,9 @@ const Banner = () => {
       <Center pb="50px">
         <Text
           as="b"
-          fontSize="3xl"
-          width="1216px"
+          fontSize={{ sm: "xl", md: "3xl" }}
           height="114px"
+          maxW="90%"
           textAlign="center"
         >
           Aprende, utiliza e involucrate en el mundo blockchain y web3, la

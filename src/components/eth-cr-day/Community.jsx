@@ -16,7 +16,7 @@ const Community = () => {
       <Box backgroundColor="#F7FAFC" py="70px">
         <Center>
           <Box>
-            <Text variant="h1" align="center">
+            <Text variant={{ sm: "h2", md: "h1" }} align="center">
               Nos reuniremos como{" "}
               <Text as="span" color="red">
                 comunidad

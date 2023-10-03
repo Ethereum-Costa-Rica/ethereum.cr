@@ -52,10 +52,11 @@ const Speakers = () => {
       justifyContent="center"
       alignItems="center"
       bg="white"
+      px={["15px"]}
     >
       <Flex direction="row" wrap="wrap" justify="center" mb="6">
-        <Text variant={{ sm: "h2", md: "h1" }}>Conoce a los</Text>
-        <Text variant={{ sm: "h2", md: "h1" }} color="brand.primary">
+        <Text variant={["h2", "h2", "h1"]}>Conoce a los</Text>
+        <Text variant={["h2", "h2", "h1"]} color="brand.primary">
           &nbsp;conferencistas
         </Text>
       </Flex>
@@ -98,7 +99,7 @@ const Speakers = () => {
               <Text variant="subtitle" color="brand.primary" mb="4">
                 {speaker.title}
               </Text>
-              <Text w="100%" variant="body" align="center">
+              <Text w={["90%", "100%"]} variant="body" align="center">
                 {speaker.description}
               </Text>
               <Flex

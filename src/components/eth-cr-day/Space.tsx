@@ -5,7 +5,7 @@ const Space = () => {
     <div>
       <Flex py="75px" alignItems="center" justifyContent="center">
         <Box>
-          <Text align="center" variant={{ sm: "h2", md: "h1" }}>
+          <Text align="center" variant={["h2", "h2", "h1"]}>
             Guarda tu{" "}
             <Text as="span" color="red">
               espacio

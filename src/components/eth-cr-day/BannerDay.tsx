@@ -19,11 +19,23 @@ const Banner = () => {
         maxW="1376px"
         m="auto"
       >
-        <Text as="b" fontSize="xl" mx={8} my={4}>
+        <Text
+          as="b"
+          align="center"
+          fontSize={{ sm: "subtitle", md: "xl" }}
+          mx={{ sm: 2, md: 8 }}
+          my={4}
+        >
           Una iniciativa promovida y desarrollada por
         </Text>
         <EthCrLogo />
-        <Text as="b" fontSize="xl" m={8} my={4}>
+        <Text
+          as="b"
+          align="center"
+          fontSize={{ sm: "subtitle", md: "xl" }}
+          mx={{ sm: 2, md: 8 }}
+          my={4}
+        >
           trabajando con amor para la comunidad
         </Text>
       </Flex>
@@ -40,7 +52,7 @@ const Banner = () => {
           Registrarse
         </Button>
       </Flex>
-      <Center pb="50px">
+      <Center pb={{ sm: "10px", md: "50px" }}>
         <Text
           as="b"
           fontSize={{ sm: "xl", md: "3xl" }}

@@ -54,7 +54,6 @@ const Banner = () => {
       </Flex>
       <Center pb={{ sm: "10px", md: "50px" }}>
         <Text
-          as="b"
           fontSize={{ sm: "xl", md: "3xl" }}
           height="114px"
           maxW="90%"

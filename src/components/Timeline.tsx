@@ -16,7 +16,8 @@ const Timeline = () => {
       width="full"
     >
       <Flex
-        padding="70px 135px"
+        py={["60px", "135px"]}
+        px={["30px", "70px"]}
         direction="column"
         width="full"
         alignItems="center"
@@ -24,7 +25,7 @@ const Timeline = () => {
         <Box>
           <Text
             marginBottom="80px"
-            variant="main-title"
+            variant={["h2", "main-title"]}
             maxW={700}
             lineHeight="100%"
             align="center"

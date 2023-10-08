@@ -48,6 +48,10 @@ const theme = extendTheme({
           fontSize: "36px",
           fontWeight: 700,
         },
+        h3: {
+          fontSize: "24px",
+          fontWeight: 700,
+        },
         subtitle: {
           fontSize: "16px",
           fontWeight: "semibold",

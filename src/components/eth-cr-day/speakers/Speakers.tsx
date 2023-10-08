@@ -54,9 +54,9 @@ const Speakers = () => {
       bg="white"
       px={["15px"]}
     >
-      <Flex direction="row" wrap="wrap" justify="center" mb="6">
-        <Text variant={["h2", "h2", "h1"]}>Conoce a los</Text>
-        <Text variant={["h2", "h2", "h1"]} color="brand.primary">
+      <Flex direction="row" wrap="wrap" justify="center" my="10">
+        <Text variant={["h3", "h2", "h1"]}>Conoce a los</Text>
+        <Text variant={["h3", "h2", "h1"]} color="brand.primary">
           &nbsp;conferencistas
         </Text>
       </Flex>
@@ -78,9 +78,9 @@ const Speakers = () => {
             justify="center"
             px={{ sm: 5, md: 10 }}
           >
-            <Box boxSize="md">
+            <Box mb={10} boxSize={["xs", "sm", "sm"]}>
               <Image
-                borderRadius="full"
+                borderRadius="3xl"
                 src={`./speakers/${speaker.image}`}
                 alt="Speaker"
               />
@@ -95,15 +95,20 @@ const Speakers = () => {
               bg="white"
               mx={{ sm: 0, md: "8", lg: "8" }}
             >
-              <Text variant="h2">{speaker.name}</Text>
+              <Text variant={["h3", "h2"]}>{speaker.name}</Text>
               <Text variant="subtitle" color="brand.primary" mb="4">
                 {speaker.title}
               </Text>
-              <Text w={["90%", "100%"]} variant="body" align="center">
+              <Text
+                w={["90%", "100%"]}
+                variant="body"
+                align={["left", "center"]}
+              >
                 {speaker.description}
               </Text>
               <Flex
-                mt="4"
+                mt="7"
+                mb="20"
                 w="100%"
                 direction="row"
                 justify="center"

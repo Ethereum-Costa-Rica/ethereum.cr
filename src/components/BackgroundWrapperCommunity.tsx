@@ -18,42 +18,40 @@ const BackgroundWrapperCommunity = ({ children }: Props) => {
   };
 
   return (
-    <div>
+    <Flex
+      paddingTop={10}
+      direction="column"
+      justifyContent="space-evenly"
+      position="relative"
+    >
       <Flex
-        paddingTop={10}
-        direction="column"
-        justifyContent="space-evenly"
-        position="relative"
-      >
-        <Flex
-          position="absolute"
-          top={0}
-          left={0}
-          bottom={0}
-          right={0}
-          px={[25, 50, 90]}
-          backgroundImage={checkBgInclusion2()}
-          backgroundRepeat="no-repeat"
-          backgroundSize="auto 75vh"
-          backgroundPosition="95% 143%"
-          zIndex={-1}
-        />
-        <Flex
-          position="absolute"
-          top={0}
-          left={0}
-          bottom={0}
-          right={0}
-          px={[25, 50, 90]}
-          backgroundImage={checkBgInclusion1()}
-          backgroundRepeat="no-repeat"
-          backgroundSize="auto 104vh"
-          backgroundPosition="5% 100%"
-          zIndex={-1}
-        />
-        {children}
-      </Flex>
-    </div>
+        position="absolute"
+        top={0}
+        left={0}
+        bottom={0}
+        right={0}
+        px={[25, 50, 90]}
+        backgroundImage={checkBgInclusion2()}
+        backgroundRepeat="no-repeat"
+        backgroundSize="auto 75vh"
+        backgroundPosition="95% 143%"
+        zIndex={-1}
+      />
+      <Flex
+        position="absolute"
+        top={0}
+        left={0}
+        bottom={0}
+        right={0}
+        px={[25, 50, 90]}
+        backgroundImage={checkBgInclusion1()}
+        backgroundRepeat="no-repeat"
+        backgroundSize="auto 104vh"
+        backgroundPosition="5% 100%"
+        zIndex={-1}
+      />
+      {children}
+    </Flex>
   );
 };
 

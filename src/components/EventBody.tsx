@@ -1,21 +1,34 @@
 import { Box, Text } from "@chakra-ui/react";
 
-interface EventBodyProps {
+interface Session {
+  room: string;
+  type: string;
+  speaker: string;
   title: string;
-  schedule: string;
-  description: string;
 }
 
-const EventBody = ({ title, schedule, description }: EventBodyProps) => {
+interface EventBodyProps {
+  schedule: string;
+  sessions: Session[];
+}
+
+const EventBody = ({ schedule, sessions }: EventBodyProps) => {
   return (
-    <Box marginLeft={[0, 0, 0, "40px", "40px"]} textAlign="center">
+    <Box  textAlign="center">
       <Text fontSize="30px" fontWeight={700}>
-        {title}
-      </Text>
-      <Text fontSize="18px" color="red" marginBottom="40px">
         {schedule}
       </Text>
-      <Text>{description}</Text>
+      {sessions.map((session) => (
+        <Box key={session.title + session.room + session.speaker}>
+          <Text fontSize="18px" color="red" marginBottom="10px">
+            Room {session.room}
+          </Text>
+          <Text>
+            Type: {session.type} - {session.title}{" "}
+            {session.speaker ? `- ${session.speaker}` : ""}
+          </Text>
+        </Box>
+      ))}
     </Box>
   );
 };

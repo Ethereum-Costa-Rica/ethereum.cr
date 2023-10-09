@@ -24,7 +24,7 @@ const EventTitle = ({ title, active = false }: EventTitleProps) => {
   return (
     <Flex
       width="100%"
-      h="10"
+      h="4"
       paddingRight={["15px", "15px", "15px", "50px", "50px"]}
     >
       <Flex
@@ -37,7 +37,7 @@ const EventTitle = ({ title, active = false }: EventTitleProps) => {
       >
         <Text
           color={active ? "red.500" : "blue.1000"}
-          fontSize={["12px", "22px", "22px", "22px", "32px"]}
+          fontSize={["12px", "14px", "14px", "14px", "24px"]}
           fontWeight={700}
           minWidth={["120px", "120px", "120px", "auto", "auto"]}
           paddingRight={["15px", "15px", "15px", "50px", "50px"]}

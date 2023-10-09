@@ -1,9 +1,14 @@
-import Image from "next/image";
-import asset from "../../public/eth-cr.svg";
+import { Box, Image } from "@chakra-ui/react";
 
 const EthCrLogo = () => {
   return (
-    <Image height={103} width={180} src={asset} alt="Ethereum Costa Rica" />
+    <Box>
+      <Image
+        boxSize={["120px", "180px", "220px"]}
+        src="./eth-cr.svg"
+        alt="Ethereum Costa Rica"
+      />
+    </Box>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Flex, Button } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import EthCrLogo from "./eth-cr-logo";
 import ButtonDonations from "./ButtonDonations";
 

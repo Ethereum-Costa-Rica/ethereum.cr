@@ -38,7 +38,7 @@ const Timeline = () => {
           <Flex justifyItems="start">
             <Text
               marginBottom="80px"
-              variant={["h2", "main-title"]}
+              variant={["h2", "h2", "main-title"]}
               maxW={700}
               lineHeight="100%"
               align="center"
@@ -116,7 +116,5 @@ const Timeline = () => {
       </Flex>
     </>
   );
- 
- 
 };
 export default Timeline;

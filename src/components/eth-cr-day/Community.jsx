@@ -1,35 +1,26 @@
-import {
-  Text,
-  Box,
-  Container,
-  Wrap,
-  WrapItem,
-  Image,
-  Flex,
-} from "@chakra-ui/react";
+import { Text, Box, Image, Flex } from "@chakra-ui/react";
 
 const Community = () => {
   return (
     <Box pt={10} backgroundColor="#F7FAFC">
-      <Flex direction="column" justify="center" align="center">
+      <Text mb={10} variant={["h3", "h2", "h1"]} align="center">
+        Nos reuniremos como{" "}
+        <Text as="span" color="red">
+          comunidad
+        </Text>
+      </Text>
+      <Flex direction="row" flexWrap="wrap" justify="center" align="center">
         <Box
           display="flex"
-          flexDirection="column"
           alignItems="center"
-          justifyContent="space-around"
-          boxSize="90vw"
-          maxW="2048px"
+          boxSize={["90vw", "70vw", "30vw"]}
+          mr={["0px", "0px", "100px", "150px"]}
         >
-          <Text mb={10} variant={["h3", "h2", "h1"]} align="center">
-            Nos reuniremos como{" "}
-            <Text as="span" color="red">
-              comunidad
-            </Text>
-          </Text>
           <Image
             src="texas-tech2.jpg"
             borderRadius="5px"
             alt="Campus Texas Tech"
+            minW="360px"
           />
         </Box>
         <Flex mb={10} mt={14} direction="column">

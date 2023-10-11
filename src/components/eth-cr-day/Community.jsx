@@ -49,15 +49,27 @@ const Community = () => {
             </Text>
           </Box>
           <Text maxW={500} my="25px" variant="body" align="center">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit
+            El Ethereum Costa Rica Day será una jornada repleta de actividades,
+            incluyendo charlas, talleres, conferencias y espacios dedicados al
+            networking. Este evento tiene como objetivo introducir a nuevos
+            usuarios, desarrolladores, entusiastas y emprendedores al mundo del
+            blockchain y Ethereum, enfocándose en la educación, la experiencia y
+            la consolidación de la comunidad.
           </Text>
-          <Text maxW={500} my="25px" variant="body" align="center">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam,
+          <Text maxW={500} my="25px" variant="body" align="left">
+            <u>
+              <strong>Algunas de los temas que tocaremos serán:</strong>
+            </u>
+
+            <ul>
+              <li>Uso de wallets: ¿qué es una billetera?¿Cómo se usan?</li>
+              <li>
+                NFTs: ¿qué son y como son una manera de potenciar las
+                comunidades y empresas digitales?
+              </li>
+              <li>Desarrollo: en lenguajes como Solidity, Cairo, etc.</li>
+              <li>Criptografía: e Introducción a Zero Knowledge</li>
+            </ul>
           </Text>
         </Flex>
       </Flex>

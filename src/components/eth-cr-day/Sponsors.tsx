@@ -17,21 +17,14 @@ const Sponsors = () => {
         justifyItems="center"
         px={5}
       >
-        <Image
-          src="./sponsors/texas-tech-university.png"
-          alt="Texas Tech University"
-        />
-        <Image src="./sponsors/paguelo-facil.png" alt="Paguelo Facil" />
-        <Image
-          src="./sponsors/pizza-dao.png"
-          alt="Pizza DAO"
-        />
+        <Image src="./sponsors/ef-logo.png" alt="ETH Fundation" />
         <Image src="./sponsors/paguelo-facil.png" alt="Paguelo Facil" />
         <Image
           src="./sponsors/texas-tech-university.png"
           alt="Texas Tech University"
         />
-        <Image src="./sponsors/paguelo-facil.png" alt="Paguelo Facil" />
+        <Image src="./sponsors/886-crypto.png" alt="886 Crypto" />
+        <Image src="./sponsors/pizza-dao.png" alt="Pizza DAO" />
       </Grid>
     </Box>
   );

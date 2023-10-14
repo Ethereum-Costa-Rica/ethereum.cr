@@ -10,7 +10,6 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import BackgroundWrapperCommunity from "./BackgroundWrapperCommunity";
-import Banner from "@/components/eth-cr-day/banner";
 import { useEffect } from "react";
 import Image from "next/image";
 import CRIcon from "../../public/cr-icon.svg";
@@ -82,9 +81,6 @@ const Body = () => {
           </Container>
         </WrapItem>
       </Wrap>
-      <Box mt="125px">
-        <Banner />
-      </Box>
       <BackgroundWrapperCommunity>
         <Flex direction="row" alignItems="center" justifyContent="center">
           <Flex direction="column">

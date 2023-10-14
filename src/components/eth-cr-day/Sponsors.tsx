@@ -23,8 +23,8 @@ const Sponsors = () => {
         />
         <Image src="./sponsors/paguelo-facil.png" alt="Paguelo Facil" />
         <Image
-          src="./sponsors/texas-tech-university.png"
-          alt="Texas Tech University"
+          src="./sponsors/pizza-dao.png"
+          alt="Pizza DAO"
         />
         <Image src="./sponsors/paguelo-facil.png" alt="Paguelo Facil" />
         <Image

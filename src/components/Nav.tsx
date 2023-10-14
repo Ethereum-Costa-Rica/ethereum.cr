@@ -9,6 +9,7 @@ const Nav = () => {
       px={["5%"]}
       justifyContent="space-between"
       alignItems="center"
+      position="relative"
     >
       <EthCrLogo />
       <ButtonDonations />

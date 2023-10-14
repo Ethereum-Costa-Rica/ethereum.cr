@@ -7,7 +7,6 @@ import {
   useToast,
   // useClipboard,
 } from "@chakra-ui/react";
-
 import { useEffect } from "react";
 import Nav from "./Nav";
 import BackgroundWrapper from "./BackgroundWrapper";
@@ -30,7 +29,6 @@ const Hero = () => {
 
   return (
     <BackgroundWrapper>
-      <Nav />
       <Flex
         direction="row"
         alignItems="center"

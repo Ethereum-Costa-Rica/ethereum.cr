@@ -1,17 +1,42 @@
-import { Flex, Text, Center, Button } from "@chakra-ui/react";
+import { Flex, Text, Center, Button, useMediaQuery } from "@chakra-ui/react";
 import EthCrLogo from "../eth-cr-logo";
 import EthCrDayLogo from "../eth-cr-day-logo";
 
 const Banner = () => {
+  const [isLargerThan1090] = useMediaQuery("(min-width: 1090px)");
+
   return (
     <Flex direction="column" justify="space-evenly" w="full" height={700}>
-      <Center>
+      <Center py="80px">
         <EthCrDayLogo />
       </Center>
-      <Flex direction="row" justify="space-evenly" alignItems="center">
-        <Text as="b">Un día para crecer, conectar y apoyar</Text>
+      <Flex
+        direction={isLargerThan1090 ? "row" : "column"}
+        wrap="wrap"
+        justify="space-evenly"
+        alignItems="center"
+        maxW="1376px"
+        m="auto"
+      >
+        <Text
+          as="b"
+          align="center"
+          fontSize={{ sm: "subtitle", md: "xl" }}
+          mx={{ sm: 2, md: 8 }}
+          my={4}
+        >
+          Un día para crecer, conectar y apoyar
+        </Text>
         <EthCrLogo />
-        <Text as="b">Sábado 18 de Noviembre del 2023</Text>
+        <Text
+          as="b"
+          align="center"
+          fontSize={{ sm: "subtitle", md: "xl" }}
+          mx={{ sm: 2, md: 8 }}
+          my={4}
+        >
+          Sábado 18 de Noviembre del 2023
+        </Text>
       </Flex>
       <Flex
         direction="row"

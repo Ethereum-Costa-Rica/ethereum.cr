@@ -7,10 +7,12 @@ import Timeline from "@/components/Timeline";
 import Space from "@/components/eth-cr-day/Space";
 import Sponsors from "@/components/eth-cr-day/Sponsors";
 import Footer from "@/components/Footer";
+import Bot from "@/components/Bot";
 
 export default function EthCrDay() {
   return (
     <div>
+      <Bot />
       <BackgroundWrapperDay>
         <Nav />
       </BackgroundWrapperDay>
@@ -23,4 +25,4 @@ export default function EthCrDay() {
       <Footer />
     </div>
   );
-}
+};

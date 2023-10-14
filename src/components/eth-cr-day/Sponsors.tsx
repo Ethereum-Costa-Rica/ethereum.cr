@@ -25,6 +25,7 @@ const Sponsors = () => {
         />
         <Image src="./sponsors/886-crypto.png" alt="886 Crypto" />
         <Image src="./sponsors/pizza-dao.png" alt="Pizza DAO" />
+        <Image src="./sponsors/c-creators.png" alt="C Creators" />
       </Grid>
     </Box>
   );

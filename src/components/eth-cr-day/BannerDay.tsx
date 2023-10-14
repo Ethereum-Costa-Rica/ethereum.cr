@@ -8,7 +8,7 @@ const Banner = () => {
 
   return (
     <Flex direction="column" justify="space-evenly" w="full">
-      <Center>
+      <Center py="80px">
         <EthCrDayLogo />
       </Center>
       <Flex
@@ -48,7 +48,12 @@ const Banner = () => {
         gap="60px"
       >
         <ButtonDonations />
-        <Button width="160px" as="a" href="https://www.checkmyticket.xyz/event/9bf60e16-47e9-4823-a10a-2814fb21aa8a" variant="primary">
+        <Button
+          width="160px"
+          as="a"
+          href="https://www.checkmyticket.xyz/event/9bf60e16-47e9-4823-a10a-2814fb21aa8a"
+          variant="primary"
+        >
           Registrarse
         </Button>
       </Flex>

@@ -18,6 +18,14 @@ export const SpeakersData: Array<SpeakerType> = [
     topic: "Account Abstraction",
   },
   {
+    name: "Igor Yalovoy",
+    image: "igor.jpg",
+    title: "Smart Contract Engineer at Balancer",
+    description:
+      "Started coding at age of sixteen, developed first commercial software at age of twenty. In 12 years of my career, I architected and delivered a broad range of solutions.",
+    topic: "From Code to Contract: Mastering Solidity Basics",
+  },
+  {
     name: "Ph.D, Edumar León Cordero",
     image: "edumar.jpg",
     title: "Global Content Manager de Venus Protocol",

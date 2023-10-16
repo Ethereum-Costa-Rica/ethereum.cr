@@ -43,9 +43,9 @@ export const EVENTS = [
       },
       {
         room: "Sala 2",
-        type: "Networking",
-        speaker: "",
-        title: "Introducción a Smart Contracts",
+        type: "Taller",
+        speaker: "Igor Yalovoy",
+        title: "From Code to Contract:Mastering Solidity Basics",
       },
     ],
   },

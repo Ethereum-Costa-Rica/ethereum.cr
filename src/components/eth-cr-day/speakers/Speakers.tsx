@@ -73,9 +73,9 @@ const Speakers = () => {
           <Flex
             maxW="100%"
             key={index}
-            direction="row"
-            wrap="wrap"
+            direction="column"
             justify="center"
+            alignItems="center"
             px={{ sm: 5, md: 10 }}
           >
             <Box mb={10} boxSize={["xs", "sm", "sm"]}>
@@ -93,22 +93,15 @@ const Speakers = () => {
               alignItems="center"
               justifyContent="center"
               bg="white"
-              mx={{ sm: 0, md: "8", lg: "8" }}
+              mx={{ sm: 0, md: "5", lg: "5" }}
             >
               <Text variant={["h3", "h2"]}>{speaker.name}</Text>
               <Text variant="subtitle" color="brand.primary" mb="4">
                 {speaker.title}
               </Text>
-              <Text
-                w={["90%", "100%"]}
-                variant="body"
-                align={["left", "center"]}
-              >
-                {speaker.description}
-              </Text>
               <Flex
                 mt="7"
-                mb="20"
+                mb="10"
                 w="100%"
                 direction="row"
                 justify="center"
@@ -119,6 +112,14 @@ const Speakers = () => {
                 </Text>
                 <Text variant="body">&nbsp;{speaker.topic}</Text>
               </Flex>
+              <Text
+                w={["90%", "100%"]}
+                variant="body"
+                align={["left", "center"]}
+                mb={5}
+              >
+                {speaker.description}
+              </Text>
             </Flex>
           </Flex>
         ))}

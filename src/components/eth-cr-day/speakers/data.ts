@@ -10,11 +10,19 @@ export const SpeakersData: Array<SpeakerType> = [
     topic: "Using NFTs to Build Community",
   },
   {
-    name: "Justin Alberto Castillo V.",
+    name: "Justin Castillo",
     image: "justin.jpg",
     title: "Ingeniero de Software Senior",
     description:
-      "Profesional con amplia experiencia en el desarrollo de Dapps y Smart Contracts en Ethereum. Asi mismo, ha acumulado experiencia enseñando acerca del ecosistema y desarrollo de Smart Contracts a estudiantes del tecnológico de Costa Rica.",
-    topic: "Account Abstraction",
+      "Veremos conceptos esenciales para poder crear un token en la red Goerli.",
+    topic: "Workshop: Crea tu propio token",
+  },
+  {
+    name: "Ranulfo",
+    image: "ranulfo.jpeg",
+    title: "Ingeniero de Software",
+    description:
+      "Explicar con analogias los beneficios de AA, zk-Starks y onchain worlds y como sus integraciones pueden traer billones de usuarios del mundo Web2 para Web3 usando la red de Ethereum L2.",
+    topic: "Web3 para las masas: confluencia de AA, zk-Starks y onchain worlds",
   },
 ];

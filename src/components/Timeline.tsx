@@ -1,23 +1,11 @@
 import { EVENTS } from "@/utils/data";
-import { Text, Flex, Box, Button } from "@chakra-ui/react";
+import { Text, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 import EventBody from "./EventBody";
 import EventTitle from "./EventTitle";
 
 const Timeline = () => {
   const [selectedEvent, setSelectedEvent] = useState(0);
-
-  const handleNextEvent = () => {
-    if (selectedEvent < EVENTS.length - 1) {
-      setSelectedEvent(selectedEvent + 1);
-    }
-  };
-
-  const handlePrevEvent = () => {
-    if (selectedEvent > 0) {
-      setSelectedEvent(selectedEvent - 1);
-    }
-  };
 
   return (
     <>
@@ -55,7 +43,7 @@ const Timeline = () => {
             alignItems="center"
             justifyContent="center"
             mb="32px"
-            direction={["column", "column", "column", "row", "row"]}
+            direction="row"
           >
             <Flex
               width={["100%", "100%", "100%", "50%", "50%"]}
@@ -70,11 +58,11 @@ const Timeline = () => {
                 <Flex
                   onClick={() => setSelectedEvent(index)}
                   cursor="pointer"
-                  key={index + event.schedule}
+                  key={index + event.group}
                   flexWrap="wrap"
                 >
                   <EventTitle
-                    title={event.schedule}
+                    title={event.group}
                     active={index === selectedEvent}
                   />
                 </Flex>
@@ -92,21 +80,8 @@ const Timeline = () => {
                 width="400px"
                 maxWidth="100%"
               >
-                <Flex
-                  display={["none", "none", "block", "block", "block"]}
-                  justify="center"
-                  textAlign="center"
-                  justifySelf="center"
-                  mb="10px"
-                >
-                  <Button onClick={handlePrevEvent} mr="5px">
-                    ←
-                  </Button>
-                  <Button onClick={handleNextEvent}> →</Button>
-                </Flex>
-
                 <EventBody
-                  schedule={EVENTS[selectedEvent].schedule}
+                  talk={EVENTS[selectedEvent].group}
                   sessions={EVENTS[selectedEvent].sessions}
                 />
               </Flex>

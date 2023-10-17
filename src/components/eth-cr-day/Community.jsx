@@ -1,4 +1,4 @@
-import { Text, Box, Image, Flex } from "@chakra-ui/react";
+import { Text, Box, Image, Flex, List, ListItem } from "@chakra-ui/react";
 
 const Community = () => {
   return (
@@ -49,7 +49,7 @@ const Community = () => {
             </Text>
           </Box>
           <Text maxW={500} my="25px" variant="body" align="center">
-            El Ethereum Costa Rica Day será una jornada repleta de actividades,
+            Ethereum Costa Rica Day será una jornada repleta de actividades,
             incluyendo charlas, talleres, conferencias y espacios dedicados al
             networking. Este evento tiene como objetivo introducir a nuevos
             usuarios, desarrolladores, entusiastas y emprendedores al mundo del
@@ -57,20 +57,16 @@ const Community = () => {
             la consolidación de la comunidad.
           </Text>
           <Text maxW={500} my="25px" variant="body" align="left">
-            <u>
-              <strong>Algunas de los temas que tocaremos serán:</strong>
-            </u>
-
-            <ul>
-              <li>Uso de wallets: ¿qué es una billetera?¿Cómo se usan?</li>
-              <li>
-                NFTs: ¿qué son y como son una manera de potenciar las
-                comunidades y empresas digitales?
-              </li>
-              <li>Desarrollo: en lenguajes como Solidity, Cairo, etc.</li>
-              <li>Criptografía: e Introducción a Zero Knowledge</li>
-            </ul>
+            <strong>Algunas de los temas que tocaremos serán:</strong>
           </Text>
+          <List>
+            <ListItem>Uso de wallets</ListItem>
+            <ListItem>NFTs</ListItem>
+            <ListItem>
+              Desarrollo en lenguajes como Solidity, Cairo, etc.
+            </ListItem>
+            <ListItem>Zero Knowledge</ListItem>
+          </List>
         </Flex>
       </Flex>
     </Box>

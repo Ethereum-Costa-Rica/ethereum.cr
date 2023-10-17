@@ -6,10 +6,9 @@ interface Props {
 }
 
 const BackgroundWrapperDay = ({ children }: Props) => {
-
   return (
     <Flex
-      paddingTop={10}
+      paddingTop={[1, 2, 10]}
       px={{ sm: 15, md: 30, lg: 90 }}
       direction="column"
       justifyContent="space-evenly"

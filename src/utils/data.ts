@@ -1,245 +1,191 @@
 export const EVENTS = [
   {
-    schedule: "9:00-9:30",
+    group: "Entrada y Bienvenida",
     sessions: [
       {
-        room: "Auditorio",
-        type: "Entrada",
-        speaker: "",
-        title: "Entrada General",
-      }
-    ],
-  },
-  {
-    schedule: "9:30-10:00",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Charla",
-        speaker: "",
-        title: "Acto de Bienvenida Ethereum Costa Rica Day",
-      },
-    ],
-  },
-  {
-    schedule: "10:00-10:30",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Charla",
-        speaker: "RESERVADO",
-        title: "KeyNote Speaker",
-      }
-    ],
-  },
-  {
-    schedule: "10:30-11:15",
-    sessions: [
-      {
+        title: "Bienvenida ETHCR Day",
         room: "Sala 1",
-        type: "Taller",
-        speaker: "",
-        title: "Introducción a Web3",
-      },
-      {
-        room: "Sala 2",
-        type: "Networking",
-        speaker: "",
-        title: "Introducción a Smart Contracts",
+        schedule: "9:00 am - 9:30 am",
+        speaker: "Otto Mora",
+        description: "Charla de apertura",
       },
     ],
   },
   {
-    schedule: "11:15-12:00",
+    group: "Keynote",
     sessions: [
       {
-        room: "Sala 1",
-        type: "Taller",
-        speaker: "Kevin Barquero",
-        title: "Fundamentos para Web3",
-      },
-      {
-        room: "Sala 2",
-        type: "Taller",
-        speaker: "Justin Castillo",
-        title: "Crea tu propio token en 30 minutos",
-      },
-    ],
-  },
-  {
-    schedule: "11:00-11:30",
-    sessions: [
-      {
+        title: "Keynote Talk",
         room: "Auditorio",
-        type: "Charla",
-        speaker: "Otto Mora - PolygonID",
-        title: "Identidad Digital",
+        schedule: "10:00 am - 10:30 am",
+        speaker: "",
+        description: "Lorem ipsum",
       },
     ],
   },
   {
-    schedule: "11:30-12:00",
+    group: "Bloque 1",
     sessions: [
       {
-        room: "Auditorio",
-        type: "Charla",
-        speaker: "Perchy",
-        title: "Using NFTs to Build Community",
-      },
-    ],
-  },
-  {
-    schedule: "12:00-1:00",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Almuerzo",
-        speaker: "",
-        title: "Almuerzo (piso 3)",
-      },
-      {
-        room: "Sala 1",
-        type: "Almuerzo",
-        speaker: "",
-        title: "Almuerzo (piso 3)",
-      },
-      {
-        room: "Sala 2",
-        type: "Almuerzo",
-        speaker: "",
-        title: "Almuerzo (piso 3)",
-      },
-    ],
-  },
-  {
-    schedule: "1:00-1:30",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Workshop",
-        speaker: "",
         title:
-          "Onramping y Offramping",
+          "Relevancia de la Transdisciplinariedad en el acceso y adopción del ecosistema web3",
+        room: "Sala 1",
+        schedule: "10:30 am - 11:00 am",
+        speaker: "Edumar",
+        description: "KeyNote Speaker",
       },
       {
+        title: "Workshop: Intro a web3",
+        room: "Sala 2",
+        schedule: "10:30 am - 11:15 am",
+        speaker: "RESERVADO",
+        description: "KeyNote Speaker",
+      },
+      {
+        title: "Workshop: From Code to Contract",
+        room: "Sala 3",
+        schedule: "10:30 am - 11:15 am",
+        speaker: "Igor Yalovoy",
+        description: "KeyNote Speaker",
+      },
+    ],
+  },
+  {
+    group: "Bloque 2",
+    sessions: [
+      {
+        title:
+          "How NFTs create unique opportunities for artists to build communities",
         room: "Sala 1",
-        type: "Charla",
-        speaker: "Ranulfo Paiva Barbosa",
+        schedule: "11:30 am - 12:00 pm",
+        speaker: "Perchy",
+        description: "Lorem ipsum",
+      },
+      {
+        title: "Escalando Ethereum",
+        room: "Sala 2",
+        schedule: "11:15 am - 12:00 pm",
+        speaker: "Alberto Galan 886Crypto",
+        description: "Lorem ipsum",
+      },
+      {
+        title: "Workshop: Crea tu propio token!",
+        room: "Sala 3",
+        schedule: "10:30 am - 11:15 am",
+        speaker: "Justin Castillo",
+        description:
+          "Aprenderás el estándar ERC20 y lograrás desplegar tu propio token!",
+      },
+    ],
+  },
+  {
+    group: "Almuerzo",
+    sessions: [
+      {
+        title: "Almuerzo",
+        room: "Piso 3",
+        schedule: "12:00 pm - 1:00 pm",
+        speaker: "",
+        description: "El almuerzo se servirá en el piso 3",
+      },
+    ],
+  },
+  {
+    group: "Bloque 4",
+    sessions: [
+      {
+        title: "Organizaciones Evolucionarias",
+        room: "Sala 1",
+        schedule: "1:00 pm - 1:30 pm",
+        speaker: "Jaf Sandí",
+        description: "Lorem ipsum",
+      },
+      {
         title:
           "Web3 para las masas: confluencia de AA, zk-Starks y onchain worlds",
-      },
-    ],
-  },
-  {
-    schedule: "1:30-2:00",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Charla",
-        speaker: "Jose Miguel Zamora",
-        title: "El Abogado crypto",
-      },
-      {
-        room: "Sala 1",
-        type: "Charla",
-        speaker: "",
-        title: "Intro a ReFi",
-      },
-    ],
-  },
-  {
-    schedule: "2:00-2:30",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Taller",
-        speaker: "Karla Cordoba",
-        title: "Intro a Governanza, DAOs, CofiBlocks",
-      },
-      {
-        room: "Sala 1",
-        type: "Taller",
-        speaker: "Edgar Barrantes",
-        title: "",
-      },
-    ],
-  },
-  {
-    schedule: "1:00-1:45",
-    sessions: [
-      {
         room: "Sala 2",
-        type: "Break",
-        speaker: "Beja",
-        title: "Intro a Cairo",
-      },
-    ],
-  },
-  {
-    schedule: "1:45-2:30",
-    sessions: [
-      {
-        room: "Sala 2",
-        type: "Break",
-        speaker: "Rafael Campos",
-        title: "zkApps con o1js",
-      },
-    ],
-  },
-  {
-    schedule: "2:30-3:00",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Break",
-        speaker: "",
-        title: "Coffee break",
+        schedule: "1:00 pm - 1:30 pm",
+        speaker: "Ranulfo",
+        description: "Lorem ipsum",
       },
       {
-        room: "Sala 1",
-        type: "Break",
-        speaker: "",
-        title: "Coffee break",
-      },
-      {
-        room: "Sala 2",
-        type: "Break",
-        speaker: "",
-        title: "Coffee break",
-      },
-    ],
-  },
-  {
-    schedule: "3:00-3:30",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Charla",
-        speaker: "Robert Ramirez",
-        title: "CheckMyTicket",
-      },
-    ],
-  },
-  {
-    schedule: "4:00-4:30",
-    sessions: [
-      {
-        room: "Auditorio",
-        type: "Panel",
-        speaker: "ETHCR + Asoblockchain + CENFOTEC + TexasTech",
         title:
-          "Panel: La oportunidad de web3 para Costa Rica",
+          "Abriendo puertas: las oportunidades para un desarrollador en el mundo de blockchain",
+        room: "Sala 3",
+        schedule: "1:00 pm - 1:30 pm",
+        speaker: "Ranulfo",
+        description: "Lorem ipsum",
       },
     ],
   },
   {
-    schedule: "4:30-4:45",
+    group: "Bloque 5",
     sessions: [
       {
-        room: "Auditorio",
-        type: "ceremonia",
+        title: '"El Abogado crypto"',
+        room: "Sala 1",
+        schedule: "1:30 pm - 2:00 pm",
+        speaker: "Jose Miguel Zamora Socio Fundador Lighthouse",
+        description: "Lorem ipsum",
+      },
+    ],
+  },
+  {
+    group: "Bloque 6",
+    sessions: [
+      {
+        title: "Intro a Governanza, DAOs, CofiBlocks",
+        room: "Sala 1",
+        schedule: "2:00 pm - 2:30 pm",
+        speaker: "Karla Córdoba",
+        description: "Lorem ipsum",
+      },
+      {
+        title: "El Futuro de la Venta de Entradas de Eventos con NFT",
+        room: "Sala 2",
+        schedule: "2:00 pm - 2:30 pm",
+        speaker: "Robert Ramirez",
+        description: "Lorem ipsum",
+      },
+      {
+        title: "Workshop: desarrollando zk apps con o1js",
+        room: "Sala 3",
+        schedule: "1:45 pm - 2:30 pm",
+        speaker: "Rafael Campos",
+        description: "Lorem ipsum",
+      },
+    ],
+  },
+  {
+    group: "Coffee break",
+    sessions: [
+      {
+        title: "Coffee Break",
+        room: "Piso 3",
+        schedule: "2:30 pm - 3:00 pm",
         speaker: "",
-        title: "Ceremonia de CIERRE",
+        description:
+          "Break para disfrutar de un delicioso café y aprovechar para hacer networking",
+      },
+    ],
+  },
+  {
+    group: "Bloque 7",
+    sessions: [
+      {
+        title: "Identity",
+        room: "Sala 1",
+        schedule: "3:00 pm - 3:30 pm",
+        speaker: "Otto Mora | Polygon ID",
+        description: "Lorem ipsum",
+      },
+      {
+        title:
+          "Developer onboarding: herramientas para el desarrollo en Ethereum y L2s",
+        room: "Sala 3",
+        schedule: "3:00 pm - 3:30 pm",
+        speaker: "Edgar Barrantes",
+        description: "Lorem ipsum",
       },
     ],
   },

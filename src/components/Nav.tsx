@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <Flex
       direction="row"
-      px={["5%"]}
+      px={["1%", "1%", "5%"]}
       justifyContent="space-between"
       alignItems="center"
       position="relative"

@@ -105,6 +105,7 @@ const Speakers = () => {
                 w="100%"
                 direction="row"
                 justify="center"
+                wrap="wrap"
                 alignItems="center"
               >
                 <Text fontWeight="bold" variant="body" color="brand.primary">

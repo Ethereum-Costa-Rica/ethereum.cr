@@ -8,10 +8,11 @@ import Space from "@/components/eth-cr-day/Space";
 import Sponsors from "@/components/eth-cr-day/Sponsors";
 import Footer from "@/components/Footer";
 import Bot from "@/components/Bot";
+import { Box } from "@chakra-ui/react";
 
 export default function EthCrDay() {
   return (
-    <div>
+    <Box p={4}>
       <Bot />
       <BackgroundWrapperDay>
         <Nav />
@@ -23,6 +24,6 @@ export default function EthCrDay() {
       <Space />
       <Sponsors />
       <Footer />
-    </div>
+    </Box>
   );
-};
+}

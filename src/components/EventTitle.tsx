@@ -1,5 +1,10 @@
-import { Text, GridItem, Flex, chakra, shouldForwardProp } from "@chakra-ui/react";
-import { wrap } from "module";
+import {
+  Text,
+  GridItem,
+  Flex,
+  chakra,
+  shouldForwardProp,
+} from "@chakra-ui/react";
 
 const Elipse = chakra("div", {
   shouldForwardProp: (prop) => {
@@ -15,9 +20,9 @@ const Elipse = chakra("div", {
   },
 });
 
-interface EventTitleProps  {
-    title: string;
-    active?: boolean;
+interface EventTitleProps {
+  title: string;
+  active?: boolean;
 }
 
 const EventTitle = ({ title, active = false }: EventTitleProps) => {
@@ -37,7 +42,7 @@ const EventTitle = ({ title, active = false }: EventTitleProps) => {
       >
         <Text
           color={active ? "red.500" : "blue.1000"}
-          fontSize={["12px", "14px", "14px", "14px", "24px"]}
+          fontSize={["xs", "sm", "xl", "2lg", "3xl"]}
           fontWeight={700}
           minWidth={["120px", "120px", "120px", "auto", "auto"]}
           paddingRight={["15px", "15px", "15px", "50px", "50px"]}
@@ -57,4 +62,4 @@ const EventTitle = ({ title, active = false }: EventTitleProps) => {
     </Flex>
   );
 };
-    export default EventTitle;
+export default EventTitle;

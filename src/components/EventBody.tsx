@@ -17,10 +17,10 @@ const EventBody = ({ talk, sessions }: EventBodyProps) => {
   return (
     <Box
       display="flex"
-      justifyContent="center"
+      justifyContent="flex-start"
       flexDirection="column"
       alignItems="center"
-      h={[600]}
+      h={["auto", "auto", "auto", "auto", 600]}
       w="full"
       overflowY="auto"
       textAlign="center"

@@ -12,12 +12,12 @@ import { Box } from "@chakra-ui/react";
 
 export default function EthCrDay() {
   return (
-    <Box p={4}>
+    <Box>
       <Bot />
       <BackgroundWrapperDay>
         <Nav />
+        <BannerDay />
       </BackgroundWrapperDay>
-      <BannerDay />
       <Community />
       <Speakers />
       <Timeline />

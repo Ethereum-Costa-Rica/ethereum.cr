@@ -1,9 +1,9 @@
 import {
   Text,
-  GridItem,
   Flex,
   chakra,
   shouldForwardProp,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 const Elipse = chakra("div", {
@@ -15,8 +15,8 @@ const Elipse = chakra("div", {
   baseStyle: {
     shadow: "sm",
     rounded: "full",
-    width: "30px",
-    height: "30px",
+    width: "40px",
+    height: "40px",
   },
 });
 
@@ -26,39 +26,38 @@ interface EventTitleProps {
 }
 
 const EventTitle = ({ title, active = false }: EventTitleProps) => {
+  const [isLargerThan992] = useMediaQuery("(min-width: 992px)");
+
   return (
     <Flex
-      width="100%"
-      h="4"
-      paddingRight={["15px", "15px", "15px", "50px", "50px"]}
+      id="some-id"
+      borderRight={[0, 0, 0, "2px solid gray", "2px solid gray"]}
+      borderColor="gray.400"
+      alignItems="center"
+      flexDirection="row"
+      justifyContent={["center", "center", "space-between", "space-between"]}
+      minW={[0, 0, 0, "100%"]}
+      w="40px"
+      minH="40px"
     >
-      <Flex
-        width="100%"
-        borderRight={[0, 0, 0, "2px solid gray", "2px solid gray"]}
-        borderColor="gray.400"
-        alignItems="center"
-        justifyContent="space-between"
-        height={20}
-      >
+      {isLargerThan992 && (
         <Text
           color={active ? "red.500" : "blue.1000"}
           fontSize={["xs", "sm", "xl", "2lg", "3xl"]}
           fontWeight={700}
           minWidth={["120px", "120px", "120px", "auto", "auto"]}
-          paddingRight={["15px", "15px", "15px", "50px", "50px"]}
           align="center"
+          mb={5}
         >
           {title}
         </Text>
-        <Elipse
-          display={["none", "none", "none", "block", "block"]}
-          bgColor={active ? "red.500" : "gray.400"}
-          minWidth={active ? "30px" : "20px"}
-          width={active ? "30px" : "20px"}
-          height={active ? "30px" : "20px"}
-          marginRight={active ? "-15.5px" : "-10.5px"}
-        />
-      </Flex>
+      )}
+      <Elipse
+        bgColor={active ? "red.500" : "gray.400"}
+        width={active ? "30px" : "25px"}
+        height={active ? "30px" : "25px"}
+        marginRight={active ? "-15.5px" : "-13.5px"}
+      />
     </Flex>
   );
 };

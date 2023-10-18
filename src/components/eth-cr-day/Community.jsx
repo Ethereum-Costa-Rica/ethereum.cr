@@ -1,9 +1,26 @@
-import { Text, Box, Image, Flex, List, ListItem } from "@chakra-ui/react";
+import {
+  Text,
+  Box,
+  Image,
+  Flex,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
+
+import BackgroundWrapperDay from "@/components/BackgroundWrapperDay";
 
 const Community = () => {
   return (
-    <Box pt={10} backgroundColor="#F7FAFC">
-      <Text mb={10} variant={["h3", "h2", "h1"]} align="center">
+    <Flex
+      justify="center"
+      pt={30}
+      gap={[30, 30, 30, 30, 134]}
+      direction="column"
+      alignItems="center"
+      backgroundColor="#F7FAFC"
+      px={["20px", "20px", "20px", "20px", "70px"]}
+    >
+      <Text variant={["h3", "h2", "h1"]} align="center">
         Nos reuniremos como{" "}
         <Text as="span" color="red">
           comunidad
@@ -23,7 +40,7 @@ const Community = () => {
             minW="360px"
           />
         </Box>
-        <Flex mb={10} mt={14} direction="column">
+        <Flex mb={10} direction="column">
           <Box align="center">
             <Text
               fontSize="3xl"
@@ -48,7 +65,12 @@ const Community = () => {
               9:00-17:00
             </Text>
           </Box>
-          <Text maxW={500} my="25px" variant="body" align="center">
+          <Text
+            maxW={500}
+            my="25px"
+            variant="body"
+            align={["left", "left", "left", "left", "center"]}
+          >
             Ethereum Costa Rica Day será una jornada repleta de actividades,
             incluyendo charlas, talleres, conferencias y espacios dedicados al
             networking. Este evento tiene como objetivo introducir a nuevos
@@ -59,17 +81,25 @@ const Community = () => {
           <Text maxW={500} my="25px" variant="body" align="left">
             <strong>Algunas de los temas que tocaremos serán:</strong>
           </Text>
-          <List>
-            <ListItem>Uso de wallets</ListItem>
-            <ListItem>NFTs</ListItem>
+          <UnorderedList>
             <ListItem>
-              Desarrollo en lenguajes como Solidity, Cairo, etc.
+              <Text variant="body">Uso de wallets</Text>
             </ListItem>
-            <ListItem>Zero Knowledge</ListItem>
-          </List>
+            <ListItem>
+              <Text variant="body">NFTs</Text>
+            </ListItem>
+            <ListItem>
+              <Text variant="body">
+                Desarrollo en lenguajes como Solidity, Cairo, etc.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text variant="body">Zero Knowledge</Text>
+            </ListItem>
+          </UnorderedList>
         </Flex>
       </Flex>
-    </Box>
+    </Flex>
   );
 };
 

@@ -27,6 +27,7 @@ const ButtonDonations = () => {
         colorScheme="red"
         variant="outline"
         onClick={handleButtonClick}
+        w="142px"
       >
         {hasCopied ? "Copiado!" : "Donar con crypto"}
       </Button>

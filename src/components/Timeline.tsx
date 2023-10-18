@@ -18,7 +18,7 @@ const Timeline = () => {
       >
         <Flex
           py={["60px", "135px"]}
-          px={["30px", "70px"]}
+          px={["10px", "10px", "70px"]}
           direction="column"
           width="full"
           alignItems="center"
@@ -42,24 +42,24 @@ const Timeline = () => {
             width="full"
             alignItems="center"
             justifyContent="center"
-            mb="32px"
-            direction="row"
+            direction={["column", "column", "column", "row"]}
           >
             <Flex
               width={["100%", "100%", "100%", "50%", "50%"]}
               direction={["row", "row", "row", "column", "column"]}
-              gap={[0, 0, 0, 10, 10]}
-              height={["200px", "200px", "200px", "auto", "auto"]}
+              gap={[2, 2, 0]}
+              flexWrap={["wrap", "wrap", "wrap", "nowrap", "nowrap"]}
               justifyContent="center"
-              flexWrap="wrap"
-              marginBottom={["40px", "40px", "40px", "0px", "0px"]}
             >
               {EVENTS.map((event, index) => (
                 <Flex
                   onClick={() => setSelectedEvent(index)}
                   cursor="pointer"
                   key={index + event.group}
-                  flexWrap="wrap"
+                  justifyContent="center"
+                  alignItems="center"
+                  maxW={["40px", "40px", "40px", "100%"]}
+                  width="100%"
                 >
                   <EventTitle
                     title={event.group}

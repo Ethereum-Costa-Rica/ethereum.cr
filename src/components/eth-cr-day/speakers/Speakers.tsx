@@ -78,13 +78,12 @@ const Speakers = () => {
             alignItems="center"
             px={{ sm: 5, md: 10 }}
           >
-            <Box mb={10} boxSize={["xs", "sm", "sm"]}>
-              <Image
-                borderRadius="3xl"
-                src={`./speakers/${speaker.image}`}
-                alt="Speaker"
-              />
-            </Box>
+            <Image
+              borderRadius="100%"
+              src={`./speakers/${speaker.image}`}
+              alt="Speaker"
+              maxW={["200px", "200px", "200px", "400px", "400px"]}
+            />
             <Flex
               direction="column"
               maxW="700px"

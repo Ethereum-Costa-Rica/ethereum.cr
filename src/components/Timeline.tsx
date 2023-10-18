@@ -41,6 +41,7 @@ const Timeline = () => {
           <Flex
             width="full"
             alignItems="center"
+            gap={20}
             justifyContent="center"
             direction={["column", "column", "column", "row"]}
           >

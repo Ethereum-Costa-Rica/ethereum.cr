@@ -20,7 +20,8 @@ const EventBody = ({ talk, sessions }: EventBodyProps) => {
       justifyContent="center"
       flexDirection="column"
       alignItems="center"
-      minH={600}
+      h={[600]}
+      w="full"
       overflowY="auto"
       textAlign="center"
     >
@@ -33,15 +34,11 @@ const EventBody = ({ talk, sessions }: EventBodyProps) => {
         {talk}
       </Text>
       {sessions.map(({ title, room, schedule, speaker, description }) => (
-        <Box mb={2} key={description + room + speaker}>
-          <Text
-            fontSize={["xs", "sm", "md", "xl", "xl"]}
-            fontWeight={500}
-            marginBottom="10px"
-          >
+        <Box mb={2} w="full" key={description + room + speaker}>
+          <Text fontSize={["xl", "xl"]} fontWeight={500} marginBottom="10px">
             {title}
           </Text>
-          <Text fontSize={["xs", "sm", "md", "lg", "lg"]} fontWeight={700}>
+          <Text fontSize={["lg", "lg"]} fontWeight={700}>
             {room}
           </Text>
           <Text fontSize="18px" color="red" marginBottom="10px">

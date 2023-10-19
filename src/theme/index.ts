@@ -52,9 +52,17 @@ const theme = extendTheme({
           fontSize: "24px",
           fontWeight: 700,
         },
+        h4: {
+          fontSize: "18px",
+          fontWeight: 700,
+        },
         subtitle: {
           fontSize: "16px",
           fontWeight: "semibold",
+        },
+        subtitle2: {
+          fontSize: "18px",
+          fontWeight: "regular",
         },
         ["card-title"]: {
           fontSize: "3xl",

@@ -1,11 +1,26 @@
-export const EVENTS = [
+type Session = {
+  title: string;
+  room: string;
+  schedule: string;
+  speaker: string;
+  description: string;
+};
+
+export type Event = {
+  group: string;
+  groupSchedule: string;
+  sessions: Array<Session>;
+};
+
+export const EVENTS: Array<Event> = [
   {
     group: "Entrada y Bienvenida",
+    groupSchedule: "9:30 am - 10:00 am",
     sessions: [
       {
         title: "Bienvenida ETHCR Day",
         room: "Sala 1",
-        schedule: "9:00 am - 9:30 am",
+        schedule: "9:30 am - 9:45 am",
         speaker: "Otto Mora",
         description: "Charla de apertura",
       },
@@ -13,6 +28,7 @@ export const EVENTS = [
   },
   {
     group: "Keynote",
+    groupSchedule: "10:00 am - 10:30 am",
     sessions: [
       {
         title: "Keynote Talk",
@@ -25,10 +41,11 @@ export const EVENTS = [
   },
   {
     group: "Bloque 1",
+    groupSchedule: "10:30 am - 11:00 am",
     sessions: [
       {
         title:
-          "Relevancia de la Transdisciplinariedad en el acceso y adopción del ecosistema web3",
+          "Web3 para todos: una mirada a la inclusión de diferentes disciplinas en el ecosistema",
         room: "Sala 1",
         schedule: "10:30 am - 11:00 am",
         speaker: "Edumar",
@@ -52,6 +69,7 @@ export const EVENTS = [
   },
   {
     group: "Bloque 2",
+    groupSchedule: "11:30 am - 12:00 pm",
     sessions: [
       {
         title:
@@ -80,6 +98,7 @@ export const EVENTS = [
   },
   {
     group: "Almuerzo",
+    groupSchedule: "12:00 pm - 1:00 pm",
     sessions: [
       {
         title: "Almuerzo",
@@ -92,6 +111,7 @@ export const EVENTS = [
   },
   {
     group: "Bloque 4",
+    groupSchedule: "1:00 pm - 1:30 pm",
     sessions: [
       {
         title: "Organizaciones Evolucionarias",
@@ -120,6 +140,7 @@ export const EVENTS = [
   },
   {
     group: "Bloque 5",
+    groupSchedule: "1:30 pm - 2:00 pm",
     sessions: [
       {
         title: '"El Abogado crypto"',
@@ -132,6 +153,7 @@ export const EVENTS = [
   },
   {
     group: "Bloque 6",
+    groupSchedule: "2:00 pm - 2:30 pm",
     sessions: [
       {
         title: "Intro a Governanza, DAOs, CofiBlocks",
@@ -158,6 +180,7 @@ export const EVENTS = [
   },
   {
     group: "Coffee break",
+    groupSchedule: "2:30 pm - 3:00 pm",
     sessions: [
       {
         title: "Coffee Break",
@@ -171,6 +194,7 @@ export const EVENTS = [
   },
   {
     group: "Bloque 7",
+    groupSchedule: "3:00 pm - 3:30 pm",
     sessions: [
       {
         title: "Identity",

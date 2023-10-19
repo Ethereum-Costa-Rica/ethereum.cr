@@ -1,42 +1,24 @@
-import {
-  Flex,
-  Text,
-  Wrap,
-  WrapItem,
-  useToast,
-  useClipboard,
-} from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import ButtonDonations from "./ButtonDonations";
 
 const Footer = () => {
   return (
-    <Wrap
+    <Flex
+      direction="row"
       justify="space-between"
-      px={["20px", "30px", "90px"]}
-      pt={10}
-      pb={10}
+      alignItems="center"
+      gap={10}
+      p={5}
       backgroundColor="#EDF2F7"
     >
-      <WrapItem>
-        <Flex direction="column">
-          <Flex alignItems="center" mb={-3}>
-            <Text fontSize="4xl">
-              Ethereum
-              <Text fontSize="4xl" color="red" ml={2} as="b">
-                Costa Rica
-              </Text>
-            </Text>
-          </Flex>
-          <Text fontSize="xl" mb={5}>
-            Creado con amor por la comunidad
-          </Text>
-          <Text fontSize="lg">2023</Text>
-        </Flex>
-      </WrapItem>
-      <WrapItem>
-        <ButtonDonations />
-      </WrapItem>
-    </Wrap>
+      <Flex direction="row">
+        <Text fontSize={["xl", "4xl"]}>Ethereum</Text>
+        <Text fontSize={["xl", "4xl"]} color="red" ml={2} as="b">
+          Costa Rica
+        </Text>
+      </Flex>
+      <ButtonDonations />
+    </Flex>
   );
 };
 

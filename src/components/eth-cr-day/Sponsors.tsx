@@ -2,17 +2,30 @@ import { Text, Box, Center, Grid, Image } from "@chakra-ui/react";
 
 const Sponsors = () => {
   return (
-    <Box maxW="1228px" m="auto" pb="100px">
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      maxW="1228px"
+      m="auto"
+      pb="100px"
+    >
       <Center>
         <Box py="75px">
-          <Text variant={["h", "h2", "h1"]} align="center">
+          <Text variant={["h2", "h2", "h1"]} align="center">
             Official Sponsors
           </Text>
         </Box>
       </Center>
       <Grid
-        templateColumns="repeat(3, 1fr)"
-        gap={20}
+        templateColumns={[
+          "repeat(2, 163px)",
+          "repeat(2, 163px)",
+          "repeat(3, 163px)",
+          "repeat(3, 1fr)",
+        ]}
+        gap={10}
         alignItems="center"
         justifyItems="center"
         px={5}
@@ -24,7 +37,8 @@ const Sponsors = () => {
           alt="Texas Tech University"
         />
         <Image src="./sponsors/886-crypto.png" alt="886 Crypto" />
-        <Image src="./sponsors/pizza-dao.png" alt="Pizza DAO" />
+        <Image src="./checkmyticket.svg" alt="Check My Ticket" />
+        <Image src="./PizzaDao.svg" alt="Pizza DAO" />
         <Image src="./sponsors/c-creators.png" alt="C Creators" />
       </Grid>
     </Box>

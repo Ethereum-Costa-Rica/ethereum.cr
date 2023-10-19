@@ -1,11 +1,13 @@
-import { EVENTS } from "@/utils/data";
-import { Text, Flex } from "@chakra-ui/react";
+import { Event, EVENTS } from "@/utils/data";
+import { Text, Flex, useMediaQuery, Divider } from "@chakra-ui/react";
 import { useState } from "react";
+import EventInfoMobile from "./eth-cr-day/EventInfoMobile";
 import EventBody from "./EventBody";
 import EventTitle from "./EventTitle";
 
 const Timeline = () => {
   const [selectedEvent, setSelectedEvent] = useState(0);
+  const [isLargerThan360] = useMediaQuery("(min-width: 480px)");
 
   return (
     <>
@@ -18,7 +20,7 @@ const Timeline = () => {
       >
         <Flex
           py={["60px", "135px"]}
-          px={["10px", "10px", "70px"]}
+          px={["20px", "20px", "70px"]}
           direction="column"
           width="full"
           alignItems="center"
@@ -38,48 +40,42 @@ const Timeline = () => {
             </Text>
           </Flex>
 
-          <Flex
-            width="full"
-            alignItems="center"
-            gap={20}
-            justifyContent="center"
-            direction={["column", "column", "column", "row"]}
-          >
+          {isLargerThan360 ? (
             <Flex
-              width={["100%", "100%", "100%", "50%", "50%"]}
-              direction={["row", "row", "row", "column", "column"]}
-              gap={[2, 2, 0]}
-              flexWrap={["wrap", "wrap", "wrap", "nowrap", "nowrap"]}
+              width="full"
+              alignItems="center"
+              gap={20}
               justifyContent="center"
-            >
-              {EVENTS.map((event, index) => (
-                <Flex
-                  onClick={() => setSelectedEvent(index)}
-                  cursor="pointer"
-                  key={index + event.group}
-                  justifyContent="center"
-                  alignItems="center"
-                  maxW={["40px", "40px", "40px", "100%"]}
-                  width="100%"
-                >
-                  <EventTitle
-                    title={event.group}
-                    active={index === selectedEvent}
-                  />
-                </Flex>
-              ))}
-            </Flex>
-            <Flex
-              width={["100%", "100%", "100%", "50%", "50%"]}
-              align="center"
-              justify="center"
+              direction={["column", "column", "column", "row"]}
             >
               <Flex
-                alignContent="center"
-                alignItems="center"
-                direction="column"
-                width="400px"
-                maxWidth="100%"
+                width={["100%", "100%", "100%", "50%", "50%"]}
+                direction={["row", "row", "row", "column", "column"]}
+                gap={[2, 2, 0]}
+                flexWrap={["wrap", "wrap", "wrap", "nowrap", "nowrap"]}
+                justifyContent="center"
+              >
+                {EVENTS.map((event, index) => (
+                  <Flex
+                    onClick={() => setSelectedEvent(index)}
+                    cursor="pointer"
+                    key={index + event.group}
+                    justifyContent="center"
+                    alignItems="center"
+                    maxW={["40px", "40px", "40px", "100%"]}
+                    width="100%"
+                  >
+                    <EventTitle
+                      title={event.group}
+                      active={index === selectedEvent}
+                    />
+                  </Flex>
+                ))}
+              </Flex>
+              <Flex
+                width={["100%", "100%", "100%", "50%", "50%"]}
+                align="center"
+                justify="center"
               >
                 <EventBody
                   talk={EVENTS[selectedEvent].group}
@@ -87,7 +83,17 @@ const Timeline = () => {
                 />
               </Flex>
             </Flex>
-          </Flex>
+          ) : (
+            <>
+              <Divider />
+              {EVENTS.map((event: Event, index) => (
+                <>
+                  <EventInfoMobile key={index + Date.now()} {...event} />
+                  <Divider />
+                </>
+              ))}
+            </>
+          )}
         </Flex>
       </Flex>
     </>

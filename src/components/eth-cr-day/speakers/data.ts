@@ -12,9 +12,9 @@ export const SpeakersData: Array<SpeakerType> = [
   {
     name: "Justin Castillo",
     image: "justin.jpg",
-    title: "Ingeniero de Software Senior",
+    title: "Blockchain Engineer",
     description:
-      "Veremos conceptos esenciales para poder crear un token en la red Goerli.",
+      "Aprenderás las características del estándar ERC20 y cómo puede ayudarte a crear activos digitales",
     topic: "Workshop: Crea tu propio token",
   },
   {
@@ -37,25 +37,23 @@ export const SpeakersData: Array<SpeakerType> = [
     name: "Ph.D, Edumar León Cordero",
     image: "edumar.jpg",
     title: "Global Content Manager de Venus Protocol",
-    description:
-      "Periodista, Educadora y Consultora Web3",
+    description: "Periodista, Educadora y Consultora Web3",
     topic: "Transdisciplinariedad en el acceso y adopción del ecosistema web3",
   },
   {
     name: "Otto Mora",
     image: "otto.jpg",
     title: "Polygon ID BizDev, Asoblockchain Board Member",
-    description:
-      "BizDev, engineering manager, consultor y lider de comunidad",
+    description: "BizDev, engineering manager, consultor y lider de comunidad",
     topic: "Identitidad Zero Knowledge y construyendo comunidad Web3",
   },
   {
     name: "Daniel Bejarano",
     image: "beja.jpg",
     title: "Ingeniero de Software",
-    description:
-      "Ingeniero, contribuidor codigo open source, hacker",
-    topic: "Abriendo puertas: las oportunidades para un desarrollador en el mundo de blockchain",
+    description: "Ingeniero, contribuidor codigo open source, hacker",
+    topic:
+      "Abriendo puertas: las oportunidades para un desarrollador en el mundo de blockchain",
   },
   {
     name: "Jose Miguel Zamora",
@@ -77,16 +75,14 @@ export const SpeakersData: Array<SpeakerType> = [
     name: "Robert Ramirez",
     image: "robert.jpg",
     title: "Fundador Check My Ticket",
-    description:
-      "Desarrollador y emprendedor",
+    description: "Desarrollador y emprendedor",
     topic: "El Futuro de la Venta de Entradas de Eventos con NFTs",
   },
   {
     name: "Rafael Campos",
     image: "rafael.jpg",
     title: "Desarrollador en Zero Knowledge",
-    description:
-      "Desarrollador en Zero Knowledge",
+    description: "Desarrollador en Zero Knowledge",
     topic: "Desarrollando zk apps con o1js",
   },
   {
@@ -95,6 +91,7 @@ export const SpeakersData: Array<SpeakerType> = [
     title: "Ingeniero en Software",
     description:
       "Ingeniero en software especializado en arquitecturas decentralizadas, trabajando en dapps ydevops",
-    topic: "Developer onboarding: herramientas para el desarrollo en Ethereum y L2s",
+    topic:
+      "Developer onboarding: herramientas para el desarrollo en Ethereum y L2s",
   },
 ];

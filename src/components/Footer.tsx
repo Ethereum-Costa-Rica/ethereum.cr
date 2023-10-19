@@ -7,8 +7,9 @@ const Footer = () => {
       direction="row"
       justify="space-between"
       alignItems="center"
-      gap={10}
-      p={5}
+      gap={5}
+      minH="120px"
+      p={[2, 5]}
       backgroundColor="#EDF2F7"
     >
       <Flex direction="row">

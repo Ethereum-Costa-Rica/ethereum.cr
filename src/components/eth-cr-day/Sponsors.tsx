@@ -28,7 +28,6 @@ const Sponsors = () => {
         gap={10}
         alignItems="center"
         justifyItems="center"
-        px={5}
       >
         <Image src="./sponsors/ef-logo.png" alt="ETH Fundation" />
         <Image src="./sponsors/paguelo-facil.png" alt="Paguelo Facil" />

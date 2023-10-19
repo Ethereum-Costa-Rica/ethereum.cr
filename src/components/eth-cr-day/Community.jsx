@@ -37,7 +37,7 @@ const Community = () => {
             src="texas-tech2.jpg"
             borderRadius="5px"
             alt="Campus Texas Tech"
-            minW="360px"
+            minW="320px"
           />
         </Box>
         <Flex mb={10} direction="column">

@@ -7,7 +7,7 @@ import EventTitle from "./EventTitle";
 
 const Timeline = () => {
   const [selectedEvent, setSelectedEvent] = useState(0);
-  const [isLargerThan360] = useMediaQuery("(min-width: 480px)");
+  const [isLargerThan992] = useMediaQuery("(min-width: 992px)");
 
   return (
     <>
@@ -40,7 +40,7 @@ const Timeline = () => {
             </Text>
           </Flex>
 
-          {isLargerThan360 ? (
+          {isLargerThan992 ? (
             <Flex
               width="full"
               alignItems="center"
@@ -52,7 +52,6 @@ const Timeline = () => {
                 width={["100%", "100%", "100%", "50%", "50%"]}
                 direction={["row", "row", "row", "column", "column"]}
                 gap={[2, 2, 0]}
-                flexWrap={["wrap", "wrap", "wrap", "nowrap", "nowrap"]}
                 justifyContent="center"
               >
                 {EVENTS.map((event, index) => (

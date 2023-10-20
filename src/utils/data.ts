@@ -44,14 +44,6 @@ export const EVENTS: Array<Event> = [
     groupSchedule: "10:30 am - 11:00 am",
     sessions: [
       {
-        title:
-          "Web3 para todos: una mirada a la inclusión de diferentes disciplinas en el ecosistema",
-        room: "Sala 1",
-        schedule: "10:30 am - 11:00 am",
-        speaker: "Edumar",
-        description: "",
-      },
-      {
         title: "Workshop: Intro a web3",
         room: "Sala 2",
         schedule: "10:30 am - 11:15 am",

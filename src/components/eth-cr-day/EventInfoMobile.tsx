@@ -31,7 +31,7 @@ const EventInfoMobile = (event: Event) => {
       />
       {expand && (
         <Flex direction="column" w="full" h="auto" overflowY="auto" pt={5}>
-          {sessions.map(({ title, room, schedule }) => (
+          {sessions.map(({ title, speaker, room, schedule }) => (
             <Flex
               key={room + Date.now()}
               direction="column"
@@ -39,12 +39,11 @@ const EventInfoMobile = (event: Event) => {
               alignItems="center"
               mb={10}
             >
-              <Text align="center" fontSize="18px">
+              <Text align="center" fontSize="18px" fontWeight={700}>
                 {title}
               </Text>
-              <Text fontSize={["lg", "lg"]} fontWeight={700}>
-                {room}
-              </Text>
+              <Text fontSize={["lg", "lg"]}>{speaker}</Text>
+              <Text fontSize={["lg", "lg"]}>{room}</Text>
               <Text align="center" variant="subtitle2" color="brand.primary">
                 {schedule}
               </Text>

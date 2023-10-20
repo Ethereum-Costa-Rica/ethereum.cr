@@ -26,8 +26,6 @@ interface EventTitleProps {
 }
 
 const EventTitle = ({ title, active = false }: EventTitleProps) => {
-  const [isLargerThan992] = useMediaQuery("(min-width: 992px)");
-
   return (
     <Flex
       id="some-id"
@@ -40,18 +38,16 @@ const EventTitle = ({ title, active = false }: EventTitleProps) => {
       w="40px"
       minH="40px"
     >
-      {isLargerThan992 && (
-        <Text
-          color={active ? "red.500" : "blue.1000"}
-          fontSize={["xs", "sm", "xl", "2lg", "3xl"]}
-          fontWeight={700}
-          minWidth={["120px", "120px", "120px", "auto", "auto"]}
-          align="center"
-          mb={5}
-        >
-          {title}
-        </Text>
-      )}
+      <Text
+        color={active ? "red.500" : "blue.1000"}
+        fontSize={["xs", "sm", "xl", "2lg", "3xl"]}
+        fontWeight={700}
+        minWidth="auto"
+        align="center"
+        mb={5}
+      >
+        {title}
+      </Text>
       <Elipse
         bgColor={active ? "red.500" : "gray.400"}
         width={active ? "30px" : "25px"}

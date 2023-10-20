@@ -34,13 +34,6 @@ export const SpeakersData: Array<SpeakerType> = [
     topic: "From Code to Contract: Mastering Solidity Basics",
   },
   {
-    name: "Ph.D, Edumar León Cordero",
-    image: "edumar.jpg",
-    title: "Global Content Manager de Venus Protocol",
-    description: "Periodista, Educadora y Consultora Web3",
-    topic: "Transdisciplinariedad en el acceso y adopción del ecosistema web3",
-  },
-  {
     name: "Otto Mora",
     image: "otto.jpg",
     title: "Polygon ID BizDev, Asoblockchain Board Member",

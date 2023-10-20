@@ -4,7 +4,7 @@ export const SpeakersData: Array<SpeakerType> = [
   {
     name: "Perchy",
     image: "perchy.jpg",
-    title: "Web3 cartoonist",
+    title: "BanklessDAO core contributor & Web3 cartoonist",
     description:
       "How NFTs are uniquely able to help artists build and unite communities around their artwork.",
     topic: "Using NFTs to Build Community",
@@ -15,12 +15,20 @@ export const SpeakersData: Array<SpeakerType> = [
     title: "Blockchain Engineer",
     description:
       "Aprenderás las características del estándar ERC20 y cómo puede ayudarte a crear activos digitales",
-    topic: "Workshop: Crea tu propio token",
+    topic: "Workshop: Crea tu propio token en 45min",
   },
   {
-    name: "Ranulfo",
+    name: "Alberto Galán",
+    image: "alberto.jpg",
+    title: "Fundador de la comunidad @inbestprogram y educador en @886crypto",
+    description:
+      "Aprenderás sobre la estrategia de escalabilidad de Ethereum incluyendo sobre L2sc",
+    topic: "Charla: Escalando Ethereum",
+  },
+  {
+    name: "Ranulfo Paiva",
     image: "ranulfo.jpeg",
-    title: "Ingeniero de Software",
+    title: "Cofundador de Cambiatus y Cofiblocks",
     description:
       "Explicar con analogias los beneficios de AA, zk-Starks y onchain worlds y como sus integraciones pueden traer billones de usuarios del mundo Web2 para Web3 usando la red de Ethereum L2.",
     topic: "Web3 para las masas: confluencia de AA, zk-Starks y onchain worlds",
@@ -76,7 +84,7 @@ export const SpeakersData: Array<SpeakerType> = [
     image: "robert.jpg",
     title: "Fundador Check My Ticket",
     description: "Desarrollador y emprendedor",
-    topic: "El Futuro de la Venta de Entradas de Eventos con NFTs",
+    topic: "El Futuro de la venta de entradas de eventos con NFTs",
   },
   {
     name: "Rafael Campos",
@@ -88,9 +96,9 @@ export const SpeakersData: Array<SpeakerType> = [
   {
     name: "Edgar Barrantes",
     image: "edgar.jpg",
-    title: "Ingeniero en Software",
+    title: "Ingeniero en Software en Nethermind",
     description:
-      "Ingeniero en software especializado en arquitecturas decentralizadas, trabajando en dapps ydevops",
+      "Ingeniero en software especializado en arquitecturas decentralizadas, trabajando en dapps y devops",
     topic:
       "Developer onboarding: herramientas para el desarrollo en Ethereum y L2s",
   },

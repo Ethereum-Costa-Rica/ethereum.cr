@@ -39,6 +39,8 @@ const Sponsors = () => {
         <Image src="./checkmyticket.svg" alt="Check My Ticket" />
         <Image src="./PizzaDao.svg" alt="Pizza DAO" />
         <Image src="./sponsors/c-creators.png" alt="C Creators" />
+        <Image src="./sponsors/in-best.png" alt="In Best" />
+        <Image src="./sponsors/impesa.png" alt="Impesa" />
       </Grid>
     </Box>
   );

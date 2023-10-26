@@ -30,7 +30,6 @@ const Sponsors = () => {
         justifyItems="center"
       >
         <Image src="./sponsors/ef-logo.png" alt="ETH Fundation" />
-        <Image src="./sponsors/paguelo-facil.png" alt="Paguelo Facil" />
         <Image
           src="./sponsors/texas-tech-university.png"
           alt="Texas Tech University"

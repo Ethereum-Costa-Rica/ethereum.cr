@@ -60,7 +60,7 @@ export const SpeakersData: Array<SpeakerType> = [
     image: "josemiguel.jpg",
     title: "Socio Fundador Lighthouse",
     description:
-      "Abogadp enfocado en fintech, blockchain y servicios financieros",
+      "Abogado enfocado en fintech, blockchain y servicios financieros",
     topic: "El Abogado crypto",
   },
   {
@@ -93,5 +93,14 @@ export const SpeakersData: Array<SpeakerType> = [
       "Ingeniero en software especializado en arquitecturas decentralizadas, trabajando en dapps ydevops",
     topic:
       "Developer onboarding: herramientas para el desarrollo en Ethereum y L2s",
+  },
+  {
+    name: "Alberto Galán",
+    image: "alberto-galan.jpg",
+    title: "Founder InBest Program, Partner 886Crypto",
+    description:
+      "Engineer, Educator, Blockchain Builder & User",
+    topic:
+      "Escalando Ethereum con Roll Ups y Tecnologías de Segunda Capa",
   },
 ];

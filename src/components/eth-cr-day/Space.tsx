@@ -19,7 +19,12 @@ const Space = () => {
             </Text>
           </Flex>
           <Flex justifyContent="center">
-            <Button maxW="142px" as="a" href="#" variant="primary">
+            <Button
+              maxW="142px"
+              as="a"
+              href="https://www.checkmyticket.xyz/event/9bf60e16-47e9-4823-a10a-2814fb21aa8a"
+              variant="primary"
+            >
               Formar parte
             </Button>
           </Flex>

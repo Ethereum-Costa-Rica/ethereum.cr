@@ -103,4 +103,13 @@ export const SpeakersData: Array<SpeakerType> = [
     topic:
       "Escalando Ethereum con Roll Ups y Tecnologías de Segunda Capa",
   },
+  {
+    name: "Pedro Rey Puma",
+    image: "pedro-rey.jpg",
+    title: "Docente en el Diplomado de CriptoEconomia en Universidad de Cuyo, Fundador de CriptoLaPlata y Ethereum Bolivia",
+    description:
+      "Se enseñará los nuevos tipos de empleo que hay en web3, características, el conocimiento que deben adquirir para conseguir empleo y el ambiente del emprendimiento y creación de nuevos proyectos web3.",
+    topic:
+      "El empleo en web3 y los emprendimientos",
+  },
 ];

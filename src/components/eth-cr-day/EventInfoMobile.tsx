@@ -33,7 +33,7 @@ const EventInfoMobile = (event: Event) => {
         <Flex direction="column" w="full" h="auto" overflowY="auto" pt={5}>
           {sessions.map(({ title, speaker, room, schedule }) => (
             <Flex
-              key={room + Date.now()}
+              key={title + Date.now()}
               direction="column"
               justify="center"
               alignItems="center"

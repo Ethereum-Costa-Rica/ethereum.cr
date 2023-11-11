@@ -1,13 +1,5 @@
+import { Session } from "@/utils/data";
 import { Box, Divider, Text } from "@chakra-ui/react";
-
-interface Session {
-  title: string;
-  room: string;
-  schedule: string;
-  speaker: string;
-  description: string;
-}
-
 interface EventBodyProps {
   talk: string;
   sessions: Session[];
@@ -26,7 +18,7 @@ const EventBody = ({ talk, sessions }: EventBodyProps) => {
       textAlign="center"
     >
       {sessions.map(({ title, room, schedule, speaker, description }) => (
-        <Box mb={2} w="full" key={description + room + speaker}>
+        <Box mb={2} w="full" key={title + speaker}>
           <Text variant="h3" fontWeight={500} marginBottom="10px">
             {title}
           </Text>

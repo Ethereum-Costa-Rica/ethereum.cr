@@ -1,4 +1,4 @@
-type Session = {
+export type Session = {
   title: string;
   room?: string;
   schedule: string;

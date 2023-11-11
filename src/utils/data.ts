@@ -1,9 +1,9 @@
 type Session = {
   title: string;
-  room: string;
+  room?: string;
   schedule: string;
-  speaker: string;
-  description: string;
+  speaker?: string;
+  description?: string;
 };
 
 export type Event = {
@@ -14,28 +14,39 @@ export type Event = {
 
 export const EVENTS: Array<Event> = [
   {
-    group: "Entrada y Bienvenida",
-    groupSchedule: "9:30 am - 10:00 am",
+    group: "Entrada y Logistica",
+    groupSchedule: "9:00 am - 10:00 am",
     sessions: [
       {
-        title: "Bienvenida ETHCR Day",
-        room: "Sala 1",
-        schedule: "9:30 am - 9:45 am",
-        speaker: "Otto Mora",
-        description: "Charla de apertura",
+        title: "Bienvenida a Ethereum Costa Rica Day",
+        schedule: "9:00 am - 9:30 am",
       },
     ],
   },
   {
-    group: "Keynote",
+    group: "Bienvenida",
+    groupSchedule: "9:00 am - 10:00 am",
+    sessions: [
+      {
+        title: "Bienvenida a Ethereum Costa Rica Day",
+        room: "Sala 1",
+        schedule: "9:30 am - 10:00 am",
+        speaker: "Otto Mora",
+        description:
+          "Bienvenida y presentación por parte de Otto Mora y espacio para Texas Tech.",
+      },
+    ],
+  },
+  {
+    group: "Exhibiciones",
     groupSchedule: "10:00 am - 10:30 am",
     sessions: [
       {
-        title: "Keynote Talk",
-        room: "Auditorio",
+        title: "Open Showroom",
+        room: "Sala 4",
         schedule: "10:00 am - 10:30 am",
         speaker: "",
-        description: "RESERVADO",
+        description: "",
       },
     ],
   },
@@ -44,14 +55,21 @@ export const EVENTS: Array<Event> = [
     groupSchedule: "10:30 am - 11:00 am",
     sessions: [
       {
-        title: "Workshop: Intro a web3",
-        room: "Sala 2",
-        schedule: "10:30 am - 11:15 am",
-        speaker: "RESERVADO",
+        title: "Deployment of Venus Protocol on Ethereum Mainnet",
+        room: "Sala 1",
+        schedule: "10:30 am - 11:00 am",
+        speaker: "Brad Harrison",
         description: "",
       },
       {
-        title: "Workshop: From Code to Contract",
+        title: "Intro a web3: descarga tu primera billetera",
+        room: "Sala 2",
+        schedule: "10:30 am - 11:15 am",
+        speaker: "Kevin Barquero",
+        description: "",
+      },
+      {
+        title: "From Code to Contract: Mastering Solidity Basics",
         room: "Sala 3",
         schedule: "10:30 am - 11:15 am",
         speaker: "Igor Yalovoy",
@@ -61,30 +79,41 @@ export const EVENTS: Array<Event> = [
   },
   {
     group: "Bloque 2",
+    groupSchedule: "11:00 am - 11:30 am",
+    sessions: [
+      {
+        title: "El empleo en web3 y los emprendimientos",
+        room: "Sala 1",
+        schedule: "11:00 am - 11:30 am",
+        speaker: "Pedro Rey Puma",
+        description: "",
+      },
+    ],
+  },
+  {
+    group: "Bloque 3",
     groupSchedule: "11:30 am - 12:00 pm",
     sessions: [
       {
-        title:
-          "How NFTs create unique opportunities for artists to build communities",
+        title: "Using NFTs to Build Community",
         room: "Sala 1",
         schedule: "11:30 am - 12:00 pm",
         speaker: "Perchy",
         description: "",
       },
       {
-        title: "Escalando Ethereum",
+        title: "Escalando Ethereum con Roll Ups y Tecnologías de Segunda Capa",
         room: "Sala 2",
-        schedule: "11:15 am - 12:00 pm",
-        speaker: "Alberto Galan 886Crypto",
+        schedule: "11:30 am - 12:00 pm",
+        speaker: "Alberto Galán",
         description: "",
       },
       {
-        title: "Workshop: Crea tu propio token!",
+        title: "Crea tu propio token en 45min",
         room: "Sala 3",
-        schedule: "10:30 am - 11:15 am",
+        schedule: "11:30 am - 12:00 pm",
         speaker: "Justin Castillo",
-        description:
-          "Aprenderás el estándar ERC20 y lograrás desplegar tu propio token!",
+        description: "",
       },
     ],
   },
@@ -106,18 +135,18 @@ export const EVENTS: Array<Event> = [
     groupSchedule: "1:00 pm - 1:30 pm",
     sessions: [
       {
-        title: "Organizaciones Evolucionarias",
+        title:
+          "Web3 para las masas: confluencia de AA, zk-Starks y onchain worlds",
         room: "Sala 1",
         schedule: "1:00 pm - 1:30 pm",
-        speaker: "Jaf Sandí",
+        speaker: "Ranulfo",
         description: "",
       },
       {
-        title:
-          "Web3 para las masas: confluencia de AA, zk-Starks y onchain worlds",
+        title: "Organizaciones Evolucionarias - un vistazo al futuro hoy",
         room: "Sala 2",
         schedule: "1:00 pm - 1:30 pm",
-        speaker: "Ranulfo",
+        speaker: "Jaff Sandi ",
         description: "",
       },
       {
@@ -125,7 +154,7 @@ export const EVENTS: Array<Event> = [
           "Abriendo puertas: las oportunidades para un desarrollador en el mundo de blockchain",
         room: "Sala 3",
         schedule: "1:00 pm - 1:30 pm",
-        speaker: "Ranulfo",
+        speaker: "Daniel Bejarano",
         description: "",
       },
     ],
@@ -135,10 +164,26 @@ export const EVENTS: Array<Event> = [
     groupSchedule: "1:30 pm - 2:00 pm",
     sessions: [
       {
-        title: '"El Abogado crypto"',
+        title: "Dónde estamos y para dónde vamos: Regulación en Costa Rica",
         room: "Sala 1",
         schedule: "1:30 pm - 2:00 pm",
-        speaker: "Jose Miguel Zamora Socio Fundador Lighthouse",
+        speaker: "Jose Miguel Zamora",
+        description: "",
+      },
+      {
+        title:
+          "Consenso Inteligente: El Futuro de las DAOs Impulsado por la IA",
+        room: "Sala 2",
+        schedule: "1:30 pm - 2:00 pm",
+        speaker: "Gabriel Carranza",
+        description: "",
+      },
+      {
+        title:
+          "Developer onboarding: herramientas para el desarrollo en Ethereum y L2s",
+        room: "Sala 3",
+        schedule: "1:30 pm - 2:00 pm",
+        speaker: "Gabriel Carranza",
         description: "",
       },
     ],
@@ -148,24 +193,25 @@ export const EVENTS: Array<Event> = [
     groupSchedule: "2:00 pm - 2:30 pm",
     sessions: [
       {
-        title: "Intro a Governanza, DAOs, CofiBlocks",
+        title: "Negocios Colaborativos y ReFi: el experimento de CofiBlocks",
         room: "Sala 1",
         schedule: "2:00 pm - 2:30 pm",
-        speaker: "Karla Córdoba",
+        speaker: "Karla Cordoba",
         description: "",
       },
       {
-        title: "El Futuro de la Venta de Entradas de Eventos con NFT",
+        title: "El Futuro de la Venta de Entradas de Eventos con NFTs",
         room: "Sala 2",
         schedule: "2:00 pm - 2:30 pm",
         speaker: "Robert Ramirez",
         description: "",
       },
       {
-        title: "Workshop: desarrollando zk apps con o1js",
+        title:
+          "Blockchain y Pruebas de Conocimiento Cero (ZKP): Una combinación perfecta para garantizar la privacidad y la transparencia",
         room: "Sala 3",
-        schedule: "1:45 pm - 2:30 pm",
-        speaker: "Rafael Campos",
+        schedule: "2:00 pm - 2:30 pm",
+        speaker: "Andres Obando y Hugo Villalta",
         description: "",
       },
     ],
@@ -189,19 +235,71 @@ export const EVENTS: Array<Event> = [
     groupSchedule: "3:00 pm - 3:30 pm",
     sessions: [
       {
-        title: "Identity",
+        title: "Intro a Identidad Autosoberana y Credenciales Verificables",
         room: "Sala 1",
         schedule: "3:00 pm - 3:30 pm",
-        speaker: "Otto Mora | Polygon ID",
+        speaker: "Otto Mora",
         description: "",
       },
       {
         title:
-          "Developer onboarding: herramientas para el desarrollo en Ethereum y L2s",
-        room: "Sala 3",
+          "Notariado Digital: un nuevo paradigma con Blockchain. Casos de uso reales",
+        room: "Sala 2",
         schedule: "3:00 pm - 3:30 pm",
-        speaker: "Edgar Barrantes",
+        speaker: "Fabricio Espinoza",
         description: "",
+      },
+      {
+        title: "Pruebas criptográficas de autenticidad usando TLSNotary",
+        room: "Sala 3",
+        schedule: "3:00 pm - 3:45 pm",
+        speaker: "Rafael Campos",
+        description: "",
+      },
+    ],
+  },
+  {
+    group: "Bloque 8",
+    groupSchedule: "3:30 pm - 4:00 pm",
+    sessions: [
+      {
+        title: "<Por anunciar>",
+        room: "Sala 1",
+        schedule: "3:00 pm - 3:30 pm",
+        speaker: "Mario Hernandez ",
+        description: "",
+      },
+      {
+        title: "Tikuna: AI aplicada a la detección de ataques en el Blockchain",
+        room: "Sala 2",
+        schedule: "3:00 pm - 3:30 pm",
+        speaker: "Francis Gomez",
+        description: "",
+      },
+    ],
+  },
+  {
+    group: "Panel de discusión",
+    groupSchedule: "4:00 pm - 4:30 pm",
+    sessions: [
+      {
+        title: "Panel de discusión",
+        room: "Sala 1",
+        schedule: "4:00 pm - 4:30 pm",
+        speaker: "Francis Sanchinelli, Fernando Quiros, Ilan Melendez",
+        description:
+          "Moderador: Otto Mora. Temas: La oportunidad para CR y Latam, Oportunidades de formación para ser un ciudadano web3",
+      },
+    ],
+  },
+  {
+    group: "Cierre",
+    groupSchedule: "4:00 pm - 4:45 pm",
+    sessions: [
+      {
+        title: "Ceremonia de CIERRE",
+        room: "Sala 1",
+        schedule: "4:30 pm - 4:45 pm",
       },
     ],
   },

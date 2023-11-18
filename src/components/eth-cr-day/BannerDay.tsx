@@ -4,7 +4,7 @@ import Image from "next/image";
 import resizedLogo from "../../../public/eth-cr-day-resized.svg";
 import EthCrLogo from "../eth-cr-logo";
 import EthCrDayLogo from "../eth-cr-day-logo";
-import ButtonDonations from "../ButtonDonations";
+import Agenda from "../Agenda";
 
 const Banner = () => {
   const [isLargerThan1090] = useMediaQuery("(min-width: 1090px)");
@@ -47,7 +47,7 @@ const Banner = () => {
         </Text>
       </Flex>
       <Flex direction="row" alignItems="center" justifyContent="center">
-        <ButtonDonations />
+        <Agenda />
         <Button
           width="160px"
           ml={45}

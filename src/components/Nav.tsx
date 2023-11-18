@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import EthCrLogo from "./eth-cr-logo";
-import ButtonDonations from "./ButtonDonations";
+import Agenda from "./Agenda";
 
 const Nav = () => {
   return (
@@ -12,7 +12,7 @@ const Nav = () => {
       position="relative"
     >
       <EthCrLogo />
-      <ButtonDonations />
+      <Agenda />
     </Flex>
   );
 };

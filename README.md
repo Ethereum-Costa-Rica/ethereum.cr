@@ -75,6 +75,7 @@ This project is licensed under the [MIT](https://github.com/Ethereum-Costa-Rica/
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/JustinCast"><img src="https://avatars.githubusercontent.com/u/17890146?v=4" width="100px;" alt="Justin Castillo"/><br /><sub><b>JustinCast </b></sub></a><br /></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Coderoostr"><img src="https://avatars.githubusercontent.com/u/103231131?v=4" width="100px;" alt="Marcos González"/><br /><sub><b>Coderoostr </b></sub></a><br /></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/brolag"><img src="https://avatars.githubusercontent.com/u/1393385?v=4" width="100px;" alt="Alfredo Bonilla"/><br /><sub><b>brolag </b></sub></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Gerson2102"><img src="https://avatars.githubusercontent.com/u/71728860?v=4" width="100px;" alt="Gerson Loaiza"/><br /><sub><b>Gerson2102 </b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>

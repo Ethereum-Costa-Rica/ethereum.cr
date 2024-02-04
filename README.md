@@ -1,4 +1,6 @@
-![Logo](docs/logo/Vector.svg)
+<p align="center">
+  <img src="docs/logo/Vector.svg" alt="Logo">
+</p>
 
 [![Telegram](https://img.shields.io/badge/Our_community-Telegram-blue?style=for-the-badge&logo=Telegram)](https://t.me/EthereumCR) [![X (Twitter)](<https://img.shields.io/badge/Follow_us-X_(Twitter)-black?style=for-the-badge&logo=X>)](https://twitter.com/EthereumCR) [![Instagram](https://img.shields.io/badge/Follow_us-Instagram-purple?style=for-the-badge&logo=Instagram)](https://www.instagram.com/ethereumcr/) [![Linkedin](https://img.shields.io/badge/Follow_us-Linkedin-darkblue?style=for-the-badge&logo=Linkedin)](https://www.linkedin.com/company/ethereum-costa-rica/) ![GitHub followers](https://img.shields.io/github/followers/Ethereum-Costa-Rica?style=for-the-badge&color=red) ![GitHub forks](https://img.shields.io/github/forks/Ethereum-Costa-Rica/ethereum.cr?style=for-the-badge&color=red) ![GitHub Repo stars](https://img.shields.io/github/stars/Ethereum-Costa-Rica/ethereum.cr?style=for-the-badge&color=red) ![GitHub contributors](https://img.shields.io/github/contributors/Ethereum-Costa-Rica/ethereum.cr?style=for-the-badge&color=red)
 
@@ -54,12 +56,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## How to contribute to the project
 
 **1.** The first step is to `fork` the repository.
+
 **2.** The second step is to `clone` the repository that you already forked.
+
 **3.** Then you can create a `branch` to do your work.
+
 **4.** You can now make changes and `commit` them.
+
 **5.** When you are done make sure to `push` the changes to Github.
+
 **6.** Create a `pull request`.
+
 **7.** Sync your `forked master branch`.
+
 **8.** And finally, delete the unnecessary `branch`.
 
 ## License

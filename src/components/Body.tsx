@@ -20,7 +20,6 @@ import xIcon from "../../public/x-icon.svg";
 import facebookIcon from "../../public/facebook-icon.svg";
 import linkedinIcon from "../../public/linkedin-icon.svg";
 import meetupIcon from "../../public/meetup-icon.svg";
-import SubstackWidget from "./SubStackWidet";
 
 const Body = () => {
   const breakpoint = useBreakpoint();
@@ -153,17 +152,6 @@ const Body = () => {
               >
                 <Image src={meetupIcon} alt="Meetup Icon" />
               </Button>
-            </Flex>
-            <Flex
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-              mb="44"
-            >
-              <Text variant="sub-title" mb={4}>
-                Suscribite a nuestro boletín
-              </Text>
-              <SubstackWidget />
             </Flex>
             <Center mb="36">
               <Image

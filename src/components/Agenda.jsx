@@ -4,16 +4,14 @@ const Agenda = () => {
   return (
     <div>
       <Button
-        maxW="142px"
         size="md"
-        width="125px"
         as="a"
-        href="https://bit.ly/ethcrday-agenda"
+        href="/day"
         color="red"
         colorScheme="red"
         variant="outline"
       >
-        Agenda
+        Ethereum Costa Rica Day 2023
       </Button>
     </div>
   );

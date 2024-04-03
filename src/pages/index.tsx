@@ -1,4 +1,3 @@
-import Banner from "@/components/eth-cr-day/banner";
 import Hero from "@/components/Hero";
 import Body from "@/components/Body";
 import Footer from "@/components/Footer";
@@ -10,7 +9,6 @@ export default function Home() {
     <div>
       <Bot />
       <Nav />
-      <Banner />
       <Hero />
       <Body />
       <Footer />

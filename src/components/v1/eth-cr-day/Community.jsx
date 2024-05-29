@@ -7,7 +7,7 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 
-import BackgroundWrapperDay from "@/components/BackgroundWrapperDay";
+import BackgroundWrapperDay from "@/components/v1/BackgroundWrapperDay";
 
 const Community = () => {
   return (

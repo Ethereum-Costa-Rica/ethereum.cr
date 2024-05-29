@@ -1,7 +1,7 @@
 import { Event, EVENTS } from "@/utils/data";
 import { Text, Flex, useMediaQuery, Divider } from "@chakra-ui/react";
 import { useState } from "react";
-import EventInfoMobile from "./eth-cr-day/EventInfoMobile";
+import EventInfoMobile from "./v1/eth-cr-day/EventInfoMobile";
 import EventBody from "./EventBody";
 import EventTitle from "./EventTitle";
 

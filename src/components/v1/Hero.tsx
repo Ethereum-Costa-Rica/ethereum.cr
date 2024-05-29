@@ -8,8 +8,8 @@ import {
   // useClipboard,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
-import Nav from "./Nav";
-import BackgroundWrapper from "./BackgroundWrapper";
+import Nav from "./v1/Nav";
+import BackgroundWrapper from "./v1/BackgroundWrapper";
 
 const Hero = () => {
   const breakpoint = useBreakpoint();

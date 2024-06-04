@@ -4,7 +4,6 @@ import { appWithTranslation } from "next-i18next";
 
 import "@/styles/globals.css";
 import theme from "@/theme";
-import nextI18Config from "../../next-i18next.config";
 
 const app = ({ Component, pageProps }: AppProps) => {
   return (

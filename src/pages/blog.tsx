@@ -1,14 +1,15 @@
+import NavBar from "@/components/nav-bar";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import NavBar from "@/components/nav-bar";
-
-export default function Home() {
+const Blog = () => {
   return (
     <div>
       <NavBar />
     </div>
   );
-}
+};
+
+export default Blog;
 
 export async function getStaticProps({ locale }) {
   return {

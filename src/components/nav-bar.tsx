@@ -38,7 +38,7 @@ const NavBar = () => {
         w="100%"
         alignItems="center"
       >
-        <Image src={Logo} alt="ETH CR Logo" priority />
+        <Image src={Logo} alt="ETH CR Logo" width={130} priority />
         <IconButton
           fontSize={44}
           background="transparent"
@@ -67,7 +67,8 @@ const NavBar = () => {
                 alignItems="center"
                 height={{ base: "76px" }}
                 sx={{
-                  borderRight: pathname === `/${key}` ? "2px solid black" : "",
+                  borderRight:
+                    pathname === `/${key}` ? "2.5px solid black" : "",
                   paddingRight: "20px",
                   width: "100%",
                 }}

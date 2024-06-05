@@ -1,3 +1,5 @@
+import Cover from "@/components/events/cover";
+import NextEvents from "@/components/events/next-events";
 import NavBar from "@/components/nav-bar";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -5,6 +7,8 @@ const Events = () => {
   return (
     <div>
       <NavBar />
+      <Cover />
+      <NextEvents />
     </div>
   );
 };

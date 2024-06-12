@@ -2,5 +2,9 @@
   "events": "Eventos",
   "blog": "Blog",
   "donate": "Donar",
-  "shop": "Tienda"
+  "shop": "Tienda",
+  "contactUs": "Contáctanos",
+  "keepInTouch": "Mantente en contacto",
+  "subscribeForUpdates": "Suscríbete para recibir actualizaciones",
+  "yourEmailPlaceholder": "tu.correo@mail.com"
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   IconButton,
@@ -15,23 +15,50 @@ import { useTranslation } from "next-i18next";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import Logo from "../../public/assets/eth-cr.svg";
+import EthCrLogo from "../../public/assets/eth-cr.svg";
+import EthCrLogoWhite from "../../public/assets/eth-cr-white.svg";
 
 const NavBar = () => {
   const { t } = useTranslation();
   const pathname = usePathname();
   const theme = useTheme();
   const [opened, setOpened] = useState(false);
+  const [navbarOpacity, setNavbarOpacity] = useState(0.8);
+  const [background, setBackground] = useState("transparent");
+  const [logo, setLogo] = useState(EthCrLogoWhite);
+  const isTransparent = background === "transparent";
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 0) {
+        setNavbarOpacity(1);
+        setBackground("white");
+        setLogo(EthCrLogo);
+      } else {
+        setNavbarOpacity(0.8);
+        setBackground("transparent");
+        setLogo(EthCrLogoWhite);
+      }
+    };
+    // clean up code
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <Box
+      bg={background}
       display="flex"
       flexDirection="column"
       alignItems="center"
-      width={{ sm: "346px" }}
+      width="100%"
+      maxW="390px"
       maxHeight={{ sm: "444px" }}
       px={theme.spacing.mobile.paddingX}
       py={18}
+      position="fixed"
+      zIndex={1}
     >
       <Flex
         direction="row"
@@ -39,9 +66,10 @@ const NavBar = () => {
         w="100%"
         alignItems="center"
       >
-        <Image src={Logo} alt="ETH CR Logo" width={130} priority />
+        <Image src={logo} alt="ETH CR Logo" width={177} height={64} priority />
         <IconButton
           fontSize={44}
+          color={isTransparent ? "white" : "black"}
           background="transparent"
           aria-label="Expand navbar"
           onClick={() => setOpened(!opened)}
@@ -59,7 +87,7 @@ const NavBar = () => {
       </Flex>
       {opened && (
         <Fade in={opened} style={{ width: "100%" }}>
-          <Flex direction="column" w="100%" h="auto">
+          <Flex direction="column" w="100%" h="auto" bg="white">
             {["events", "blog", "donate", "shop"].map((key, index) => (
               <Flex
                 key={index}

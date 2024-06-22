@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Box,
   IconButton,
@@ -6,20 +7,20 @@ import {
   Fade,
   ScaleFade,
   Collapse,
-  Slide,
+  useTheme,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { MdMenu, MdClose } from "react-icons/md";
 import { useTranslation } from "next-i18next";
 import { usePathname } from "next/navigation";
-
-import Logo from "../../public/eth-cr.svg";
 import Link from "next/link";
-import { useState } from "react";
+
+import Logo from "../../public/assets/eth-cr.svg";
 
 const NavBar = () => {
   const { t } = useTranslation();
   const pathname = usePathname();
+  const theme = useTheme();
   const [opened, setOpened] = useState(false);
 
   return (
@@ -29,7 +30,7 @@ const NavBar = () => {
       alignItems="center"
       width={{ sm: "346px" }}
       maxHeight={{ sm: "444px" }}
-      px={22}
+      px={theme.spacing.mobile.paddingX}
       py={18}
     >
       <Flex

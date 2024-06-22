@@ -7,6 +7,12 @@ const theme = extendTheme({
     //   dark: "#0F2841",
     // },
   },
+  spacing: {
+    mobile: {
+      paddingX: "22px",
+      verticalGag: "12px",
+    },
+  },
   components: {
     // Button: {
     //   baseStyle: {

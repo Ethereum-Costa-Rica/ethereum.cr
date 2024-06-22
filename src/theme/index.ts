@@ -2,10 +2,10 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   colors: {
-    // brand: {
-    //   primary: "#E93334",
-    //   dark: "#0F2841",
-    // },
+    brand: {
+      primary: "#84CCF5", // Light blue
+      dark: "#0F2841",
+    },
   },
   spacing: {
     mobile: {
@@ -14,19 +14,34 @@ const theme = extendTheme({
     },
   },
   components: {
-    // Button: {
-    //   baseStyle: {
-    //     fontWeight: "semibold",
-    //   },
-    //   sizes: {},
-    //   variants: {
-    //     primary: {
-    //       bg: "red.500",
-    //       color: "white",
-    //     },
-    //   },
-    //   defaultProps: {},
-    // },
+    Button: {
+      baseStyle: {
+        fontWeight: "semibold",
+      },
+      sizes: {
+        sm: {
+          fontSize: "20px",
+          padding: "8px 16px",
+          height: "46px",
+          gap: "10px",
+        },
+        md: {
+          fontSize: "24px",
+          padding: "12px 20px",
+        },
+        lg: {
+          fontSize: "32px",
+          padding: "16px 24px",
+        },
+      },
+      variants: {
+        primary: {
+          bg: "brand.primary",
+          color: "black",
+        },
+      },
+      defaultProps: {},
+    },
     Text: {
       // baseStyle: {
       //   color: "#0F2841",

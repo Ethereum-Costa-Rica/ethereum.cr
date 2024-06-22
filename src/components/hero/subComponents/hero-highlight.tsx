@@ -1,5 +1,5 @@
 import { Flex, useTheme } from "@chakra-ui/react";
-import React from "react";
+import React, { ReactNode } from "react";
 import Image from "next/image";
 
 type HeroHighLightProps = {
@@ -9,6 +9,7 @@ type HeroHighLightProps = {
   eventMainGraphicSrc: string;
   eventMainGraphicWidth: number;
   eventMainGraphicHeight: number;
+  children?: ReactNode;
 };
 
 const HeroHighlight = (props: HeroHighLightProps) => {
@@ -20,6 +21,7 @@ const HeroHighlight = (props: HeroHighLightProps) => {
     eventMainGraphicSrc,
     eventMainGraphicWidth,
     eventMainGraphicHeight,
+    children,
   } = props;
 
   return (
@@ -44,6 +46,7 @@ const HeroHighlight = (props: HeroHighLightProps) => {
         alt="Event Main Graphic"
         priority
       />
+      {children}
     </Flex>
   );
 };

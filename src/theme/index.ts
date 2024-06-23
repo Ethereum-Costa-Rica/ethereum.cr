@@ -49,6 +49,54 @@ const theme = extendTheme({
       // },
       variants: {
         //
+        "h1-extra-bold-desktop": {
+          fontSize: "64px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+
+        "h2-extra-bold-desktop": {
+          fontSize: "44px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+
+        "h3-extra-bold-desktop": {
+          fontSize: "40px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+
+        //
+        "h1-extra-bold-mobile": {
+          fontSize: "36px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+        "h2-extra-bold-mobile": {
+          fontSize: "34px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+        "h3-extra-bold-mobile": {
+          fontSize: "32px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+        "h4-extra-bold-mobile": {
+          fontSize: "28px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+
+        //
         "h1-semibold": {
           fontSize: "36px",
           fontWeight: "semibold",
@@ -67,6 +115,8 @@ const theme = extendTheme({
           lineHeight: "150%",
           letterSpacing: "0.03em",
         },
+
+        //
         "normal-text-semibold": {
           fontSize: "20px",
           fontWeight: "light",

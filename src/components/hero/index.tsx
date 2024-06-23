@@ -1,11 +1,13 @@
 import { Box, Button, Icon, useTheme } from "@chakra-ui/react";
 import { MdArrowForward } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 import HeroHighlight from "./subComponents/hero-highlight";
 import Image from "next/image";
 
 const Hero = () => {
   const baseAssetsUrl = "assets/eth-pura-vida/";
+  const { t } = useTranslation();
   const theme = useTheme();
   const ethPuraVidaExtraChildren = (
     <>
@@ -17,7 +19,7 @@ const Hero = () => {
         alt="ETH Pura Vida Date"
       />
       <Button variant="primary" size="sm">
-        Know More
+        {t("learnMore")}
         <Icon w="24px" h="24px" as={MdArrowForward} />
       </Button>
     </>

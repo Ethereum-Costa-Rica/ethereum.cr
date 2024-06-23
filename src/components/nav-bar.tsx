@@ -18,27 +18,31 @@ import Link from "next/link";
 import EthCrLogo from "../../public/assets/eth-cr.svg";
 import EthCrLogoWhite from "../../public/assets/eth-cr-white.svg";
 
+const transparentBgColor = "#ffffff1a";
+const whiteBgColor = "#ffffff";
 const NavBar = () => {
   const { t } = useTranslation();
   const pathname = usePathname();
   const theme = useTheme();
   const [opened, setOpened] = useState(false);
-  const [navbarOpacity, setNavbarOpacity] = useState(0.8);
-  const [background, setBackground] = useState("transparent");
+  const [bgColor, setBgColor] = useState(transparentBgColor);
   const [logo, setLogo] = useState(EthCrLogoWhite);
-  const isTransparent = background === "transparent";
+  const isTransparent = bgColor === transparentBgColor;
+
+  const setBaseNavbarMenuProperties = () => {
+    setBgColor(whiteBgColor);
+    setLogo(EthCrLogo);
+  };
+
+  const setWhiteNavbarMenuProperties = () => {
+    setBgColor(transparentBgColor);
+    setLogo(EthCrLogoWhite);
+  };
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 0) {
-        setNavbarOpacity(1);
-        setBackground("white");
-        setLogo(EthCrLogo);
-      } else {
-        setNavbarOpacity(0.8);
-        setBackground("transparent");
-        setLogo(EthCrLogoWhite);
-      }
+      if (window.scrollY > 0) setBaseNavbarMenuProperties();
+      else setWhiteNavbarMenuProperties();
     };
     // clean up code
     window.removeEventListener("scroll", onScroll);
@@ -46,9 +50,18 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (opened) {
+      setBaseNavbarMenuProperties();
+      return;
+    }
+
+    setWhiteNavbarMenuProperties();
+  }, [opened]);
+
   return (
     <Box
-      bg={background}
+      bgColor={bgColor}
       display="flex"
       flexDirection="column"
       alignItems="center"

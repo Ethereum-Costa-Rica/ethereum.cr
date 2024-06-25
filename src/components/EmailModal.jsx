@@ -1,49 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Modal,
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Button,
   useDisclosure,
   FormControl,
-  FormLabel,
   Input,
   Image,
   Center,
   VStack,
+  Flex,
+  useToast,
 } from "@chakra-ui/react";
+import emailjs from "emailjs-com";
 
 function EmailModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const toast = useToast();
 
   React.useEffect(() => {
     onOpen();
   }, [onOpen]);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
-    try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxsnTaZ-I7vhXaJc6Z6AuD9JBUbnPe59hxI9FRPaltC-ncaUYIgznO-3lrmTuXHDuws-A/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
 
-      if (response.ok) {
-        console.log("Correo enviado con éxito");
-      } else {
-        console.error("Error al enviar el correo");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
+    const templateParams = {
+      user_email: email,
+    };
+
+    emailjs
+      .send(
+        "service_tx82tqr",
+        "template_xoh5eml",
+        templateParams,
+        "BlPWWRhjHcpUgj5Rt"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast({
+            title: "Correo enviado.",
+            description: "Tu correo ha sido enviado exitosamente.",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+          });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          toast({
+            title: "Error.",
+            description: "Hubo un problema al enviar tu correo.",
+            status: "error",
+            duration: 5000,
+            isClosable: true,
+          });
+        }
+      );
 
     onClose();
   };
@@ -62,19 +81,22 @@ function EmailModal() {
               <VStack spacing={4}>
                 <Image src="ethpv.svg" alt="Logo" boxSize="350px" />
                 <form onSubmit={handleSubmit}>
-                  <FormControl id="email" isRequired>
-                    <FormLabel textAlign="center">Correo electrónico</FormLabel>
-                    <Input
-                      type="email"
-                      name="email"
-                      placeholder="Ingresa tu correo"
-                    />
+                  <FormControl
+                    id="email"
+                    isRequired
+                    justifyContent="center"
+                  >
+                    <Flex mb="10">
+                      <Input
+                        placeholder="Correo electrónico"
+                        type='email'
+                        name='email'
+                      />
+                      <Button colorScheme="blue" type="submit" value="send">
+                        Enviar
+                      </Button>
+                    </Flex>
                   </FormControl>
-                  <ModalFooter justifyContent="center">
-                    <Button colorScheme="blue" type="submit">
-                      Enviar
-                    </Button>
-                  </ModalFooter>
                 </form>
               </VStack>
             </Center>

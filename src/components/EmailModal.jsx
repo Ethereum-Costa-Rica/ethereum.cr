@@ -36,10 +36,10 @@ function EmailModal() {
 
     emailjs
       .send(
-        "service_tx82tqr",
-        "template_xoh5eml",
+        "service_hufgswn",
+        "template_v310vkf",
         templateParams,
-        "BlPWWRhjHcpUgj5Rt"
+        "K2rhSWiNG06iCO3yj"
       )
       .then(
         (response) => {

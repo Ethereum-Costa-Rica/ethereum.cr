@@ -81,16 +81,12 @@ function EmailModal() {
               <VStack spacing={4}>
                 <Image src="ethpv.svg" alt="Logo" boxSize="350px" />
                 <form onSubmit={handleSubmit}>
-                  <FormControl
-                    id="email"
-                    isRequired
-                    justifyContent="center"
-                  >
+                  <FormControl id="email" isRequired justifyContent="center">
                     <Flex mb="10">
                       <Input
                         placeholder="Correo electrónico"
-                        type='email'
-                        name='email'
+                        type="email"
+                        name="email"
                       />
                       <Button colorScheme="blue" type="submit" value="send">
                         Enviar

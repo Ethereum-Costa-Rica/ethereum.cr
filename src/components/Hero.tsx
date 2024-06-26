@@ -14,7 +14,7 @@ import BackgroundWrapper from "./BackgroundWrapper";
 const Hero = () => {
   const breakpoint = useBreakpoint();
   const _breakpoints = ["base", "xs", "sm", "md"];
-  const wallet = "0x5EAD82e959D8218f6003526AB8d457972B679C41";
+  const wallet = "0x0004d7D8843Ba256f0CA0d835C0977C5D5375285";
   // const { onCopy, hasCopied } = useClipboard(wallet);
   const toast = useToast();
 

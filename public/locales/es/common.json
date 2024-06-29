@@ -7,5 +7,9 @@
   "keepInTouch": "Mantente en contacto",
   "subscribeForUpdates": "Suscríbete para recibir actualizaciones",
   "yourEmailPlaceholder": "tu.correo@mail.com",
-  "learnMore": "Ver más"
+  "learnMore": "Ver más",
+  "homeContent": {
+    "ethereumCommunityIn": "Comunidad Ethereum en",
+    "communityDescription": "Somos una comunidades de entusiastas, desarrolladores y creadores apasionados por la tecnología de blockchain Ethereum y su potencial para cambiar el mundo"
+  }
 }

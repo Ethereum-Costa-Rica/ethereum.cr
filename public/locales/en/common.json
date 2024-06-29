@@ -7,5 +7,9 @@
   "keepInTouch": "Keep in touch",
   "subscribeForUpdates": "Subscribe for updates",
   "yourEmailPlaceholder": "your.email@mail.com",
-  "learnMore": "Learn more"
+  "learnMore": "Learn more",
+  "homeContent": {
+    "ethereumCommunityIn": "Comunidad Ethereum en",
+    "communityDescription": "We are a community of learners, builders, and creators who are passionate about Ethereum blockchain technology and its potential to change the world."
+  }
 }

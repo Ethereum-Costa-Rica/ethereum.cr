@@ -4,12 +4,14 @@ import NavBar from "@/components/nav-bar";
 import MailingList from "@/components/mailing-list";
 import { Flex } from "@chakra-ui/react";
 import Hero from "@/components/hero/index";
+import HomeContent from "@/components/home-content/index";
 
 export default function Home() {
   return (
     <Flex h="auto" direction="column" justifyContent="space-between">
       <NavBar />
       <Hero />
+      <HomeContent />
       <MailingList />
     </Flex>
   );

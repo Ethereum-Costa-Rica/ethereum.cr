@@ -1,4 +1,4 @@
-import { Box, Button, Icon, useTheme } from "@chakra-ui/react";
+import { Box, Button, Icon, useTheme, Text } from "@chakra-ui/react";
 import { MdArrowForward } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
@@ -15,11 +15,10 @@ const Hero = () => {
         width={240}
         height={68}
         src={`${baseAssetsUrl}eth-pura-vida-date.svg`}
-        priority
         alt="ETH Pura Vida Date"
       />
-      <Button variant="primary" size="sm">
-        {t("learnMore")}
+      <Button variant="eth-pura-vida" size="sm">
+        <Text>{t("learnMore")}</Text>
         <Icon w="24px" h="24px" as={MdArrowForward} />
       </Button>
     </>

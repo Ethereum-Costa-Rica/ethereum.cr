@@ -79,7 +79,7 @@ const NavBar = () => {
         w="100%"
         alignItems="center"
       >
-        <Image src={logo} alt="ETH CR Logo" width={177} height={64} priority />
+        <Image src={logo} alt="ETH CR Logo" width={177} height={64} />
         <IconButton
           fontSize={44}
           color={isTransparent ? "white" : "black"}

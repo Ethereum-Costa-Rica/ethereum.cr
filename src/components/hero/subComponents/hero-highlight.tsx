@@ -37,14 +37,12 @@ const HeroHighlight = (props: HeroHighLightProps) => {
         width={imageWidth}
         height={imageHeight}
         alt="Hero Highlight image"
-        priority
       />
       <Image
         src={eventMainGraphicSrc}
         width={eventMainGraphicWidth}
         height={eventMainGraphicHeight}
         alt="Event Main Graphic"
-        priority
       />
       {children}
     </Flex>

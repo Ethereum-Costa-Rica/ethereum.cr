@@ -3,13 +3,18 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   colors: {
     brand: {
-      primary: "#84CCF5", // Light blue
+      ethPuraVida: {
+        primary: "#84CCF5", // Light blue
+      },
       dark: "#0F2841",
+      blueCR: "#0F2841",
+      darkRedCR: "#AA2222",
     },
   },
   spacing: {
     mobile: {
       paddingX: "22px",
+      paddingY: "32px",
       verticalGag: "12px",
     },
   },
@@ -28,6 +33,7 @@ const theme = extendTheme({
         md: {
           fontSize: "24px",
           padding: "12px 20px",
+          height: "60px",
         },
         lg: {
           fontSize: "32px",
@@ -36,19 +42,18 @@ const theme = extendTheme({
       },
       variants: {
         primary: {
-          bg: "brand.primary",
+          bg: "brand.blueCR",
+          color: "white",
+        },
+        "eth-pura-vida": {
+          bg: "brand.ethPuraVida.primary",
           color: "black",
         },
       },
       defaultProps: {},
     },
     Text: {
-      // baseStyle: {
-      //   color: "#0F2841",
-      //   lineHeight: "150%",
-      // },
       variants: {
-        //
         "h1-extra-bold-desktop": {
           fontSize: "64px",
           fontWeight: "extrabold",

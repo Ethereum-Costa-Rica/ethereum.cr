@@ -1,5 +1,6 @@
-import { Button, Flex, Text, useTheme } from "@chakra-ui/react";
+import { Button, Flex, Text, useTheme, Image } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+import NextImage from "next/image";
 
 const HomeContent = () => {
   const { t } = useTranslation();
@@ -24,6 +25,25 @@ const HomeContent = () => {
         <Button variant="primary" size="md">
           {t("learnMore")}
         </Button>
+      </Flex>
+      <Flex
+        direction="row"
+        justifyContent="start"
+        mt={theme.spacing.mobile.marginY}
+      >
+        <Image
+          position="relative"
+          src="gibbresh.png"
+          fallbackSrc="https://via.placeholder.com/300"
+        />
+        <NextImage
+          className=""
+          width={73.52}
+          height={428}
+          style={{ position: "absolute", right: 0, zIndex: 1 }}
+          src="assets/eth-cr-vertical-graphic.svg"
+          alt="Eth CR vertical graphic"
+        />
       </Flex>
     </Flex>
   );

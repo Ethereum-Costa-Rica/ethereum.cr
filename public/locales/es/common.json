@@ -10,6 +10,12 @@
   "learnMore": "Ver más",
   "homeContent": {
     "ethereumCommunityIn": "Comunidad Ethereum en",
-    "communityDescription": "Somos una comunidades de entusiastas, desarrolladores y creadores apasionados por la tecnología de blockchain Ethereum y su potencial para cambiar el mundo"
+    "communityDescription": "Somos una comunidades de entusiastas, desarrolladores y creadores apasionados por la tecnología de blockchain Ethereum y su potencial para cambiar el mundo",
+    "noMatterWhereYouAre": "No importa donde estés",
+    "youCanConnect": "Puedes conectarte con otras personas en nuestros eventos, talleres y meetups.",
+    "onlineAndInPerson": "Eventos en línea y en persona",
+    "moreThan": "Más de",
+    "lastYear": "el año pasado",
+    "seeMoreEvents": "Ver más eventos"
   }
 }

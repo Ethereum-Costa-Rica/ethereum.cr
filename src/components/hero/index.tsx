@@ -18,7 +18,7 @@ const Hero = () => {
         alt="ETH Pura Vida Date"
       />
       <Button variant="eth-pura-vida" size="sm">
-        <Text>{t("learnMore")}</Text>
+        {t("learnMore")}
         <Icon w="24px" h="24px" as={MdArrowForward} />
       </Button>
     </>

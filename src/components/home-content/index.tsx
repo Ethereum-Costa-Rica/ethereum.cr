@@ -1,6 +1,7 @@
 import { Button, Flex, Text, useTheme, Image } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import NextImage from "next/image";
+import EventCard from "./event-card";
 
 const HomeContent = () => {
   const { t } = useTranslation();
@@ -29,7 +30,7 @@ const HomeContent = () => {
       <Flex
         direction="row"
         justifyContent="start"
-        mt={theme.spacing.mobile.marginY}
+        my={theme.spacing.mobile.marginY}
       >
         <Image
           position="relative"
@@ -40,11 +41,19 @@ const HomeContent = () => {
           className=""
           width={73.52}
           height={428}
-          style={{ position: "absolute", right: 0, zIndex: 1 }}
+          style={{ position: "absolute", right: 0 }}
           src="assets/eth-cr-vertical-graphic.svg"
           alt="Eth CR vertical graphic"
         />
       </Flex>
+
+      <Text variant="h3-extra-bold-mobile" mt={theme.spacing.mobile.marginY}>
+        {t("homeContent.noMatterWhereYouAre")}
+      </Text>
+      <Text variant="normal-text-semibold">
+        {t("homeContent.youCanConnect")}
+      </Text>
+      <EventCard />
     </Flex>
   );
 };

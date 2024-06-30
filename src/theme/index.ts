@@ -50,6 +50,11 @@ const theme = extendTheme({
           bg: "brand.ethPuraVida.primary",
           color: "black",
         },
+        outlined: {
+          bg: "transparent",
+          color: "black",
+          border: "3px solid",
+        },
       },
       defaultProps: {},
     },

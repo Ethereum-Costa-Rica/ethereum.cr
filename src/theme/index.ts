@@ -16,6 +16,7 @@ const theme = extendTheme({
       paddingX: "22px",
       paddingY: "32px",
       verticalGag: "12px",
+      horizontalGap: "20px",
       marginY: "24px",
     },
   },

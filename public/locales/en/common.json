@@ -16,6 +16,17 @@
     "onlineAndInPerson": "Online and in-person events",
     "moreThan": "More than",
     "lastYear": "last year",
-    "seeMoreEvents": "See more events"
+    "seeMoreEvents": "See more events",
+    "nationalAndForeignSpeakers": "National and foreign speakers",
+    "over": "Over",
+    "variousEvents": "various events",
+    "experts": "Experts",
+    "englishAndSpanishWorkshops": "English & Spanish workshops",
+    "multiLanguage": "Multi-language",
+    "overTheYear": "Over the year",
+    "activity": "Activity",
+    "hackathonsAndIdeathons": "Hackathons & Ideathons",
+    "handsOnEvents": "Hands-on events",
+    "perYear": "Per year"
   }
 }

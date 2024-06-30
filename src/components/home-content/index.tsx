@@ -2,6 +2,7 @@ import { Button, Flex, Text, useTheme, Image } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import NextImage from "next/image";
 import EventCard from "./event-card";
+import { HOME_CARD_FEATURES } from "@/constants/homeCardFeatures";
 
 const HomeContent = () => {
   const { t } = useTranslation();
@@ -53,7 +54,17 @@ const HomeContent = () => {
       <Text variant="normal-text-semibold">
         {t("homeContent.youCanConnect")}
       </Text>
-      <EventCard />
+      <Flex
+        w="100%"
+        direction="row"
+        wrap="nowrap"
+        overflowX="auto"
+        gap={theme.spacing.mobile.horizontalGap}
+      >
+        {HOME_CARD_FEATURES.map((feature, index) => (
+          <EventCard key={index} cardFeature={feature} />
+        ))}
+      </Flex>
     </Flex>
   );
 };

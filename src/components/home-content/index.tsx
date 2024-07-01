@@ -105,7 +105,7 @@ const HomeContent = () => {
           <Button variant="primary">{t("homeContent.findHowToHelp")}</Button>
         </Flex>
       </Flex>
-      <Flex h="361px" direction="column" gap={theme.spacing.mobile.verticalGap}>
+      <Flex direction="column" gap={theme.spacing.mobile.verticalGap}>
         <Text variant="h3-extra-bold-mobile">
           {t("homeContent.become")}
           <Text as="span" color="brand.darkRedCR">

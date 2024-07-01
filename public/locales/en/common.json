@@ -3,10 +3,15 @@
   "blog": "Blog",
   "donate": "Donate",
   "shop": "Shop",
-  "contactUs": "Contact Us",
-  "keepInTouch": "Keep in touch",
-  "subscribeForUpdates": "Subscribe for updates",
-  "yourEmailPlaceholder": "your.email@mail.com",
+  "footer": {
+    "contactUs": "Contact Us",
+    "keepInTouch": "Keep in touch",
+    "subscribeForUpdates": "Subscribe for updates",
+    "yourEmailPlaceholder": "your.email@mail.com",
+    "consent": "By subscribing, you agree to receive EthCR emails",
+    "subscribe": "Subscribe",
+    "workingWithLove": "Working with love for the community"
+  },
   "learnMore": "Learn more",
   "homeContent": {
     "ethereumCommunityIn": "Ethereum Community in",

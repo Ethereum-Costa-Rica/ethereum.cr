@@ -203,6 +203,12 @@ const theme = extendTheme({
           lineHeight: "150%",
           letterSpacing: "0.03em",
         },
+        "extra-small-text-light": {
+          fontSize: "12px",
+          fontWeight: "light",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
       },
       defaultProps: {
         variant: "normalText",

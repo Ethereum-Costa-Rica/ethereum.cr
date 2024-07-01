@@ -41,6 +41,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
+      setOpened(false);
       if (window.scrollY > 0) setBaseNavbarMenuProperties();
       else setWhiteNavbarMenuProperties();
     };

@@ -1,7 +1,7 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import NavBar from "@/components/nav-bar";
-import MailingList from "@/components/mailing-list";
+import Footer from "@/components/footer";
 import { Flex } from "@chakra-ui/react";
 import Hero from "@/components/hero/index";
 import HomeContent from "@/components/home-content/index";
@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <HomeContent />
-      <MailingList />
+      <Footer />
     </Flex>
   );
 }

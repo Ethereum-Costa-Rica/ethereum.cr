@@ -3,10 +3,15 @@
   "blog": "Blog",
   "donate": "Donar",
   "shop": "Tienda",
-  "contactUs": "Contáctanos",
-  "keepInTouch": "Mantente en contacto",
-  "subscribeForUpdates": "Suscríbete para recibir actualizaciones",
-  "yourEmailPlaceholder": "tu.correo@mail.com",
+  "footer": {
+    "contactUs": "Contáctanos",
+    "keepInTouch": "Mantente en contacto",
+    "subscribeForUpdates": "Suscríbete para actualizaciones",
+    "yourEmailPlaceholder": "tu.email@mail.com",
+    "consent": "Al suscribirte, aceptas recibir correos electrónicos de EthCR",
+    "subscribe": "Suscribirse",
+    "workingWithLove": "Trabajando con amor por la comunidad"
+  },
   "learnMore": "Ver más",
   "homeContent": {
     "ethereumCommunityIn": "Comunidad Ethereum en",

@@ -27,6 +27,22 @@
     "activity": "Actividad",
     "hackathonsAndIdeathons": "Hackathons y Ideathons",
     "handsOnEvents": "Eventos prácticos",
-    "perYear": "Por año"
+    "perYear": "Por año",
+    "youCan": "Tu puedes",
+    "help": "Ayudar",
+    "youCanHelpDescription": "Dar para recibir es uno de nuestros valores, si también es para ti; puedes ayudar a la comunidad Ethereum",
+    "throughDonations": "a través de donaciones, ",
+    "sponsorship": "patrocinio",
+    "and": "y",
+    "withYourTalent": "con tu talento.",
+    "findHowToHelp": "Descubre cómo ayudar",
+    "become": "Become a",
+    "member": "Member",
+    "ethCrHas": "Ethereum Costa Rica tiene",
+    "openDoors": "las puertas abiertas para ti.",
+    "inThisSpace": "En este espacio podrás aprender, compartir y",
+    "beAware": "estar al tanto de todas las actividades",
+    "newDevelopments": "y nuevos desarrollos que la comunidad tiene para ti.",
+    "joinTgChannel": "Canal de Telegram"
   }
 }

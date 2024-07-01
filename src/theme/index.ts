@@ -127,17 +127,15 @@ const theme = extendTheme({
           lineHeight: "150%",
           letterSpacing: "0.03em",
         },
-
-        //
         "normal-text-semibold": {
           fontSize: "20px",
-          fontWeight: "light",
+          fontWeight: "semibold",
           lineHeight: "150%",
           letterSpacing: "0.03em",
         },
         "small-text-semibold": {
           fontSize: "16px",
-          fontWeight: "light",
+          fontWeight: "semibold",
           lineHeight: "150%",
           letterSpacing: "0.03em",
         },

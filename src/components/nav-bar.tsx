@@ -17,16 +17,22 @@ import Link from "next/link";
 
 import EthCrLogo from "../../public/assets/eth-cr.svg";
 import EthCrLogoWhite from "../../public/assets/eth-cr-white.svg";
+import EthCrLogoBlack from "../../public/assets/eth-cr-black.svg";
 
 const transparentBgColor = "#ffffff1a";
 const whiteBgColor = "#ffffff";
-const NavBar = () => {
+
+type NavbarProps = {
+  black?: boolean;
+};
+
+const NavBar = ({ black }: NavbarProps) => {
   const { t } = useTranslation();
   const pathname = usePathname();
   const theme = useTheme();
   const [opened, setOpened] = useState(false);
   const [bgColor, setBgColor] = useState(transparentBgColor);
-  const [logo, setLogo] = useState(EthCrLogoWhite);
+  const [logo, setLogo] = useState(black ? EthCrLogoBlack : EthCrLogoWhite);
   const isTransparent = bgColor === transparentBgColor;
 
   const setBaseNavbarMenuProperties = () => {
@@ -40,6 +46,8 @@ const NavBar = () => {
   };
 
   useEffect(() => {
+    if (black) return;
+
     const onScroll = () => {
       setOpened(false);
       if (window.scrollY > 0) setBaseNavbarMenuProperties();
@@ -52,6 +60,8 @@ const NavBar = () => {
   }, []);
 
   useEffect(() => {
+    if (black) return;
+
     if (opened) {
       setBaseNavbarMenuProperties();
       return;
@@ -94,7 +104,7 @@ const NavBar = () => {
             </ScaleFade>
           ) : (
             <Collapse in={!opened}>
-              <MdMenu />
+              <MdMenu color={black ? "black" : "white"} />
             </Collapse>
           )}
         </IconButton>

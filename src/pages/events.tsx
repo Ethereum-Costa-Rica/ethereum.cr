@@ -1,15 +1,23 @@
 import Cover from "@/components/events/cover";
 import NextEvents from "@/components/events/next-events";
 import NavBar from "@/components/nav-bar";
+import { Flex, useTheme } from "@chakra-ui/react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Events = () => {
+  const theme = useTheme();
   return (
-    <div>
-      <NavBar />
+    <Flex
+      direction="column"
+      w={theme.spacing.mobile.width}
+      justifyContent="space-between"
+      h="auto"
+      alignItems="center"
+    >
+      <NavBar black={true} />
       <Cover />
-      <NextEvents />
-    </div>
+      {/* <NextEvents /> */}
+    </Flex>
   );
 };
 

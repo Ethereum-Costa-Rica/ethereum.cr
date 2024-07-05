@@ -54,7 +54,12 @@ const Footer = () => {
         <Text variant="normal-text-regular">
           {t("footer.subscribeForUpdates")}
         </Text>
-        <Input bg="white" placeholder={t("footer.yourEmailPlaceholder")} />
+        <Input
+          bg="white"
+          placeholder={t("footer.yourEmailPlaceholder")}
+          h="54px"
+          fontWeight={400}
+        />
         <Flex direction="row" wrap="nowrap">
           <Text variant="small-text-light">*{t("footer.consent")}</Text>
           <Button variant="outlined" size="sm" minW="127px" ml="10px">

@@ -11,9 +11,15 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { MdArrowForward } from "react-icons/md";
 
-const Cover = () => {
+type CoverProps = {
+  coverGraphicUrl: string;
+};
+
+const Cover = ({ coverGraphicUrl }: CoverProps) => {
   const theme = useTheme();
   const { t } = useTranslation();
+
+  console.log(coverGraphicUrl);
 
   return (
     <Flex
@@ -26,7 +32,7 @@ const Cover = () => {
     >
       <Flex direction="column" mt="40px" mb="10px">
         <Image
-          src="assets/eth-pura-vida/eth-pv-hero.svg"
+          src={`/assets/${coverGraphicUrl}`}
           width={350}
           height={616}
           alt="ETH Pura Vida Hero"

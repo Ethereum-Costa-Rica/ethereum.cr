@@ -51,6 +51,7 @@
     "joinTgChannel": "Telegram channel"
   },
   "ethPuraVida": {
-    "buyTickets": "Buy tickets"
+    "buyTickets": "Buy tickets",
+    "eventDescription": "A web3 conference and hackathon in the heart of Costa Rica, to promote Ethereum adoption and educate the community, driving innovation and growth."
   }
 }

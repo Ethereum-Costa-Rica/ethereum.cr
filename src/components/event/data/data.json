@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "event": "eth-pura-vida",
+      "coverGraphicUrl": "eth-pura-vida/eth-pv-hero.svg",
+      "eventNameGraphicUrl": "eth-pura-vida/eth-pv-event-name-graphic.svg",
+      "description": "ethPuraVida.eventDescription",
+      "venue": {
+        "img": "eth-pura-vida/eth-pv-venue.jpg",
+        "name": "Sede Inter-Universitaria Alajuela",
+        "address": "Route 1 / General Cañas, Barreal, Ulloa, Heredia, Costa Rica.",
+        "gMapsLink": "https://maps.app.goo.gl/9dwsS6Jjsy4GXC8f7"
+      }
+    }
+  ]
+}

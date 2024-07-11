@@ -35,7 +35,7 @@ const Event = (props: EventProps) => {
       h="auto"
       alignItems="center"
     >
-      <NavBar black={true} />
+      <NavBar black />
       <Cover coverGraphicUrl={coverGraphicUrl} />
       <EventDescription event={eventData as EventType} />
     </Flex>

@@ -33,21 +33,22 @@ const NavBar = ({ black }: NavbarProps) => {
   const [opened, setOpened] = useState(false);
   const [bgColor, setBgColor] = useState(transparentBgColor);
   const [logo, setLogo] = useState(black ? EthCrLogoBlack : EthCrLogoWhite);
+  const [menuLogoColor, setMenuLogoColor] = useState("black");
   const isTransparent = bgColor === transparentBgColor;
 
   const setBaseNavbarMenuProperties = () => {
     setBgColor(whiteBgColor);
     setLogo(EthCrLogo);
+    setMenuLogoColor("black");
   };
 
   const setWhiteNavbarMenuProperties = () => {
     setBgColor(transparentBgColor);
-    setLogo(EthCrLogoWhite);
+    setLogo(logo);
+    setMenuLogoColor("white");
   };
 
   useEffect(() => {
-    if (black) return;
-
     const onScroll = () => {
       setOpened(false);
       if (window.scrollY > 0) setBaseNavbarMenuProperties();
@@ -60,14 +61,7 @@ const NavBar = ({ black }: NavbarProps) => {
   }, []);
 
   useEffect(() => {
-    if (black) return;
-
-    if (opened) {
-      setBaseNavbarMenuProperties();
-      return;
-    }
-
-    setWhiteNavbarMenuProperties();
+    setBaseNavbarMenuProperties();
   }, [opened]);
 
   return (
@@ -104,7 +98,7 @@ const NavBar = ({ black }: NavbarProps) => {
             </ScaleFade>
           ) : (
             <Collapse in={!opened}>
-              <MdMenu color={black ? "black" : "white"} />
+              <MdMenu color={menuLogoColor} />
             </Collapse>
           )}
         </IconButton>

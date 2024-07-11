@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 
 import EventsData from "@/components/event/data/data.json";
 import { EventType } from "@/models/event.type";
+import { ETH_CR_BLACK, WHITE_BG_COLOR } from "@/constants/navbar";
 
 type EventProps = {
   eventData: {
@@ -35,7 +36,14 @@ const Event = (props: EventProps) => {
       h="auto"
       alignItems="center"
     >
-      <NavBar black />
+      <NavBar
+        baseBgColor={WHITE_BG_COLOR}
+        extendedBgColor={WHITE_BG_COLOR}
+        baseLogo={ETH_CR_BLACK}
+        extendedLogo={ETH_CR_BLACK}
+        baseMenuLogoColor="black"
+        extendedMenuLogoColor="black"
+      />
       <Cover coverGraphicUrl={coverGraphicUrl} />
       <EventDescription event={eventData as EventType} />
     </Flex>

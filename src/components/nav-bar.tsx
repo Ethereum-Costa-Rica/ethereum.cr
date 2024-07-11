@@ -15,44 +15,49 @@ import { useTranslation } from "next-i18next";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import EthCrLogo from "../../public/assets/eth-cr.svg";
-import EthCrLogoWhite from "../../public/assets/eth-cr-white.svg";
-import EthCrLogoBlack from "../../public/assets/eth-cr-black.svg";
-
-const transparentBgColor = "#ffffff1a";
-const whiteBgColor = "#ffffff";
-
 type NavbarProps = {
-  black?: boolean;
+  baseBgColor: string;
+  extendedBgColor: string;
+  baseLogo: string;
+  extendedLogo: string;
+  baseMenuLogoColor: string;
+  extendedMenuLogoColor: string;
 };
 
-const NavBar = ({ black }: NavbarProps) => {
+const NavBar = ({
+  baseBgColor,
+  extendedBgColor,
+  baseLogo,
+  extendedLogo,
+  baseMenuLogoColor,
+  extendedMenuLogoColor,
+}: NavbarProps) => {
   const { t } = useTranslation();
   const pathname = usePathname();
   const theme = useTheme();
   const [opened, setOpened] = useState(false);
-  const [bgColor, setBgColor] = useState(transparentBgColor);
-  const [logo, setLogo] = useState(black ? EthCrLogoBlack : EthCrLogoWhite);
-  const [menuLogoColor, setMenuLogoColor] = useState("black");
-  const isTransparent = bgColor === transparentBgColor;
+  const [bgColor, setBgColor] = useState(baseBgColor);
+  const [logo, setLogo] = useState(baseLogo);
+  const [menuLogoColor, setMenuLogoColor] = useState(baseMenuLogoColor);
 
-  const setBaseNavbarMenuProperties = () => {
-    setBgColor(whiteBgColor);
-    setLogo(EthCrLogo);
-    setMenuLogoColor("black");
+  const setBaseProperties = () => {
+    setBgColor(baseBgColor);
+    setLogo(baseLogo);
+    setMenuLogoColor(baseMenuLogoColor);
   };
 
-  const setWhiteNavbarMenuProperties = () => {
-    setBgColor(transparentBgColor);
-    setLogo(logo);
-    setMenuLogoColor("white");
+  const setExtendedProperties = () => {
+    setBgColor(extendedBgColor);
+    setLogo(extendedLogo);
+    setMenuLogoColor(extendedMenuLogoColor);
   };
 
   useEffect(() => {
     const onScroll = () => {
       setOpened(false);
-      if (window.scrollY > 0) setBaseNavbarMenuProperties();
-      else setWhiteNavbarMenuProperties();
+      console.log(window.scrollY);
+      if (window.scrollY > 0) setExtendedProperties();
+      else if (window.scrollY === 0) setBaseProperties();
     };
     // clean up code
     window.removeEventListener("scroll", onScroll);
@@ -61,7 +66,7 @@ const NavBar = ({ black }: NavbarProps) => {
   }, []);
 
   useEffect(() => {
-    setBaseNavbarMenuProperties();
+    setExtendedProperties();
   }, [opened]);
 
   return (
@@ -87,7 +92,7 @@ const NavBar = ({ black }: NavbarProps) => {
         <Image src={logo} alt="ETH CR Logo" width={177} height={64} />
         <IconButton
           fontSize={44}
-          color={isTransparent ? "white" : "black"}
+          color="black"
           background="transparent"
           aria-label="Expand navbar"
           onClick={() => setOpened(!opened)}

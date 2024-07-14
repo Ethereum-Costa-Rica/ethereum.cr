@@ -17,7 +17,12 @@ const Hero = () => {
         src={`${baseAssetsUrl}eth-pura-vida-date.svg`}
         alt="ETH Pura Vida Date"
       />
-      <Button variant="eth-pura-vida" size="sm">
+      <Button
+        variant="eth-pura-vida"
+        size="sm"
+        as="a"
+        href="/events/eth-pura-vida"
+      >
         {t("learnMore")}
         <Icon w="24px" h="24px" as={MdArrowForward} />
       </Button>

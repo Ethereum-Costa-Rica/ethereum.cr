@@ -21,6 +21,10 @@ const theme = extendTheme({
       marginY: "24px",
       width: "390px",
     },
+    desktop: {
+      width: "1114px",
+      maxWidth: "1440px",
+    },
   },
   components: {
     Button: {

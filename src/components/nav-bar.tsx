@@ -55,7 +55,6 @@ const NavBar = ({
   useEffect(() => {
     const onScroll = () => {
       setOpened(false);
-      console.log(window.scrollY);
       if (window.scrollY > 0) setExtendedProperties();
       else if (window.scrollY === 0) setBaseProperties();
     };
@@ -89,7 +88,9 @@ const NavBar = ({
         w="100%"
         alignItems="center"
       >
-        <Image src={logo} alt="ETH CR Logo" width={177} height={64} />
+        <Link href="/">
+          <Image src={logo} alt="ETH CR Logo" width={177} height={64} />
+        </Link>
         <IconButton
           fontSize={44}
           color="black"

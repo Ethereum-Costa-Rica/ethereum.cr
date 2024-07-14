@@ -15,14 +15,16 @@ import {
 export default function Home() {
   return (
     <Flex h="auto" direction="column" justifyContent="space-between">
-      <NavBar
-        baseBgColor={TRANSPARENT_BG_COLOR}
-        extendedBgColor={WHITE_BG_COLOR}
-        baseLogo={ETH_CR_LOGO_WHITE}
-        extendedLogo={ETH_CR_LOGO}
-        baseMenuLogoColor="white"
-        extendedMenuLogoColor="black"
-      />
+      <Flex direction="row" justifyContent="center">
+        <NavBar
+          baseBgColor={TRANSPARENT_BG_COLOR}
+          extendedBgColor={WHITE_BG_COLOR}
+          baseLogo={ETH_CR_LOGO_WHITE}
+          extendedLogo={ETH_CR_LOGO}
+          baseMenuLogoColor="white"
+          extendedMenuLogoColor="black"
+        />
+      </Flex>
       <Hero />
       <HomeContent />
       <Footer />

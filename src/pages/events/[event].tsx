@@ -1,6 +1,6 @@
 import Cover from "@/components/event/cover";
 import EventDescription from "@/components/event/event-description";
-import NavBar from "@/components/nav-bar";
+import NavBarMobile from "@/components/nav-bar-mobile";
 import { Flex, useTheme } from "@chakra-ui/react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
@@ -36,7 +36,7 @@ const Event = (props: EventProps) => {
       h="auto"
       alignItems="center"
     >
-      <NavBar
+      <NavBarMobile
         baseBgColor={WHITE_BG_COLOR}
         extendedBgColor={WHITE_BG_COLOR}
         baseLogo={ETH_CR_BLACK}

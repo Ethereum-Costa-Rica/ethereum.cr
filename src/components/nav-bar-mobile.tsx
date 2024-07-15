@@ -15,6 +15,8 @@ import { useTranslation } from "next-i18next";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+import { NAVBAR_LINKS } from "@/constants/navbar";
+
 type NavbarProps = {
   baseBgColor: string;
   extendedBgColor: string;
@@ -24,7 +26,7 @@ type NavbarProps = {
   extendedMenuLogoColor: string;
 };
 
-const NavBar = ({
+const NavBarMobile = ({
   baseBgColor,
   extendedBgColor,
   baseLogo,
@@ -75,7 +77,6 @@ const NavBar = ({
       flexDirection="column"
       alignItems="center"
       width="100%"
-      maxW="390px"
       maxHeight={{ sm: "444px" }}
       px={theme.spacing.mobile.paddingX}
       py={18}
@@ -112,7 +113,7 @@ const NavBar = ({
       {opened && (
         <Fade in={opened} style={{ width: "100%" }}>
           <Flex direction="column" w="100%" h="auto" bg="white">
-            {["events", "blog", "donate", "shop"].map((key, index) => (
+            {NAVBAR_LINKS.map((key, index) => (
               <Flex
                 key={index}
                 direction="row"
@@ -138,4 +139,4 @@ const NavBar = ({
   );
 };
 
-export default NavBar;
+export default NavBarMobile;

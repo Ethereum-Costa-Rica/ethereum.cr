@@ -1,8 +1,9 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import NavBar from "@/components/nav-bar";
-import Footer from "@/components/footer";
-import { Flex } from "@chakra-ui/react";
+import NavBarMobile from "@/components/nav-bar-mobile";
+import NavBarDesktop from "@/components/nav-bar-desktop";
+import FooterMobile from "@/components/footer-mobile";
+import { Flex, useMediaQuery } from "@chakra-ui/react";
 import Hero from "@/components/hero/index";
 import HomeContent from "@/components/home-content/index";
 import {
@@ -11,23 +12,35 @@ import {
   TRANSPARENT_BG_COLOR,
   WHITE_BG_COLOR,
 } from "@/constants/navbar";
+import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 
 export default function Home() {
+  const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
+
   return (
-    <Flex h="auto" direction="column" justifyContent="space-between">
+    <Flex
+      h="auto"
+      direction="column"
+      justifyContent="space-between"
+      width="100%"
+    >
       <Flex direction="row" justifyContent="center">
-        <NavBar
-          baseBgColor={TRANSPARENT_BG_COLOR}
-          extendedBgColor={WHITE_BG_COLOR}
-          baseLogo={ETH_CR_LOGO_WHITE}
-          extendedLogo={ETH_CR_LOGO}
-          baseMenuLogoColor="white"
-          extendedMenuLogoColor="black"
-        />
+        {isMobile ? (
+          <NavBarMobile
+            baseBgColor={TRANSPARENT_BG_COLOR}
+            extendedBgColor={WHITE_BG_COLOR}
+            baseLogo={ETH_CR_LOGO_WHITE}
+            extendedLogo={ETH_CR_LOGO}
+            baseMenuLogoColor="white"
+            extendedMenuLogoColor="black"
+          />
+        ) : (
+          <NavBarDesktop />
+        )}
       </Flex>
       <Hero />
       <HomeContent />
-      <Footer />
+      <FooterMobile />
     </Flex>
   );
 }

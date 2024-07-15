@@ -10,12 +10,12 @@ import {
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
-const Footer = () => {
+const FooterMobile = () => {
   const { t } = useTranslation();
   const theme = useTheme();
 
   return (
-    <Flex direction="column" p="20px" w={390} gap="25px" bg="#EBF8FF">
+    <Flex direction="column" p="20px" w="100%" gap="25px" bg="#EBF8FF">
       <Text variant="h1-semibold">{t("footer.contactUs")}</Text>
 
       <Flex direction="row" justifyContent="space-between" alignItems="center">
@@ -94,4 +94,4 @@ const Footer = () => {
     </Flex>
   );
 };
-export default Footer;
+export default FooterMobile;

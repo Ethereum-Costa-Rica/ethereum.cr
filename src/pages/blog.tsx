@@ -1,11 +1,11 @@
-import NavBar from "@/components/nav-bar";
+import NavBarMobile from "@/components/nav-bar-mobile";
 import { ETH_CR_LOGO, WHITE_BG_COLOR } from "@/constants/navbar";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Blog = () => {
   return (
     <div>
-      <NavBar
+      <NavBarMobile
         baseBgColor={WHITE_BG_COLOR}
         extendedBgColor={WHITE_BG_COLOR}
         baseLogo={ETH_CR_LOGO}

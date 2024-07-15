@@ -31,12 +31,11 @@ const HomeContent = () => {
       </Flex>
       <Flex
         direction="row"
-        justifyContent="start"
+        justifyContent="center"
         my={theme.spacing.mobile.marginY}
       >
         <Image
           position="relative"
-          src="gibbresh.png"
           fallbackSrc="https://via.placeholder.com/300"
         />
         <NextImage

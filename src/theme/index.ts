@@ -5,7 +5,8 @@ const theme = extendTheme({
     brand: {
       ethPuraVida: {
         primary: "#84CCF5", // Light blue
-        secondary: "#EFB73B;", // Eth Pura Vida Yellow
+        secondary: "#EFB73B", // Eth Pura Vida Yellow
+        accent: "#84E9B7", // Eth Pura Vida Green
       },
       dark: "#0F2841",
       blueCR: "#0F2841",
@@ -60,6 +61,10 @@ const theme = extendTheme({
         },
         "eth-pura-vida-yellow": {
           bg: "brand.ethPuraVida.secondary",
+          color: "black",
+        },
+        "eth-pura-vida-green": {
+          bg: "brand.ethPuraVida.accent",
           color: "black",
         },
         outlined: {

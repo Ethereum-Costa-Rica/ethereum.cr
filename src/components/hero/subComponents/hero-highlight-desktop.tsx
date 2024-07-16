@@ -3,8 +3,15 @@ import { Flex, GridItem } from "@chakra-ui/react";
 import { HeroHighLightProps } from "@/models/hero.type";
 
 import Image from "next/image";
+import { ReactNode } from "react";
 
-const HeroHightLightDesktop = (props: HeroHighLightProps) => {
+type HeroHightLightDesktopType = {
+  extraImageChild?: ReactNode;
+};
+
+const HeroHightLightDesktop = (
+  props: HeroHighLightProps & HeroHightLightDesktopType
+) => {
   const {
     highlightImgSrc,
     imageWidth,
@@ -13,6 +20,7 @@ const HeroHightLightDesktop = (props: HeroHighLightProps) => {
     eventMainGraphicWidth,
     eventMainGraphicHeight,
     children,
+    extraImageChild,
   } = props;
 
   return (
@@ -34,13 +42,14 @@ const HeroHightLightDesktop = (props: HeroHighLightProps) => {
           {children}
         </Flex>
       </GridItem>
-      <GridItem colSpan={7}>
+      <GridItem colSpan={7} display="flex" flexDirection="row">
         <Image
           src={highlightImgSrc}
           width={imageWidth}
           height={imageHeight}
           alt="Hero Highlight image"
         />
+        {extraImageChild}
       </GridItem>
     </Flex>
   );

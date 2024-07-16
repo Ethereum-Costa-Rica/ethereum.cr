@@ -1,9 +1,9 @@
 import { Box, Button, Icon, useTheme, Text } from "@chakra-ui/react";
 import { MdArrowForward } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 import HeroHighlightMobile from "./subComponents/hero-highlight-mobile";
-import Image from "next/image";
 
 const HeroMobile = () => {
   const baseAssetsUrl = "assets/eth-pura-vida/";

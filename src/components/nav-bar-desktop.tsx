@@ -34,10 +34,10 @@ const NavBarDesktop = () => {
         </Link>
       </GridItem>
       <GridItem colSpan={10}>
-        <Flex direction="row" justifyContent="center">
+        <Flex direction="row" justifyContent="flex-end">
           {NAVBAR_LINKS.map((key, index) => (
             <Link key={index} href={`/${key}`}>
-              <Text variant="h3-semibold" mx="16px" color="white">
+              <Text variant="h3-regular" mx="16px" color="white">
                 {t(String(key))}
               </Text>
             </Link>

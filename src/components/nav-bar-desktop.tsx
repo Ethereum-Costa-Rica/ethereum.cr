@@ -1,26 +1,19 @@
-import { useEffect, useState } from "react";
-import { Grid, GridItem, Link, Flex, Text } from "@chakra-ui/react";
+import { Grid, GridItem, Link, Flex, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
 import { ETH_CR_LOGO_WHITE, NAVBAR_LINKS } from "@/constants/navbar";
-import useWindowWidth from "@/utils/hooks/useWindowWidth";
+import useColumnsWidth from "@/utils/hooks/useGridColumns";
 
 const NavBarDesktop = () => {
   const { t } = useTranslation();
-  const [columnWidth, setColumnWidth] = useState<string>();
-  const windowWidth = useWindowWidth();
-
-  useEffect(() => {
-    if (windowWidth > 1440) setColumnWidth("100px");
-    else if (windowWidth > 1024 && windowWidth < 1440) setColumnWidth("70px");
-    else setColumnWidth("50px");
-  }, [windowWidth]);
+  const theme = useTheme();
+  const columnsWidth = useColumnsWidth();
 
   return (
     <Grid
-      templateColumns={`repeat(12, ${columnWidth})`}
-      gap="10px"
+      templateColumns={`repeat(12, ${columnsWidth})`}
+      gap={theme.spacing.desktopGridGap}
       bg="transparent"
       position="fixed"
       w="100vw"

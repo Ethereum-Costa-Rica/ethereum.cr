@@ -24,6 +24,7 @@ const theme = extendTheme({
     desktop: {
       width: "1114px",
       maxWidth: "1440px",
+      gridGap: "10px",
     },
   },
   components: {

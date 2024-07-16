@@ -1,52 +1,83 @@
-import { Button, Flex, Text, useTheme, Image, Icon } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  Text,
+  useTheme,
+  Image,
+  Icon,
+  useMediaQuery,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import NextImage from "next/image";
 import EventCard from "./event-card";
 import { HOME_CARD_FEATURES } from "@/constants/homeCardFeatures";
 import { MdArrowForward } from "react-icons/md";
+import { MOBILE_MEDIA_QUERY } from "@/constants/app";
+import useColumnsWidth from "@/utils/hooks/useGridColumns";
 
 const HomeContent = () => {
   const { t } = useTranslation();
+  const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
+  const columnsWidth = useColumnsWidth();
   const theme = useTheme();
 
   return (
-    <Flex
+    <Grid
       h="auto"
-      direction="column"
+      gridTemplateColumns={
+        isMobile
+          ? "repeat(4, minmax(72.5px, 90px))"
+          : "repeat(12, minmax(50px, 110px)"
+      }
       justifyContent="space-between"
       px={theme.spacing.mobile.paddingX}
       py={theme.spacing.mobile.paddingY}
     >
-      <Text variant="h3-extra-bold-mobile" color="brand.blueCR">
-        {t("homeContent.ethereumCommunityIn")}
-        <span style={{ color: theme.colors.brand.darkRedCR }}> Costa Rica</span>
-      </Text>
-      <Text variant="normal-text-regular">
-        {t("homeContent.communityDescription")}
-      </Text>
-      <Flex direction="row" mt="24px">
-        <Button variant="primary" size="md">
-          {t("learnMore")}
-        </Button>
-      </Flex>
-      <Flex
-        direction="row"
+      <GridItem colSpan={isMobile ? 4 : 8}>
+        <Text variant="h3-extra-bold-mobile" color="brand.blueCR">
+          {t("homeContent.ethereumCommunityIn")}
+          <span style={{ color: theme.colors.brand.darkRedCR }}>
+            {" "}
+            Costa Rica
+          </span>
+        </Text>
+        <Text variant="normal-text-regular">
+          {t("homeContent.communityDescription")}
+        </Text>
+      </GridItem>
+      {isMobile && (
+        <GridItem colSpan={3} mt="24px">
+          <Button variant="primary" size="md">
+            {t("learnMore")}
+          </Button>
+        </GridItem>
+      )}
+      <GridItem
+        display="flex"
+        alignItems="center"
         justifyContent="center"
+        colSpan={4}
         my={theme.spacing.mobile.marginY}
       >
         <Image
           position="relative"
+          w={isMobile ? "300px" : "358px"}
+          h={isMobile ? "300px" : "358px"}
           fallbackSrc="https://via.placeholder.com/300"
         />
-        <NextImage
-          className=""
-          width={73.52}
-          height={428}
-          style={{ position: "absolute", right: 0 }}
-          src="assets/eth-cr-vertical-graphic.svg"
-          alt="Eth CR vertical graphic"
-        />
-      </Flex>
+        {/* {isMobile && (
+          <NextImage
+            className=""
+            width={73.52}
+            height={428}
+            style={{ position: "absolute", right: 0 }}
+            src="assets/eth-cr-vertical-graphic.svg"
+            alt="Eth CR vertical graphic"
+          />
+        )} */}
+      </GridItem>
 
       <Text variant="h3-extra-bold-mobile" mt={theme.spacing.mobile.marginY}>
         {t("homeContent.noMatterWhereYouAre")}
@@ -142,7 +173,7 @@ const HomeContent = () => {
           </Button>
         </Flex>
       </Flex>
-    </Flex>
+    </Grid>
   );
 };
 

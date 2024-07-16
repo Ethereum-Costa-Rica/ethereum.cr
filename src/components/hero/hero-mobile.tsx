@@ -2,10 +2,10 @@ import { Box, Button, Icon, useTheme, Text } from "@chakra-ui/react";
 import { MdArrowForward } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
-import HeroHighlight from "./subComponents/hero-highlight";
+import HeroHighlightMobile from "./subComponents/hero-highlight-mobile";
 import Image from "next/image";
 
-const Hero = () => {
+const HeroMobile = () => {
   const baseAssetsUrl = "assets/eth-pura-vida/";
   const { t } = useTranslation();
   const theme = useTheme();
@@ -23,7 +23,7 @@ const Hero = () => {
         as="a"
         href="/events/eth-pura-vida"
       >
-        {t("learnMore")}
+        <Text>{t("learnMore")}</Text>
         <Icon w="24px" h="24px" as={MdArrowForward} />
       </Button>
     </>
@@ -36,7 +36,7 @@ const Hero = () => {
       h="628px"
       padding={theme.spacing.mobile.paddingX}
     >
-      <HeroHighlight
+      <HeroHighlightMobile
         highlightImgSrc={`${baseAssetsUrl}hero-highlight.svg`}
         imageWidth={156}
         imageHeight={232}
@@ -49,4 +49,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroMobile;

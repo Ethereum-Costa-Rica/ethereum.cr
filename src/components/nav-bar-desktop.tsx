@@ -8,16 +8,13 @@ import useWindowWidth from "@/utils/hooks/useWindowWidth";
 
 const NavBarDesktop = () => {
   const { t } = useTranslation();
-  const [columnWidth, setColumnWidth] = useState("100px");
+  const [columnWidth, setColumnWidth] = useState<string>();
   const windowWidth = useWindowWidth();
 
   useEffect(() => {
-    const widthMinusGap = windowWidth - 10 * 11;
-
     if (windowWidth > 1440) setColumnWidth("100px");
-    else if (widthMinusGap > 1024 && widthMinusGap < 1440)
-      setColumnWidth("70px");
-    else setColumnWidth(`50px`);
+    else if (windowWidth > 1024 && windowWidth < 1440) setColumnWidth("70px");
+    else setColumnWidth("50px");
   }, [windowWidth]);
 
   return (
@@ -31,6 +28,7 @@ const NavBarDesktop = () => {
       h="78.24px"
       justifyContent="center"
       alignItems="center"
+      mt="24px"
     >
       <GridItem colSpan={2}>
         <Link href="/">

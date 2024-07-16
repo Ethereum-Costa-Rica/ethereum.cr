@@ -1,18 +1,10 @@
+import React from "react";
 import { Flex, useTheme } from "@chakra-ui/react";
-import React, { ReactNode } from "react";
 import Image from "next/image";
 
-type HeroHighLightProps = {
-  highlightImgSrc: string;
-  imageWidth: number;
-  imageHeight: number;
-  eventMainGraphicSrc: string;
-  eventMainGraphicWidth: number;
-  eventMainGraphicHeight: number;
-  children?: ReactNode;
-};
+import { HeroHighLightProps } from "@/models/hero.type";
 
-const HeroHighlight = (props: HeroHighLightProps) => {
+const HeroHighlightMobile = (props: HeroHighLightProps) => {
   const theme = useTheme();
   const {
     highlightImgSrc,
@@ -49,4 +41,4 @@ const HeroHighlight = (props: HeroHighLightProps) => {
   );
 };
 
-export default HeroHighlight;
+export default HeroHighlightMobile;

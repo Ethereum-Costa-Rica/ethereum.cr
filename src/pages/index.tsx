@@ -4,7 +4,7 @@ import NavBarMobile from "@/components/nav-bar-mobile";
 import NavBarDesktop from "@/components/nav-bar-desktop";
 import FooterMobile from "@/components/footer-mobile";
 import { Flex, useMediaQuery } from "@chakra-ui/react";
-import Hero from "@/components/hero/index";
+import HeroMobile from "@/components/hero/hero-mobile";
 import HomeContent from "@/components/home-content/index";
 import {
   ETH_CR_LOGO,
@@ -13,6 +13,7 @@ import {
   WHITE_BG_COLOR,
 } from "@/constants/navbar";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
+import HeroDesktop from "@/components/hero/hero-desktop";
 
 export default function Home() {
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
@@ -38,7 +39,7 @@ export default function Home() {
           <NavBarDesktop />
         )}
       </Flex>
-      <Hero />
+      {isMobile ? <HeroMobile /> : <HeroDesktop />}
       <HomeContent />
       <FooterMobile />
     </Flex>

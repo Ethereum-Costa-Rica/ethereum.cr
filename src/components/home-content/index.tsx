@@ -23,21 +23,28 @@ const HomeContent = () => {
   const columnsWidth = useColumnsWidth();
   const theme = useTheme();
 
+  console.log(columnsWidth);
   return (
     <Grid
       h="auto"
-      gridTemplateColumns={
+      templateColumns={
         isMobile
           ? "repeat(4, minmax(72.5px, 90px))"
-          : "repeat(12, minmax(50px, 110px)"
+          : `repeat(12, ${columnsWidth})`
       }
-      justifyContent="space-between"
+      justifyContent="center"
+      gap={theme.spacing.desktopGridGap}
+      maxW="100vw"
       px={theme.spacing.mobile.paddingX}
       py={theme.spacing.mobile.paddingY}
     >
       <GridItem colSpan={isMobile ? 4 : 8}>
-        <Text variant="h3-extra-bold-mobile" color="brand.blueCR">
+        <Text
+          variant={isMobile ? "h3-extra-bold-mobile" : "h2-extra-bold-desktop"}
+          color="brand.blueCR"
+        >
           {t("homeContent.ethereumCommunityIn")}
+          {isMobile ? null : <br />}
           <span style={{ color: theme.colors.brand.darkRedCR }}>
             {" "}
             Costa Rica
@@ -46,14 +53,14 @@ const HomeContent = () => {
         <Text variant="normal-text-regular">
           {t("homeContent.communityDescription")}
         </Text>
+        {isMobile && (
+          <GridItem colSpan={3} mt="24px">
+            <Button variant="primary" size="md">
+              {t("learnMore")}
+            </Button>
+          </GridItem>
+        )}
       </GridItem>
-      {isMobile && (
-        <GridItem colSpan={3} mt="24px">
-          <Button variant="primary" size="md">
-            {t("learnMore")}
-          </Button>
-        </GridItem>
-      )}
       <GridItem
         display="flex"
         alignItems="center"
@@ -79,100 +86,120 @@ const HomeContent = () => {
         )} */}
       </GridItem>
 
-      <Text variant="h3-extra-bold-mobile" mt={theme.spacing.mobile.marginY}>
-        {t("homeContent.noMatterWhereYouAre")}
-      </Text>
-      <Text variant="normal-text-regular">
-        {t("homeContent.youCanConnect")}
-      </Text>
-      <Flex
-        w="100%"
-        direction="row"
-        wrap="nowrap"
-        overflowX="auto"
-        gap={theme.spacing.mobile.horizontalGap}
-      >
-        {HOME_CARD_FEATURES.map((feature, index) => (
-          <EventCard key={index} cardFeature={feature} />
-        ))}
-      </Flex>
-      <Flex
-        height="361px"
-        paddingY={theme.spacing.mobile.paddingY}
-        direction="column"
-        gap={theme.spacing.mobile.verticalGap}
-      >
-        <Text variant="h3-extra-bold-mobile">
-          {t("homeContent.youCan")}
-          <Text as="span" color="brand.darkRedCR">
-            {" "}
-            {t("homeContent.help")}
-          </Text>
-        </Text>
-        <Text variant="normal-text-regular">
-          {t("homeContent.youCanHelpDescription")}
-          <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
-            {" "}
-            {t("homeContent.throughDonations")}
-          </Text>
-          <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
-            {" "}
-            {t("homeContent.sponsorship")}
-          </Text>
-          <Text as="span" variant="normal-text-regular">
-            {""} {t("homeContent.and")}
-          </Text>
-          <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
-            {" "}
-            {t("homeContent.withYourTalent")}
-          </Text>
-        </Text>
-        <Flex
-          direction="row"
-          justifyContent="start"
+      <GridItem colSpan={isMobile ? 4 : 8}>
+        <Text
+          variant={isMobile ? "h3-extra-bold-mobile" : "h2-extra-bold-desktop"}
           mt={theme.spacing.mobile.marginY}
         >
-          <Button variant="primary">{t("homeContent.findHowToHelp")}</Button>
-        </Flex>
-      </Flex>
-      <Flex direction="column" gap={theme.spacing.mobile.verticalGap}>
-        <Text variant="h3-extra-bold-mobile">
-          {t("homeContent.become")}
-          <Text as="span" color="brand.darkRedCR">
-            {" "}
-            {t("homeContent.member")}
-          </Text>
+          {t("homeContent.noMatterWhereYouAre")}
         </Text>
         <Text variant="normal-text-regular">
-          {t("homeContent.ethCrHas")}
-          <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
-            {" "}
-            {t("homeContent.openDoors")}
-          </Text>
-          <Text as="span" variant="normal-text-regular">
-            {" "}
-            {t("homeContent.inThisSpace")}
-          </Text>
-          <Text as="span" variant="normal-text-semibold">
-            {" "}
-            {t("homeContent.beAware")}
-          </Text>
-          <Text as="span" variant="normal-text-regular">
-            {" "}
-            {t("homeContent.newDevelopments")}
-          </Text>
+          {t("homeContent.youCanConnect")}
         </Text>
+      </GridItem>
+      <GridItem colSpan={isMobile ? 4 : 12}>
         <Flex
+          w="100%"
           direction="row"
-          justifyContent="start"
-          mt={theme.spacing.mobile.marginY}
+          wrap="nowrap"
+          overflowX="auto"
+          gap={theme.spacing.mobile.horizontalGap}
         >
-          <Button variant="outlined" size="md">
-            {t("homeContent.joinTgChannel")}
-            <Icon w="24px" h="24px" ml="10px" as={MdArrowForward} />
-          </Button>
+          {HOME_CARD_FEATURES.map((feature, index) => (
+            <EventCard key={index} cardFeature={feature} />
+          ))}
         </Flex>
-      </Flex>
+      </GridItem>
+      <GridItem
+        colSpan={isMobile ? 4 : 12}
+        display="flex"
+        flexDirection="row"
+        flexWrap="wrap"
+        justifyContent="space-between"
+      >
+        <Flex
+          height="361px"
+          paddingY={theme.spacing.mobile.paddingY}
+          direction="column"
+          maxW="500px"
+          gap={theme.spacing.mobile.verticalGap}
+        >
+          <Text variant="h3-extra-bold-mobile">
+            {t("homeContent.youCan")}
+            <Text as="span" color="brand.darkRedCR">
+              {" "}
+              {t("homeContent.help")}
+            </Text>
+          </Text>
+          <Text variant="normal-text-regular">
+            {t("homeContent.youCanHelpDescription")}
+            <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
+              {" "}
+              {t("homeContent.throughDonations")}
+            </Text>
+            <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
+              {" "}
+              {t("homeContent.sponsorship")}
+            </Text>
+            <Text as="span" variant="normal-text-regular">
+              {""} {t("homeContent.and")}
+            </Text>
+            <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
+              {" "}
+              {t("homeContent.withYourTalent")}
+            </Text>
+          </Text>
+          <Flex
+            direction="row"
+            justifyContent="start"
+            mt={theme.spacing.mobile.marginY}
+          >
+            <Button variant="primary">{t("homeContent.findHowToHelp")}</Button>
+          </Flex>
+        </Flex>
+        <Flex
+          direction="column"
+          maxW="500px"
+          gap={theme.spacing.mobile.verticalGap}
+        >
+          <Text variant="h3-extra-bold-mobile">
+            {t("homeContent.become")}
+            <Text as="span" color="brand.darkRedCR">
+              {" "}
+              {t("homeContent.member")}
+            </Text>
+          </Text>
+          <Text variant="normal-text-regular">
+            {t("homeContent.ethCrHas")}
+            <Text as="span" variant="normal-text-semibold" color="brand.blueCR">
+              {" "}
+              {t("homeContent.openDoors")}
+            </Text>
+            <Text as="span" variant="normal-text-regular">
+              {" "}
+              {t("homeContent.inThisSpace")}
+            </Text>
+            <Text as="span" variant="normal-text-semibold">
+              {" "}
+              {t("homeContent.beAware")}
+            </Text>
+            <Text as="span" variant="normal-text-regular">
+              {" "}
+              {t("homeContent.newDevelopments")}
+            </Text>
+          </Text>
+          <Flex
+            direction="row"
+            justifyContent="start"
+            mt={theme.spacing.mobile.marginY}
+          >
+            <Button variant="outlined" size="md">
+              {t("homeContent.joinTgChannel")}
+              <Icon w="24px" h="24px" ml="10px" as={MdArrowForward} />
+            </Button>
+          </Flex>
+        </Flex>
+      </GridItem>
     </Grid>
   );
 };

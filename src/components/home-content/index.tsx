@@ -33,7 +33,7 @@ const HomeContent = () => {
           : `repeat(12, ${columnsWidth})`
       }
       justifyContent="center"
-      gap={theme.spacing.desktopGridGap}
+      gap={theme.spacing.desktop.gridGap}
       maxW="100vw"
       px={theme.spacing.mobile.paddingX}
       py={theme.spacing.mobile.paddingY}

@@ -1,4 +1,12 @@
-import { Button, Flex, Grid, GridItem, Icon, Text } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  Grid,
+  GridItem,
+  Icon,
+  Text,
+  useTheme,
+} from "@chakra-ui/react";
 import { MdArrowForward } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
@@ -10,6 +18,7 @@ const HeroDesktop = () => {
   const baseAssetsUrl = "assets/eth-pura-vida/";
   const columnsWidth = useColumnsWidth();
   const { t } = useTranslation();
+  const theme = useTheme();
 
   const children = (
     <>
@@ -56,6 +65,7 @@ const HeroDesktop = () => {
     <Grid
       templateColumns={`repeat(12, ${columnsWidth})`}
       backgroundImage="assets/hero.jpg"
+      gap={theme.spacing.desktop.gridGap}
       backgroundSize="cover"
       justifyContent="center"
       alignItems="center"

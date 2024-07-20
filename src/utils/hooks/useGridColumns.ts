@@ -7,8 +7,8 @@ const useColumnsWidth = () => {
   const windowWidth = useWindowWidth();
 
   useEffect(() => {
-    if (windowWidth > 1440) setColumnWidth("110px");
-    else if (windowWidth > 1124 && windowWidth < 1440) setColumnWidth("90px");
+    if (windowWidth > 1440) setColumnWidth("72.5px");
+    else if (windowWidth > 1124 && windowWidth < 1440) setColumnWidth("50px");
     else setColumnWidth("50px");
   }, [windowWidth]);
 

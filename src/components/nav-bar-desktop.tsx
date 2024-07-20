@@ -13,7 +13,7 @@ const NavBarDesktop = () => {
   return (
     <Grid
       templateColumns={`repeat(12, ${columnsWidth})`}
-      gap={theme.spacing.desktopGridGap}
+      gap={theme.spacing.desktop.gridGap}
       bg="transparent"
       position="fixed"
       w="100vw"

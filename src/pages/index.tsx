@@ -1,9 +1,9 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { Flex, useMediaQuery } from "@chakra-ui/react";
 
 import NavBarMobile from "@/components/nav-bar-mobile";
 import NavBarDesktop from "@/components/nav-bar-desktop";
-import FooterMobile from "@/components/footer-mobile";
-import { Flex, useMediaQuery } from "@chakra-ui/react";
+import FooterMobile from "@/components/footer/footer-mobile";
 import HeroMobile from "@/components/hero/hero-mobile";
 import HomeContent from "@/components/home-content/index";
 import {
@@ -14,6 +14,7 @@ import {
 } from "@/constants/navbar";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import HeroDesktop from "@/components/hero/hero-desktop";
+import FooterDesktop from "@/components/footer/footer-desktop";
 
 export default function Home() {
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
@@ -41,7 +42,7 @@ export default function Home() {
       </Flex>
       {isMobile ? <HeroMobile /> : <HeroDesktop />}
       <HomeContent />
-      <FooterMobile />
+      {isMobile ? <FooterMobile /> : <FooterDesktop />}
     </Flex>
   );
 }

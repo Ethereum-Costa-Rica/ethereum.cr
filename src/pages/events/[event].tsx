@@ -1,13 +1,22 @@
-import Cover from "@/components/event/cover";
-import EventDescription from "@/components/event/event-description";
+import CoverMobile from "@/components/event/cover-mobile";
+import EventDescriptionMobile from "@/components/event/event-description-mobile";
 import NavBarMobile from "@/components/navbar/nav-bar-mobile";
-import { Flex, useTheme } from "@chakra-ui/react";
+import { Flex, useMediaQuery, useTheme } from "@chakra-ui/react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 
 import EventsData from "@/components/event/data/data.json";
 import { EventType } from "@/models/event.type";
-import { ETH_CR_BLACK, WHITE_BG_COLOR } from "@/constants/navbar";
+import {
+  ETH_CR_BLACK,
+  ETH_CR_LOGO,
+  ETH_CR_LOGO_WHITE,
+  TRANSPARENT_BG_COLOR,
+  WHITE_BG_COLOR,
+} from "@/constants/navbar";
+import { MOBILE_MEDIA_QUERY } from "@/constants/app";
+import NavBarDesktop from "@/components/navbar/nav-bar-desktop";
+import CoverDesktop from "@/components/event/cover-desktop";
 
 type EventProps = {
   eventData: {
@@ -20,6 +29,7 @@ const Event = (props: EventProps) => {
   const theme = useTheme();
   const { eventData } = props;
   const { coverGraphicUrl }: Partial<EventType> = eventData;
+  const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
 
   const router = useRouter();
 
@@ -30,22 +40,42 @@ const Event = (props: EventProps) => {
 
   return (
     <Flex
-      direction="column"
-      w={theme.spacing.mobile.width}
-      justifyContent="space-between"
       h="auto"
-      alignItems="center"
+      direction="column"
+      justifyContent="space-between"
+      width="100%"
     >
-      <NavBarMobile
-        baseBgColor={WHITE_BG_COLOR}
-        extendedBgColor={WHITE_BG_COLOR}
-        baseLogo={ETH_CR_BLACK}
-        extendedLogo={ETH_CR_BLACK}
-        baseMenuLogoColor="black"
-        extendedMenuLogoColor="black"
-      />
-      <Cover coverGraphicUrl={coverGraphicUrl} />
-      <EventDescription event={eventData as EventType} />
+      <Flex direction="row" justifyContent="center" alignItems="center" h={126}>
+        {isMobile ? (
+          <NavBarMobile
+            baseBgColor={WHITE_BG_COLOR}
+            extendedBgColor={WHITE_BG_COLOR}
+            baseLogo={ETH_CR_BLACK}
+            extendedLogo={ETH_CR_BLACK}
+            baseMenuLogoColor="black"
+            extendedMenuLogoColor="black"
+          />
+        ) : (
+          <NavBarDesktop
+            baseBgColor={WHITE_BG_COLOR}
+            extendedBgColor={WHITE_BG_COLOR}
+            baseLogo={ETH_CR_BLACK}
+            extendedLogo={ETH_CR_LOGO}
+            baseTextColor="black"
+            extendedTextColor="black"
+          />
+        )}
+      </Flex>
+
+      {isMobile ? (
+        <CoverMobile coverGraphicUrl={coverGraphicUrl} />
+      ) : (
+        <CoverDesktop
+          coverGraphicLeft="eth-pura-vida/eth-pura-vida-desktop-graphic.svg"
+          coverGraphicRight="eth-pura-vida/eth-pv-raw-logo.svg"
+        />
+      )}
+      <EventDescriptionMobile event={eventData as EventType} />
     </Flex>
   );
 };
@@ -63,7 +93,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ locale, params }) {
+export async function getStaticProps({ locale, params }: any) {
   const eventData = EventsData.events.find(
     (event) => event.event === params.event
   );

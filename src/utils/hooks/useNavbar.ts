@@ -8,22 +8,27 @@ const useNavbar = ({
   extendedLogo,
   baseMenuLogoColor,
   extendedMenuLogoColor,
+  baseTextColor,
+  extendedTextColor,
 }: NavbarProps) => {
   const [opened, setOpened] = useState(false);
   const [bgColor, setBgColor] = useState(baseBgColor);
   const [logo, setLogo] = useState(baseLogo);
   const [menuLogoColor, setMenuLogoColor] = useState(baseMenuLogoColor);
+  const [itemTextColor, setItemTextColor] = useState(baseTextColor);
 
   const setBaseProperties = () => {
     setBgColor(baseBgColor);
     setLogo(baseLogo);
     setMenuLogoColor(baseMenuLogoColor);
+    setItemTextColor(baseTextColor);
   };
 
   const setExtendedProperties = () => {
     setBgColor(extendedBgColor);
     setLogo(extendedLogo);
     setMenuLogoColor(extendedMenuLogoColor);
+    setItemTextColor(extendedTextColor);
   };
 
   useEffect(() => {
@@ -42,7 +47,7 @@ const useNavbar = ({
     setExtendedProperties();
   }, [opened]);
 
-  return { bgColor, logo, menuLogoColor, opened, setOpened };
+  return { bgColor, logo, menuLogoColor, opened, setOpened, itemTextColor };
 };
 
 export default useNavbar;

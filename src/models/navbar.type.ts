@@ -5,4 +5,6 @@ export type NavbarProps = {
   extendedLogo?: string;
   baseMenuLogoColor?: string;
   extendedMenuLogoColor?: string;
+  baseTextColor?: string;
+  extendedTextColor?: string;
 };

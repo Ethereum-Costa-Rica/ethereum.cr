@@ -8,7 +8,7 @@ type EventDescriptionProps = {
   event: EventType;
 };
 
-const EventDescription = ({ event }: EventDescriptionProps) => {
+const EventDescriptionMobile = ({ event }: EventDescriptionProps) => {
   const { t } = useTranslation();
   const {
     event: eventName,
@@ -67,4 +67,4 @@ const EventDescription = ({ event }: EventDescriptionProps) => {
   );
 };
 
-export default EventDescription;
+export default EventDescriptionMobile;

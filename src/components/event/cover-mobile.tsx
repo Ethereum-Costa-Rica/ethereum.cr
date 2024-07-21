@@ -15,11 +15,9 @@ type CoverProps = {
   coverGraphicUrl: string;
 };
 
-const Cover = ({ coverGraphicUrl }: CoverProps) => {
+const CoverMobile = ({ coverGraphicUrl }: CoverProps) => {
   const theme = useTheme();
   const { t } = useTranslation();
-
-  console.log(coverGraphicUrl);
 
   return (
     <Flex
@@ -46,4 +44,4 @@ const Cover = ({ coverGraphicUrl }: CoverProps) => {
   );
 };
 
-export default Cover;
+export default CoverMobile;

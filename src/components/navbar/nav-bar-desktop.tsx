@@ -9,16 +9,24 @@ import useNavbar from "@/utils/hooks/useNavbar";
 
 const NavBarDesktop = (props: NavbarProps) => {
   const { t } = useTranslation();
-  const { baseLogo, extendedLogo, baseBgColor, extendedBgColor } = props;
-  const { bgColor, logo } = useNavbar({
+  const {
+    baseLogo,
+    extendedLogo,
+    baseBgColor,
+    extendedBgColor,
+    baseTextColor,
+    extendedTextColor,
+  } = props;
+  const { bgColor, logo, itemTextColor } = useNavbar({
     baseBgColor,
     extendedBgColor,
     baseLogo,
     extendedLogo,
+    baseTextColor,
+    extendedTextColor,
   });
   const theme = useTheme();
   const columnsWidth = useColumnsWidth();
-  const itemTextColor = bgColor === baseBgColor ? "white" : "black";
 
   return (
     <Grid

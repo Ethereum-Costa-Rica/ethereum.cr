@@ -1,8 +1,8 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Flex, useMediaQuery } from "@chakra-ui/react";
 
-import NavBarMobile from "@/components/nav-bar-mobile";
-import NavBarDesktop from "@/components/nav-bar-desktop";
+import NavBarMobile from "@/components/navbar/nav-bar-mobile";
+import NavBarDesktop from "@/components/navbar/nav-bar-desktop";
 import FooterMobile from "@/components/footer/footer-mobile";
 import HeroMobile from "@/components/hero/hero-mobile";
 import HomeContent from "@/components/home-content/index";

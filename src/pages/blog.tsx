@@ -1,4 +1,4 @@
-import NavBarMobile from "@/components/nav-bar-mobile";
+import NavBarMobile from "@/components/navbar/nav-bar-mobile";
 import { ETH_CR_LOGO, WHITE_BG_COLOR } from "@/constants/navbar";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 

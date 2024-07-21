@@ -1,6 +1,6 @@
 import Cover from "@/components/event/cover";
 import EventDescription from "@/components/event/event-description";
-import NavBarMobile from "@/components/nav-bar-mobile";
+import NavBarMobile from "@/components/navbar/nav-bar-mobile";
 import { Flex, useTheme } from "@chakra-ui/react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";

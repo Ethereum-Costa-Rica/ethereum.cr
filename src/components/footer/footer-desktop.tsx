@@ -13,6 +13,7 @@ import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import Image from "next/image";
 import { FooterSocials } from "./footer-socials";
 import { MdKeyboardArrowUp } from "react-icons/md";
+import Mailing from "./mailing";
 
 const FooterDesktop = () => {
   const columnsWidth = useColumnsWidth();
@@ -26,7 +27,8 @@ const FooterDesktop = () => {
       justifyContent="center"
       w="100vw"
       maxW="100vw"
-      mb="70px"
+      py="70px"
+      bg={theme.colors.brand.footer}
     >
       <GridItem colSpan={5} flexDirection="column">
         <Image
@@ -54,24 +56,7 @@ const FooterDesktop = () => {
           <Text mr="10px">{t("footer.goOnTop")}</Text>
           <MdKeyboardArrowUp />
         </Button>
-        <Flex direction="column">
-          <Text variant="h1-semibold">{t("footer.keepInTouch")}</Text>
-          <Text variant="normal-text-regular">
-            {t("footer.subscribeForUpdates")}
-          </Text>
-          <Input
-            bg="white"
-            placeholder={t("footer.yourEmailPlaceholder")}
-            h="54px"
-            fontWeight={400}
-          />
-          <Flex direction="row" wrap="nowrap">
-            <Text variant="small-text-light">*{t("footer.consent")}</Text>
-            <Button variant="outlined" size="sm" minW="127px" ml="10px">
-              {t("footer.subscribe")}
-            </Button>
-          </Flex>
-        </Flex>
+        <Mailing />
       </GridItem>
     </Grid>
   );

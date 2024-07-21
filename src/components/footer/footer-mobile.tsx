@@ -10,34 +10,24 @@ import {
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import FooterSocials from "./footer-socials";
+import Mailing from "./mailing";
 
 const FooterMobile = () => {
   const { t } = useTranslation();
   const theme = useTheme();
 
   return (
-    <Flex direction="column" p="20px" w="100%" gap="25px" bg="#EBF8FF">
+    <Flex
+      direction="column"
+      p="20px"
+      w="100%"
+      gap="25px"
+      bg={theme.colors.brand.footer}
+    >
       <Text variant="h1-semibold">{t("footer.contactUs")}</Text>
 
       <FooterSocials />
-      <Flex direction="column" gap="10px">
-        <Text variant="h1-semibold">{t("footer.keepInTouch")}</Text>
-        <Text variant="normal-text-regular">
-          {t("footer.subscribeForUpdates")}
-        </Text>
-        <Input
-          bg="white"
-          placeholder={t("footer.yourEmailPlaceholder")}
-          h="54px"
-          fontWeight={400}
-        />
-        <Flex direction="row" wrap="nowrap">
-          <Text variant="small-text-light">*{t("footer.consent")}</Text>
-          <Button variant="outlined" size="sm" minW="127px" ml="10px">
-            {t("footer.subscribe")}
-          </Button>
-        </Flex>
-      </Flex>
+      <Mailing />
       <Flex
         direction="column"
         justifyContent="center"

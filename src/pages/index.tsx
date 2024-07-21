@@ -37,7 +37,12 @@ export default function Home() {
             extendedMenuLogoColor="black"
           />
         ) : (
-          <NavBarDesktop />
+          <NavBarDesktop
+            baseBgColor={TRANSPARENT_BG_COLOR}
+            extendedBgColor={WHITE_BG_COLOR}
+            baseLogo={ETH_CR_LOGO_WHITE}
+            extendedLogo={ETH_CR_LOGO}
+          />
         )}
       </Flex>
       {isMobile ? <HeroMobile /> : <HeroDesktop />}

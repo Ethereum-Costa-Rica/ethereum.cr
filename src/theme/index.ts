@@ -11,6 +11,7 @@ const theme = extendTheme({
       dark: "#0F2841",
       blueCR: "#0F2841",
       darkRedCR: "#AA2222",
+      footer: "#EBF8FF",
     },
   },
   spacing: {

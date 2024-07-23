@@ -43,6 +43,7 @@ const HeroDesktop = () => {
           as="a"
           href="/events/eth-pura-vida"
           ml="24px"
+          disabled
         >
           <Text>{t("ethPuraVida.buyTickets")}</Text>
           <Icon w="24px" h="24px" as={MdArrowForward} />

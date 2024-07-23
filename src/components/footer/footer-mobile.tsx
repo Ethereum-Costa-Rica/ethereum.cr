@@ -51,6 +51,15 @@ const FooterMobile = () => {
         >
           Designed by Angie Herrera
         </Text>
+        <Text
+          variant="extra-small-text-light"
+          as="a"
+          href="https://www.linkedin.com/in/jacv/"
+          color="blue"
+          target="_blank"
+        >
+          Developed by Justin Castillo
+        </Text>
       </Flex>
     </Flex>
   );

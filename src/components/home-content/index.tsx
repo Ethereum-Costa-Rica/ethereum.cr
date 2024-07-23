@@ -10,7 +10,6 @@ import {
   GridItem,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import NextImage from "next/image";
 import EventCard from "./event-card";
 import { HOME_CARD_FEATURES } from "@/constants/homeCardFeatures";
 import { MdArrowForward } from "react-icons/md";
@@ -193,7 +192,13 @@ const HomeContent = () => {
             justifyContent="start"
             mt={theme.spacing.mobile.marginY}
           >
-            <Button variant="outlined" size="md">
+            <Button
+              variant="outlined"
+              size="md"
+              as="a"
+              href="https://t.me/EthereumCR/1"
+              target="_blank"
+            >
               {t("homeContent.joinTgChannel")}
               <Icon w="24px" h="24px" ml="10px" as={MdArrowForward} />
             </Button>

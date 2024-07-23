@@ -1,7 +1,7 @@
 import { EventType } from "@/models/event.type";
 import { Flex, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { MdArrowOutward } from "react-icons/md";
 
 type EventDescriptionProps = {
@@ -36,7 +36,15 @@ const EventDescriptionMobile = ({ event }: EventDescriptionProps) => {
       />
 
       <Text variant="normal-text-regular" mt="12px">
-        {t(String(description))}
+        <Trans
+          i18nKey={description}
+          components={{
+            orange: (
+              <Text as="strong" color={theme.colors.brand.ethPuraVida.orange} />
+            ),
+            blue: <Text as="strong" color={theme.colors.brand.blueCR} />,
+          }}
+        />
       </Text>
 
       <Flex direction="column" mt="20px">

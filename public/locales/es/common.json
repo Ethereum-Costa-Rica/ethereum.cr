@@ -3,6 +3,8 @@
   "blog": "Blog",
   "donate": "Donar",
   "shop": "Tienda",
+  "soon": "Pronto",
+  "becomeSponsor": "Patrocina el evento",
   "footer": {
     "contactUs": "Contáctanos",
     "keepInTouch": "Mantente en contacto",
@@ -53,6 +55,23 @@
   },
   "ethPuraVida": {
     "buyTickets": "Comprar boletos",
-    "eventDescription": "Una conferencia web3 y hackathon en el corazón de Costa Rica, para promover la adopción de Ethereum y educar a la comunidad, impulsando la innovación y el crecimiento."
+    "eventDescription": "Una conferencia web3 y hackathon en el corazón de Costa Rica, para promover la adopción de Ethereum y educar a la comunidad, impulsando la innovación y el crecimiento.",
+    "exploreAgenda": "Explorar agenda",
+    "topEventActivities": "Principales <orange>Actividades</orange> del Evento",
+    "activitiesDescription": "Nuestra agenda está repleta de diversas actividades donde puedes aprender sobre una amplia gama de temas antes de la conferencia; desde talleres hasta hackathons, <orange>¡ven y únete a nosotros!</orange>",
+    "activities": [
+      {
+        "tag": {
+          "name": "Actividad Principal",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "Hackathon",
+        "duration": "7 días",
+        "mode": "Bi-modal",
+        "description": "Una competencia para desarrollar diferentes soluciones blockchain, el tema de la competencia depende de ti pero debes tener en cuenta algunas reglas.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg"
+      }
+    ]
   }
 }

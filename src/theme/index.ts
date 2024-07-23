@@ -7,6 +7,9 @@ const theme = extendTheme({
         primary: "#84CCF5", // Light blue
         secondary: "#EFB73B", // Eth Pura Vida Yellow
         accent: "#84E9B7", // Eth Pura Vida Green
+        orange: "#F45E1B", // Eth Pura Vida Orange
+        lightOrange: "#F67A38",
+        neutralGray: "#F7F8F8",
       },
       dark: "#0F2841",
       blueCR: "#0F2841",

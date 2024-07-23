@@ -41,7 +41,23 @@ const FooterDesktop = () => {
         <FooterSocials style={{ marginBottom: "40px" }} />
         <Text variant="h3-semibold">{t("footer.workingWithLove")}</Text>
         <Text variant="small-text-light" textAlign="center" mb="40px">
-          Design | Angie Herrera &nbsp;&nbsp;Development | Justin Castillo
+          <Text
+            as="a"
+            href="https://www.linkedin.com/in/angie-herrera-aguilar/"
+            color="blue"
+            target="_blank"
+          >
+            Design | Angie Herrera
+          </Text>{" "}
+          &nbsp;&nbsp;{" "}
+          <Text
+            as="a"
+            href="https://www.linkedin.com/in/jacv/"
+            color="blue"
+            target="_blank"
+          >
+            Development | Justin Castillo
+          </Text>
         </Text>
       </GridItem>
       <GridItem

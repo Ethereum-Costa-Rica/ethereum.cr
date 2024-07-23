@@ -42,6 +42,8 @@ export default function Home() {
             extendedBgColor={WHITE_BG_COLOR}
             baseLogo={ETH_CR_LOGO_WHITE}
             extendedLogo={ETH_CR_LOGO}
+            baseTextColor="white"
+            extendedTextColor="black"
           />
         )}
       </Flex>
@@ -52,7 +54,7 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: any) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

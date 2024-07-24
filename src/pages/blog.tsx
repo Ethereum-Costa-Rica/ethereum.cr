@@ -19,7 +19,7 @@ const Blog = () => {
 
 export default Blog;
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: any) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

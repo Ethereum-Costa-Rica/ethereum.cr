@@ -20,6 +20,13 @@ const FooterDesktop = () => {
   const { t } = useTranslation();
   const theme = useTheme();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Grid
       templateColumns={`repeat(12, ${columnsWidth})`}
@@ -68,7 +75,7 @@ const FooterDesktop = () => {
         justifyContent="space-between"
         alignItems="flex-end"
       >
-        <Button variant="outlined">
+        <Button variant="outlined" onClick={scrollToTop}>
           <Text mr="10px">{t("footer.goOnTop")}</Text>
           <MdKeyboardArrowUp />
         </Button>

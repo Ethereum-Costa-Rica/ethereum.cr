@@ -3,16 +3,17 @@ import {
   Flex,
   Text,
   useTheme,
-  Image,
   Icon,
   useMediaQuery,
   Grid,
   GridItem,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+import { MdArrowForward } from "react-icons/md";
+import Image from "next/image";
+
 import EventCard from "./event-card";
 import { HOME_CARD_FEATURES } from "@/constants/homeCardFeatures";
-import { MdArrowForward } from "react-icons/md";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 
@@ -55,7 +56,7 @@ const HomeContent = () => {
         {isMobile && (
           <GridItem colSpan={3} mt="24px">
             <Button variant="primary" size="md">
-              {t("learnMore")}
+              <Text>{t("learnMore")}</Text>
             </Button>
           </GridItem>
         )}
@@ -68,10 +69,10 @@ const HomeContent = () => {
         my={theme.spacing.mobile.marginY}
       >
         <Image
-          position="relative"
-          w={isMobile ? "300px" : "358px"}
-          h={isMobile ? "300px" : "358px"}
-          fallbackSrc="https://via.placeholder.com/300"
+          width={isMobile ? 300 : 358}
+          height={isMobile ? 300 : 358}
+          src="/assets/photos/texas-tech-auditorio.png"
+          alt="Texas Tech Auditorio"
         />
         {/* {isMobile && (
           <NextImage

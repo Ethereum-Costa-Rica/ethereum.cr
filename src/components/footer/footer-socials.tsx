@@ -12,14 +12,14 @@ export const FooterSocials = (props: any) => {
       {...props}
     >
       <Link href="https://x.com/EthereumCR" target="_blank">
-        <Image src="assets/x-icon.svg" width={64} height={64} alt="X icon" />
+        <Image src="/assets/x-icon.svg" width={64} height={64} alt="X icon" />
       </Link>
       <Link
         href="https://www.facebook.com/profile.php?id=100095125751451"
         target="_blank"
       >
         <Image
-          src="assets/facebook-icon.svg"
+          src="/assets/facebook-icon.svg"
           width={64}
           height={64}
           alt="Facebook icon"
@@ -31,7 +31,7 @@ export const FooterSocials = (props: any) => {
         target="_blank"
       >
         <Image
-          src="assets/linkedin-icon.svg"
+          src="/assets/linkedin-icon.svg"
           width={64}
           height={64}
           alt="Linkedin icon"
@@ -39,7 +39,7 @@ export const FooterSocials = (props: any) => {
       </Link>
       <Link href="https://www.meetup.com/es-ES/ethereumcr/" target="_blank">
         <Image
-          src="assets/meetup-icon.svg"
+          src="/assets/meetup-icon.svg"
           width={64}
           height={64}
           alt="Meetup icon"

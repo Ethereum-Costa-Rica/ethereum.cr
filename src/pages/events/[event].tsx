@@ -13,6 +13,8 @@ import NavBarDesktop from "@/components/navbar/nav-bar-desktop";
 import CoverDesktop from "@/components/event/cover-desktop";
 import EventDescriptionDesktop from "@/components/event/event-description-desktop";
 import EventActivities from "@/components/event/event-activities";
+import FooterDesktop from "@/components/footer/footer-desktop";
+import VenueGalleryDesktop from "@/components/venue-gallery/venue-gallery-desktop";
 
 type EventProps = {
   eventData: {
@@ -81,6 +83,8 @@ const Event = (props: EventProps) => {
         <EventDescriptionDesktop event={eventData as EventType} />
       )}
       <EventActivities />
+      <VenueGalleryDesktop />
+      <FooterDesktop />
     </Flex>
   );
 };

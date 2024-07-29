@@ -1,12 +1,4 @@
-import {
-  Grid,
-  GridItem,
-  useTheme,
-  Text,
-  Button,
-  Flex,
-  Input,
-} from "@chakra-ui/react";
+import { Grid, GridItem, useTheme, Text, Button } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
@@ -39,7 +31,7 @@ const FooterDesktop = () => {
     >
       <GridItem colSpan={5} flexDirection="column">
         <Image
-          src="assets/eth-cr.svg"
+          src="/assets/eth-cr.svg"
           width={454}
           height={216.6}
           alt="EthCR footer"

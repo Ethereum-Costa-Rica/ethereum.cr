@@ -23,7 +23,6 @@ const EventDescriptionDesktop = ({ event }: EventDescriptionProps) => {
   const theme = useTheme();
   const { t, ready } = useTranslation();
   const {
-    event: eventName,
     eventNameGraphicUrl,
     description,
     venue: { img, name, address, gMapsLink },

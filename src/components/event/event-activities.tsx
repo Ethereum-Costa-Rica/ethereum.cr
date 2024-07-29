@@ -16,6 +16,7 @@ import { Trans, useTranslation } from "react-i18next";
 import Image from "next/image";
 import { MdArrowForward, MdComputer, MdOutlineTimelapse } from "react-icons/md";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
+import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
 const EventActivities = () => {
   const { t } = useTranslation();
@@ -34,9 +35,7 @@ const EventActivities = () => {
   return (
     <Grid
       templateColumns={
-        isMobile
-          ? "repeat(4, minmax(72.5px, 90px))"
-          : `repeat(12, ${columnsWidth})`
+        isMobile ? MOBILE_GRID_COLUMNS : `repeat(12, ${columnsWidth})`
       }
       gap={theme.spacing.desktop.gridGap}
       justifyContent="center"

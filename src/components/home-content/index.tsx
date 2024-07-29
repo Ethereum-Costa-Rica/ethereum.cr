@@ -16,6 +16,7 @@ import EventCard from "./event-card";
 import { HOME_CARD_FEATURES } from "@/constants/homeCardFeatures";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
+import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
 const HomeContent = () => {
   const { t } = useTranslation();
@@ -23,14 +24,11 @@ const HomeContent = () => {
   const columnsWidth = useColumnsWidth();
   const theme = useTheme();
 
-  console.log(columnsWidth);
   return (
     <Grid
       h="auto"
       templateColumns={
-        isMobile
-          ? "repeat(4, minmax(72.5px, 90px))"
-          : `repeat(12, ${columnsWidth})`
+        isMobile ? MOBILE_GRID_COLUMNS : `repeat(12, ${columnsWidth})`
       }
       justifyContent="center"
       gap={theme.spacing.desktop.gridGap}

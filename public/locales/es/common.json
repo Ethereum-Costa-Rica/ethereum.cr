@@ -64,15 +64,45 @@
     "activities": [
       {
         "tag": {
-          "name": "Actividad Principal",
+          "name": "Main Activity",
           "color": "red",
           "background": "lightOrange"
         },
         "title": "Hackathon",
-        "duration": "7 días",
+        "duration": "7 days",
         "mode": "Bi-modal",
-        "description": "Una competencia para desarrollar diferentes soluciones blockchain, el tema de la competencia depende de ti pero debes tener en cuenta algunas reglas.",
-        "imgUrl": "eth-pura-vida/hackathon-card-1.svg"
+        "eventMode": "Bi-modal event",
+        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>21-26th October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Main Activity",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "Hackathon",
+        "duration": "7 days",
+        "mode": "Bi-modal",
+        "eventMode": "Bi-modal event",
+        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>21-26th October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Main Activity",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "Hackathon",
+        "duration": "7 days",
+        "mode": "Bi-modal",
+        "eventMode": "Bi-modal event",
+        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>21-26th October</orange> 2024"
       }
     ]
   }

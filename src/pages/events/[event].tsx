@@ -109,7 +109,7 @@ export async function getStaticProps({ locale, params }: any) {
 
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale ?? "en", ["common"])),
       // Will be passed to the page component as props
       params,
       eventData,

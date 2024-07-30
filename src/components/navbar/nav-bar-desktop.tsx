@@ -6,6 +6,7 @@ import { ETH_CR_LOGO_WHITE, NAVBAR_LINKS } from "@/constants/navbar";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import { NavbarProps } from "@/models/navbar.type";
 import useNavbar from "@/utils/hooks/useNavbar";
+// import LanguageSwitcher from "../language-switcher";
 
 const NavBarDesktop = (props: NavbarProps) => {
   const { t } = useTranslation();
@@ -52,7 +53,7 @@ const NavBarDesktop = (props: NavbarProps) => {
         </Link>
       </GridItem>
       <GridItem colSpan={10}>
-        <Flex direction="row" justifyContent="flex-end">
+        <Flex direction="row" alignItems="center" justifyContent="flex-end">
           {NAVBAR_LINKS.map((key, index) => (
             <Link key={index} href={`/events/${key}`}>
               <Text variant="h3-regular" mx="16px" color={itemTextColor}>
@@ -60,8 +61,8 @@ const NavBarDesktop = (props: NavbarProps) => {
               </Text>
             </Link>
           ))}
+          {/* <LanguageSwitcher /> */}
         </Flex>
-        <Flex></Flex>
       </GridItem>
     </Grid>
   );

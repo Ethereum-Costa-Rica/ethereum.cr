@@ -17,6 +17,11 @@ import {
 import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
 import { MdClose } from "react-icons/md";
+import {
+  EMAIL_SERVICE_ID,
+  EMAIL_TEMPLATE_ID,
+  EMAIL_USER_ID,
+} from "@/constants/email";
 
 const EmailModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -36,15 +41,9 @@ const EmailModal = () => {
     };
 
     emailjs
-      .send(
-        "service_hufgswn",
-        "template_v310vkf",
-        templateParams,
-        "K2rhSWiNG06iCO3yj"
-      )
+      .send(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, templateParams, EMAIL_USER_ID)
       .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+        () => {
           toast({
             title: "Correo enviado.",
             description: "Tu correo ha sido enviado exitosamente.",

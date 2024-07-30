@@ -96,7 +96,7 @@ const NavBarMobile = ({
                   width: "100%",
                 }}
               >
-                <Link href={`/${key}`}>
+                <Link href={`/events/${key}`}>
                   <Text variant="h3-semibold">{t(String(key))}</Text>
                 </Link>
               </Flex>

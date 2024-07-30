@@ -15,6 +15,7 @@ import {
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import HeroDesktop from "@/components/hero/hero-desktop";
 import FooterDesktop from "@/components/footer/footer-desktop";
+import EmailModal from "@/components/email-modal";
 
 export default function Home() {
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
@@ -26,6 +27,7 @@ export default function Home() {
       justifyContent="space-between"
       width="100%"
     >
+      <EmailModal />
       <Flex direction="row" justifyContent="center">
         {isMobile ? (
           <NavBarMobile

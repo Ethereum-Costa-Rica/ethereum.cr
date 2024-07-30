@@ -69,10 +69,10 @@ const EventDescriptionDesktop = ({ event }: EventDescriptionProps) => {
         <Flex direction="row" gap="24px">
           <Button variant="outlined">{t("becomeSponsor")}</Button>
           {/* <Button variant="outlined">{t("ethPuraVida.exploreAgenda")}</Button> */}
-          <Button variant="eth-pura-vida-yellow">
+          {/* <Button variant="eth-pura-vida-yellow">
             <Text as="span">{t("ethPuraVida.buyTickets")}</Text>
             <Icon w="24px" h="24px" as={MdArrowForward} ml="10px" />
-          </Button>
+          </Button> */}
         </Flex>
         <Flex
           direction="row"

@@ -54,7 +54,7 @@ const NavBarDesktop = (props: NavbarProps) => {
       <GridItem colSpan={10}>
         <Flex direction="row" justifyContent="flex-end">
           {NAVBAR_LINKS.map((key, index) => (
-            <Link key={index} href={`/${key}`}>
+            <Link key={index} href={`/events/${key}`}>
               <Text variant="h3-regular" mx="16px" color={itemTextColor}>
                 {t(String(key))}
               </Text>

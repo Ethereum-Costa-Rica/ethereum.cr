@@ -1,9 +1,11 @@
 {
   "events": "Eventos",
+
   "blog": "Blog",
   "donate": "Donar",
   "shop": "Tienda",
   "soon": "Pronto",
+  "eth-pura-vida": "ETH Pura Vida",
   "becomeSponsor": "Patrocina el evento",
   "footer": {
     "contactUs": "Contáctanos",

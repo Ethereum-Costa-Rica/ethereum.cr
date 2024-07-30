@@ -37,7 +37,7 @@ const HeroDesktop = () => {
         >
           <Text>{t("learnMore")}</Text>
         </Button>
-        <Button
+        {/* <Button
           variant="eth-pura-vida-green"
           size="sm"
           as="a"
@@ -46,7 +46,7 @@ const HeroDesktop = () => {
         >
           <Text>{t("ethPuraVida.buyTickets")}</Text>
           <Icon w="24px" h="24px" as={MdArrowForward} />
-        </Button>
+        </Button> */}
       </Flex>
     </>
   );

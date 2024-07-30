@@ -35,7 +35,7 @@ const FooterMobile = () => {
         gap="10px"
       >
         <Image
-          src="assets/eth-cr.svg"
+          src="/assets/eth-cr.svg"
           width={300}
           height={143.13}
           alt="EthCR footer"

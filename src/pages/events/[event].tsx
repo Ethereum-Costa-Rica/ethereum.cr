@@ -15,6 +15,7 @@ import EventDescriptionDesktop from "@/components/event/event-description-deskto
 import EventActivities from "@/components/event/event-activities";
 import FooterDesktop from "@/components/footer/footer-desktop";
 import VenueGalleryDesktop from "@/components/venue-gallery/venue-gallery-desktop";
+import FooterMobile from "@/components/footer/footer-mobile";
 
 type EventProps = {
   eventData: {
@@ -68,7 +69,6 @@ const Event = (props: EventProps) => {
           />
         )}
       </Flex>
-
       {isMobile ? (
         <CoverMobile coverGraphicUrl={coverGraphicUrl} />
       ) : (
@@ -84,7 +84,7 @@ const Event = (props: EventProps) => {
       )}
       <EventActivities />
       <VenueGalleryDesktop />
-      <FooterDesktop />
+      {isMobile ? <FooterMobile /> : <FooterDesktop />}
     </Flex>
   );
 };

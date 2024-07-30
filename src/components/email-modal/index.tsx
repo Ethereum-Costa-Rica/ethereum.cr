@@ -1,0 +1,145 @@
+import React, { useEffect } from "react";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  Button,
+  useDisclosure,
+  FormControl,
+  Input,
+  Image,
+  Flex,
+  useToast,
+  Text,
+} from "@chakra-ui/react";
+import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
+import { MdClose } from "react-icons/md";
+
+const EmailModal = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const {} = useTranslation();
+  const toast = useToast();
+
+  useEffect(() => {
+    onOpen();
+  }, [onOpen]);
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+
+    const templateParams = {
+      user_email: email,
+    };
+
+    emailjs
+      .send(
+        "service_hufgswn",
+        "template_v310vkf",
+        templateParams,
+        "K2rhSWiNG06iCO3yj"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast({
+            title: "Correo enviado.",
+            description: "Tu correo ha sido enviado exitosamente.",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+          });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          toast({
+            title: "Error.",
+            description: "Hubo un problema al enviar tu correo.",
+            status: "error",
+            duration: 5000,
+            isClosable: true,
+          });
+        }
+      );
+
+    onClose();
+  };
+
+  return (
+    <>
+      <Modal isOpen={isOpen} onClose={onClose} isCentered size={["sm", "md"]}>
+        <ModalOverlay />
+        <ModalContent
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <ModalHeader p={5} w="100%">
+            <Flex
+              w="100%"
+              direction="row"
+              justifyContent="space-between"
+              alignItems="center"
+              h="auto"
+            >
+              <Text textAlign="end" w="75%">
+                ¡Recibe novedades!
+              </Text>
+              <MdClose size="32px" onClick={onClose} />
+            </Flex>
+          </ModalHeader>
+          <ModalBody
+            width="100%"
+            p="15px"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Image
+              src="/assets/eth-pura-vida/ethpv.svg"
+              alt="Logo"
+              boxSize="350px"
+            />
+            <Flex
+              direction="row"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <form style={{ width: "100%" }} onSubmit={handleSubmit}>
+                <FormControl id="email" isRequired justifyContent="center">
+                  <Flex
+                    direction="row"
+                    justifyContent="space-between"
+                    w="100%"
+                    alignItems="center"
+                  >
+                    <Input
+                      placeholder="Correo electrónico"
+                      type="email"
+                      name="email"
+                    />
+                    <Button
+                      ml={5}
+                      size="sm"
+                      colorScheme="blue"
+                      type="submit"
+                      value="send"
+                    >
+                      Enviar
+                    </Button>
+                  </Flex>
+                </FormControl>
+              </form>
+            </Flex>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+};
+
+export default EmailModal;

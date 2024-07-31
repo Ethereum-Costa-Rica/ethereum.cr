@@ -36,10 +36,10 @@ const CoverMobile = ({ coverGraphicUrl }: CoverProps) => {
           alt="ETH Pura Vida Hero"
         />
       </Flex>
-      <Button disabled={true} mt="4px" variant="eth-pura-vida-yellow" w="100%">
+      {/* <Button disabled={true} mt="4px" variant="eth-pura-vida-yellow" w="100%">
         <Text as="span">{t("ethPuraVida.buyTickets")}</Text>
         <Icon w="24px" h="24px" as={MdArrowForward} ml="10px" />
-      </Button>
+      </Button> */}
     </Flex>
   );
 };

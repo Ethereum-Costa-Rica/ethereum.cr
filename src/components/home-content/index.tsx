@@ -152,7 +152,14 @@ const HomeContent = () => {
             justifyContent="start"
             mt={theme.spacing.mobile.marginY}
           >
-            <Button variant="primary">{t("homeContent.findHowToHelp")}</Button>
+            <Button
+              variant="primary"
+              as="a"
+              target="_blank"
+              href="https://t.me/EthereumCR"
+            >
+              {t("homeContent.findHowToHelp")}
+            </Button>
           </Flex>
         </Flex>
         <Flex

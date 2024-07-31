@@ -31,7 +31,6 @@ const EventActivities = () => {
       returnObjects: true,
     }) as Array<any>) || [];
 
-  console.log(events);
   return (
     <Grid
       templateColumns={

@@ -67,7 +67,13 @@ const EventDescriptionDesktop = ({ event }: EventDescriptionProps) => {
           />
         </Text>
         <Flex direction="row" gap="24px">
-          <Button variant="outlined">{t("becomeSponsor")}</Button>
+          <Button
+            variant="outlined"
+            as="a"
+            href="mailto:ethereumcostarica@gmail.com"
+          >
+            {t("becomeSponsor")}
+          </Button>
           {/* <Button variant="outlined">{t("ethPuraVida.exploreAgenda")}</Button> */}
           {/* <Button variant="eth-pura-vida-yellow">
             <Text as="span">{t("ethPuraVida.buyTickets")}</Text>

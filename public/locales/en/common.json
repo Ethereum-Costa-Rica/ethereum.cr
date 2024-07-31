@@ -74,35 +74,35 @@
         "eventMode": "Bi-modal event",
         "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>21-26th October</orange> 2024"
+        "date": "<orange>19-26th October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Extra",
+          "color": "blue",
+          "background": "lightOrange"
+        },
+        "title": "Side Event",
+        "duration": "2 hours",
+        "mode": "On site",
+        "eventMode": "On site event",
+        "description": "An intimate gathering to deep-dive into niche topics like ZK. Explanations and exercises to share ideas on next ZK apps to build.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>25th October</orange> 2024"
       },
       {
         "tag": {
           "name": "Main Activity",
-          "color": "red",
-          "background": "lightOrange"
+          "color": "purple",
+          "background": "lightPurple"
         },
-        "title": "Hackathon",
-        "duration": "7 days",
-        "mode": "Bi-modal",
-        "eventMode": "Bi-modal event",
-        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "title": "Keynote",
+        "duration": "1 hour",
+        "mode": "On site",
+        "eventMode": "On site event",
+        "description": "Get a very welcoming introduction to the conference, meet the speakers and get to know the agenda of the event.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>21-26th October</orange> 2024"
-      },
-      {
-        "tag": {
-          "name": "Main Activity",
-          "color": "red",
-          "background": "lightOrange"
-        },
-        "title": "Hackathon",
-        "duration": "7 days",
-        "mode": "Bi-modal",
-        "eventMode": "Bi-modal event",
-        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
-        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>21-26th October</orange> 2024"
+        "date": "<orange>26th October</orange> 2024"
       }
     ]
   }

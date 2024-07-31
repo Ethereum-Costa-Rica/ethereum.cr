@@ -82,7 +82,7 @@ const NavBarMobile = ({
       {opened && (
         <Fade in={opened} style={{ width: "100%" }}>
           <Flex direction="column" w="100%" h="auto" bg="white">
-            {NAVBAR_LINKS.map((key, index) => (
+            {NAVBAR_LINKS.map(({ href, label }, index) => (
               <Flex
                 key={index}
                 direction="row"
@@ -91,13 +91,13 @@ const NavBarMobile = ({
                 height={{ base: "76px" }}
                 sx={{
                   borderRight:
-                    pathname === `/${key}` ? "2.5px solid black" : "",
+                    pathname === `/${href}` ? "2.5px solid black" : "",
                   paddingRight: "20px",
                   width: "100%",
                 }}
               >
-                <Link href={`/events/${key}`}>
-                  <Text variant="h3-semibold">{t(String(key))}</Text>
+                <Link href={href}>
+                  <Text variant="h3-semibold">{t(String(label))}</Text>
                 </Link>
               </Flex>
             ))}

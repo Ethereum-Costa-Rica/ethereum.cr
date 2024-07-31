@@ -6,6 +6,7 @@ import { ETH_CR_LOGO_WHITE, NAVBAR_LINKS } from "@/constants/navbar";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import { NavbarProps } from "@/models/navbar.type";
 import useNavbar from "@/utils/hooks/useNavbar";
+import { usePathname } from "next/navigation";
 // import LanguageSwitcher from "../language-switcher";
 
 const NavBarDesktop = (props: NavbarProps) => {
@@ -28,6 +29,7 @@ const NavBarDesktop = (props: NavbarProps) => {
   });
   const theme = useTheme();
   const columnsWidth = useColumnsWidth();
+  const pathname = usePathname();
 
   return (
     <Grid
@@ -54,10 +56,23 @@ const NavBarDesktop = (props: NavbarProps) => {
       </GridItem>
       <GridItem colSpan={10}>
         <Flex direction="row" alignItems="center" justifyContent="flex-end">
-          {NAVBAR_LINKS.map((key, index) => (
-            <Link key={index} href={`/events/${key}`}>
-              <Text variant="h3-regular" mx="16px" color={itemTextColor}>
-                {t(String(key))}
+          {NAVBAR_LINKS.map(({ label, href }, index) => (
+            <Link
+              key={index}
+              href={href}
+              _hover={{ textDecoration: "none" }}
+              borderBottom={
+                href === pathname ? `2px solid ${itemTextColor}` : "none"
+              }
+            >
+              <Text
+                variant="h3-regular"
+                mx="16px"
+                _hover={{ textDecoration: "none" }}
+                textDecoration="none"
+                color={itemTextColor}
+              >
+                {t(String(label))}
               </Text>
             </Link>
           ))}

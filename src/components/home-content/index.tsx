@@ -53,7 +53,13 @@ const HomeContent = () => {
         </Text>
         {isMobile && (
           <GridItem colSpan={3} mt="24px">
-            <Button variant="primary" size="md">
+            <Button
+              variant="primary"
+              size="md"
+              as="a"
+              href="https://x.com/EthereumCR"
+              target="_blank"
+            >
               <Text>{t("learnMore")}</Text>
             </Button>
           </GridItem>

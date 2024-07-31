@@ -156,7 +156,7 @@ const EventActivities = () => {
                             </Trans>
                           </Text>
                         </Flex>
-                        <Button>
+                        <Button isDisabled>
                           <Icon as={MdArrowForward} w="24px" h="24px" />
                         </Button>
                       </Flex>

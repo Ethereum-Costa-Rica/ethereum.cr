@@ -68,7 +68,7 @@ const EventCard = ({ cardFeature }: EventCardProps) => {
             </Flex>
           </Flex>
           {isMobile && (
-            <Button variant="outlined">
+            <Button variant="outlined" isDisabled>
               {t(buttonCaption)}
               <Icon w="24px" h="24px" ml="10px" as={MdArrowForward} />
             </Button>

@@ -16,9 +16,32 @@ import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import HeroDesktop from "@/components/hero/hero-desktop";
 import FooterDesktop from "@/components/footer/footer-desktop";
 import EmailModal from "@/components/email-modal";
+import { generateUUID } from "@/utils/generateUid";
+import { useEffect, useState } from "react";
+
+const uniqueKey = "uniqueUUID";
 
 export default function Home() {
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
+  const [showEmailModal, setShowEmailModal] = useState(false);
+  const [key] = useState(
+    typeof window !== "undefined"
+      ? window.localStorage.getItem(uniqueKey)
+      : null
+  );
+
+  // Verificar si el UUID ya está en localStorage
+  function checkAndShowDialog() {
+    if (!key) {
+      const uuid = generateUUID();
+      window.localStorage.setItem(uniqueKey, uuid);
+      setShowEmailModal(true);
+    } else setShowEmailModal(false);
+  }
+
+  useEffect(() => {
+    checkAndShowDialog();
+  }, [key]);
 
   return (
     <Flex
@@ -27,7 +50,7 @@ export default function Home() {
       justifyContent="space-between"
       width="100%"
     >
-      <EmailModal />
+      <EmailModal showDialog={showEmailModal} />
       <Flex direction="row" justifyContent="center">
         {isMobile ? (
           <NavBarMobile

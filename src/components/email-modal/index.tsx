@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Modal,
   ModalOverlay,
@@ -15,7 +15,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import emailjs from "emailjs-com";
-import { useTranslation } from "react-i18next";
 import { MdClose } from "react-icons/md";
 import {
   EMAIL_SERVICE_ID,
@@ -23,16 +22,28 @@ import {
   EMAIL_USER_ID,
 } from "@/constants/email";
 
-const EmailModal = () => {
+type EmailModalProps = {
+  showDialog: boolean;
+};
+
+const EmailModal = (props: EmailModalProps) => {
+  const { showDialog } = props;
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const {} = useTranslation();
+  const [isLoading, setIsLoading] = useState(false);
   const toast = useToast();
 
   useEffect(() => {
     onOpen();
   }, [onOpen]);
 
+  useEffect(() => {
+    if (!showDialog) {
+      onClose();
+    } else onOpen();
+  }, [showDialog]);
+
   const handleSubmit = (event: any) => {
+    setIsLoading(true);
     event.preventDefault();
     const email = event.target.email.value;
 
@@ -51,9 +62,12 @@ const EmailModal = () => {
             duration: 5000,
             isClosable: true,
           });
+          setIsLoading(false);
+          onClose();
         },
         (err) => {
           console.error("FAILED...", err);
+          setIsLoading(false);
           toast({
             title: "Error.",
             description: "Hubo un problema al enviar tu correo.",
@@ -63,8 +77,6 @@ const EmailModal = () => {
           });
         }
       );
-
-    onClose();
   };
 
   return (
@@ -124,6 +136,7 @@ const EmailModal = () => {
                     <Button
                       ml={5}
                       size="sm"
+                      isLoading={isLoading}
                       colorScheme="blue"
                       type="submit"
                       value="send"

@@ -43,12 +43,7 @@ const Event = (props: EventProps) => {
       justifyContent="space-between"
       width="100%"
     >
-      <Flex
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        h="80px"
-      >
+      <Flex direction="row" justifyContent="center" h="80px">
         {isMobile ? (
           <NavBarMobile
             baseBgColor={WHITE_BG_COLOR}

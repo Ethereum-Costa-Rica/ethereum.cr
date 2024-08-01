@@ -1,18 +1,10 @@
-import {
-  Grid,
-  useTheme,
-  GridItem,
-  Text,
-  Flex,
-  Button,
-  Icon,
-} from "@chakra-ui/react";
+import { Grid, useTheme, GridItem, Text, Flex, Button } from "@chakra-ui/react";
 
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import Image from "next/image";
 import { EventType } from "@/models/event.type";
 import { Trans, useTranslation } from "react-i18next";
-import { MdArrowForward, MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 
 type EventDescriptionProps = {
   event: EventType;
@@ -86,7 +78,7 @@ const EventDescriptionDesktop = ({ event }: EventDescriptionProps) => {
           w="576px"
           justifyContent="space-between"
         >
-          <Image src={`/assets/${img}`} width={200} height={160} alt="Venue" />
+          <Image src={`/assets/${img}`} width={250} height={140} alt="Venue" />
           <Flex direction="column" w="352px">
             <Text
               variant="normal-text-semibold"

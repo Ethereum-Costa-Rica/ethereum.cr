@@ -3,8 +3,33 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   colors: {
     brand: {
-      primary: "#E93334",
+      ethPuraVida: {
+        primary: "#84CCF5", // Light blue
+        secondary: "#EFB73B", // Eth Pura Vida Yellow
+        accent: "#84E9B7", // Eth Pura Vida Green
+        orange: "#F45E1B", // Eth Pura Vida Orange
+        lightOrange: "#F67A38",
+        neutralGray: "#F7F8F8",
+      },
       dark: "#0F2841",
+      blueCR: "#0F2841",
+      darkRedCR: "#AA2222",
+      footer: "#EBF8FF",
+    },
+  },
+  spacing: {
+    mobile: {
+      paddingX: "22px",
+      paddingY: "32px",
+      verticalGag: "12px",
+      horizontalGap: "20px",
+      marginY: "24px",
+      width: "390px",
+    },
+    desktop: {
+      width: "1114px",
+      maxWidth: "1440px",
+      gridGap: "24px",
     },
   },
   components: {
@@ -12,66 +37,201 @@ const theme = extendTheme({
       baseStyle: {
         fontWeight: "semibold",
       },
-      sizes: {},
+      sizes: {
+        sm: {
+          fontSize: "20px",
+          padding: "8px 16px",
+          height: "46px",
+          gap: "10px",
+        },
+        md: {
+          fontSize: "24px",
+          padding: "12px 20px",
+          height: "60px",
+        },
+        lg: {
+          fontSize: "32px",
+          padding: "16px 24px",
+        },
+      },
       variants: {
         primary: {
-          bg: "red.500",
+          bg: "brand.blueCR",
           color: "white",
+        },
+        "eth-pura-vida": {
+          bg: "brand.ethPuraVida.primary",
+          color: "black",
+        },
+        "eth-pura-vida-yellow": {
+          bg: "brand.ethPuraVida.secondary",
+          color: "black",
+        },
+        "eth-pura-vida-green": {
+          bg: "brand.ethPuraVida.accent",
+          color: "black",
+        },
+        outlined: {
+          bg: "transparent",
+          color: "black",
+          border: "3px solid",
         },
       },
       defaultProps: {},
     },
     Text: {
-      baseStyle: {
-        color: "#0F2841",
-        lineHeight: "150%",
-      },
       variants: {
-        body: {
-          fontSize: "20px",
+        "h1-extra-bold-desktop": {
+          fontSize: "64px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
         },
-        "main-title": {
-          fontSize: "50px",
-          fontWeight: 700,
-          color: "red.500",
+
+        "h2-extra-bold-desktop": {
+          fontSize: "44px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
         },
-        "main-title-alternative": {
-          fontSize: "50px",
-          fontWeight: 700,
-          color: "#0F2841",
+
+        "h3-extra-bold-desktop": {
+          fontSize: "40px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
         },
-        h1: {
-          fontSize: "50px",
-          fontWeight: 700,
-        },
-        h2: {
+
+        //
+        "h1-extra-bold-mobile": {
           fontSize: "36px",
-          fontWeight: 700,
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
         },
-        h3: {
+        "h2-extra-bold-mobile": {
+          fontSize: "34px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+        "h3-extra-bold-mobile": {
+          fontSize: "32px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+        "h4-extra-bold-mobile": {
+          fontSize: "28px",
+          fontWeight: "extrabold",
+          lineHeight: "150%",
+          letterSpacing: "1%",
+        },
+
+        //
+        "h1-semibold": {
+          fontSize: "36px",
+          fontWeight: "semibold",
+          lineHeight: "150%",
+          letterSpacing: "3%",
+        },
+        "h2-semibold": {
+          fontSize: "32px",
+          fontWeight: "semibold",
+          lineHeight: "150%",
+          letterSpacing: "3%",
+        },
+        "h3-semibold": {
           fontSize: "24px",
-          fontWeight: 700,
+          fontWeight: "semibold",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
         },
-        h4: {
-          fontSize: "18px",
-          fontWeight: 700,
+        "normal-text-semibold": {
+          fontSize: "20px",
+          fontWeight: "semibold",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
         },
-        subtitle: {
+        "small-text-semibold": {
           fontSize: "16px",
           fontWeight: "semibold",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
         },
-        subtitle2: {
-          fontSize: "18px",
-          fontWeight: "regular",
+
+        //
+        "h1-regular": {
+          fontSize: "36px",
+          fontWeight: "medium",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
         },
-        ["card-title"]: {
-          fontSize: "3xl",
-          fontWeight: 700,
+        "h2-regular": {
+          fontSize: "32px",
+          fontWeight: "medium",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
         },
-        ["sub-title"]: {
-          fontSize: "xl",
-          fontWeight: 700,
+        "h3-regular": {
+          fontSize: "24px",
+          fontWeight: "medium",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
         },
+        "normal-text-regular": {
+          fontSize: "20px",
+          fontWeight: "medium",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+        "small-text-regular": {
+          fontSize: "16px",
+          fontWeight: "medium",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+
+        //
+        "h1-light": {
+          fontSize: "36px",
+          fontWeight: "light",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+        "h2-light": {
+          fontSize: "32px",
+          fontWeight: "light",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+        "h3-light": {
+          fontSize: "24px",
+          fontWeight: "light",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+        "normal-text-light": {
+          fontSize: "20px",
+          fontWeight: "light",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+        "small-text-light": {
+          fontSize: "16px",
+          fontWeight: "light",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+        "extra-small-text-light": {
+          fontSize: "12px",
+          fontWeight: "light",
+          lineHeight: "150%",
+          letterSpacing: "0.03em",
+        },
+      },
+      defaultProps: {
+        variant: "normalText",
       },
     },
   },

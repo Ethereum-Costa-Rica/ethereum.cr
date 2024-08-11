@@ -1,0 +1,112 @@
+{
+  "events": "Eventos",
+  "home": "Inicio",
+  "blog": "Blog",
+  "donate": "Donar",
+  "shop": "Tienda",
+  "soon": "Pronto",
+  "eth-pura-vida": "ETH Pura Vida",
+  "becomeSponsor": "Patrocina el evento",
+  "apply": "Aplicar",
+  "footer": {
+    "contactUs": "Contáctanos",
+    "keepInTouch": "Mantente en contacto",
+    "subscribeForUpdates": "Suscríbete para actualizaciones",
+    "yourEmailPlaceholder": "tu.email@mail.com",
+    "consent": "Al suscribirte, aceptas recibir correos electrónicos de EthCR",
+    "subscribe": "Suscribirse",
+    "workingWithLove": "Trabajando con amor por la comunidad",
+    "goOnTop": "Ir arriba"
+  },
+  "learnMore": "Ver más",
+  "homeContent": {
+    "ethereumCommunityIn": "Comunidad Ethereum en",
+    "communityDescription": "Esta comunidad es un espacio abierto a todas las personas para aprender sobre Web3, Ethereum y tecnologías blockchain. Entusiastas, constructores, artistas, activistas sociales. Una tecnología para la coordinación humana.",
+    "noMatterWhereYouAre": "No importa donde estés",
+    "youCanConnect": "Puedes conectarte con otras personas en nuestros eventos, talleres y meetups.",
+    "onlineAndInPerson": "Eventos en línea y en persona",
+    "moreThan": "Más de",
+    "lastYear": "el año pasado",
+    "seeMoreEvents": "Ver más eventos",
+    "nationalAndForeignSpeakers": "Conferencistas nacionales e internacionales",
+    "over": "Más de",
+    "variousEvents": "eventos varios",
+    "experts": "Expertos",
+    "englishAndSpanishWorkshops": "Talleres en inglés y español",
+    "multiLanguage": "Multi-lenguaje",
+    "overTheYear": "Durante el año",
+    "activity": "Actividad",
+    "hackathonsAndIdeathons": "Hackathons y Ideathons",
+    "handsOnEvents": "Eventos prácticos",
+    "perYear": "Por año",
+    "youCan": "Tu puedes",
+    "help": "Ayudar",
+    "youCanHelpDescription": "Dar para recibir es uno de nuestros valores, si también es para ti; puedes ayudar a la comunidad Ethereum",
+    "throughDonations": "a través de donaciones, ",
+    "sponsorship": "patrocinio",
+    "and": "y",
+    "withYourTalent": "con tu talento.",
+    "findHowToHelp": "Descubre cómo ayudar",
+    "become": "Become a",
+    "member": "Member",
+    "ethCrHas": "Ethereum Costa Rica tiene",
+    "openDoors": "las puertas abiertas para ti.",
+    "inThisSpace": "En este espacio podrás aprender, compartir y",
+    "beAware": "estar al tanto de todas las actividades",
+    "newDevelopments": "y nuevos desarrollos que la comunidad tiene para ti.",
+    "joinTgChannel": "Canal de Telegram"
+  },
+  "ethPuraVida": {
+    "buyTickets": "Comprar boletos",
+    "eventDescription": "Una conferencia web3 y hackathon en el corazón de Costa Rica, para promover la adopción de Ethereum y educar a la comunidad, impulsando la innovación y el crecimiento.",
+    "exploreAgenda": "Explorar agenda",
+    "topEventActivities": "Principales <orange>Actividades</orange> del Evento",
+    "activitiesDescription": "Nuestra agenda está repleta de diversas actividades donde puedes aprender sobre una amplia gama de temas antes de la conferencia; desde talleres hasta hackathons, <orange>¡ven y únete a nosotros!</orange>",
+    "activities": [
+      {
+        "tag": {
+          "name": "Main Activity",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "Hackathon",
+        "duration": "7 days",
+        "mode": "Bi-modal",
+        "eventMode": "Bi-modal event",
+        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>21-26th October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Main Activity",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "Hackathon",
+        "duration": "7 days",
+        "mode": "Bi-modal",
+        "eventMode": "Bi-modal event",
+        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>21-26th October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Main Activity",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "Hackathon",
+        "duration": "7 days",
+        "mode": "Bi-modal",
+        "eventMode": "Bi-modal event",
+        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>21-26th October</orange> 2024"
+      }
+    ],
+    "callForSpeakersTitle": "Convocatoria de <orange>Speakers</orange>",
+    "callForSpeakers": "Estamos emocionados de anunciar la <orange>Convocatoria de Speakers!</orange>. Si eres un apasionado de compartir tu conocimiento y expertise, te invitamos a aplicar para ser speaker en <orange>ETH Pura Vida 2024.</orange>"
+  }
+}

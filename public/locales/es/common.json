@@ -7,6 +7,7 @@
   "soon": "Pronto",
   "eth-pura-vida": "ETH Pura Vida",
   "becomeSponsor": "Patrocina el evento",
+  "apply": "Aplicar",
   "footer": {
     "contactUs": "Contáctanos",
     "keepInTouch": "Mantente en contacto",
@@ -104,6 +105,8 @@
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>21-26th October</orange> 2024"
       }
-    ]
+    ],
+    "callForSpeakersTitle": "Convocatoria de <orange>Speakers</orange>",
+    "callForSpeakers": "Estamos emocionados de anunciar la <orange>Convocatoria de Speakers!</orange>. Si eres un apasionado de compartir tu conocimiento y expertise, te invitamos a aplicar para ser speaker en <orange>ETH Pura Vida 2024.</orange>"
   }
 }

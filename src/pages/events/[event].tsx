@@ -16,6 +16,7 @@ import EventActivities from "@/components/event/event-activities";
 import FooterDesktop from "@/components/footer/footer-desktop";
 import VenueGalleryDesktop from "@/components/venue-gallery/venue-gallery-desktop";
 import FooterMobile from "@/components/footer/footer-mobile";
+import CallForSpeakers from "@/components/event/call-for-speakers";
 
 type EventProps = {
   eventData: {
@@ -79,6 +80,7 @@ const Event = (props: EventProps) => {
       )}
       <EventActivities />
       <VenueGalleryDesktop />
+      <CallForSpeakers />
       {isMobile ? <FooterMobile /> : <FooterDesktop />}
     </Flex>
   );

@@ -8,6 +8,7 @@
   "eth-pura-vida": "ETH Pura Vida",
   "event": "event",
   "becomeSponsor": "Become a sponsor",
+  "apply": "Apply",
   "footer": {
     "contactUs": "Contact Us",
     "keepInTouch": "Keep in touch",
@@ -105,6 +106,8 @@
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>26th October</orange> 2024"
       }
-    ]
+    ],
+    "callForSpeakersTitle": "Call for <blue>Speakers</blue>",
+    "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange>. If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>"
   }
 }

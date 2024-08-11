@@ -1,7 +1,7 @@
 import { EventType } from "@/models/event.type";
 import { Flex, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import { MdArrowOutward } from "react-icons/md";
 
 type EventDescriptionProps = {
@@ -9,9 +9,7 @@ type EventDescriptionProps = {
 };
 
 const EventDescriptionMobile = ({ event }: EventDescriptionProps) => {
-  const { t } = useTranslation();
   const {
-    event: eventName,
     eventNameGraphicUrl,
     description,
     venue: { img, name, address, gMapsLink },

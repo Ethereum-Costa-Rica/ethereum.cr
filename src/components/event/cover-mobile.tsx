@@ -1,17 +1,8 @@
-import {
-  // theme,
-  // Box,
-  useTheme,
-  Flex,
-  Button,
-  Icon,
-  Text,
-} from "@chakra-ui/react";
+import { useTheme, Flex, Button, Icon, Text } from "@chakra-ui/react";
 import { t } from "i18next";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { MdArrowForward } from "react-icons/md";
-// import { MdArrowForward } from "react-icons/md";
 
 type CoverProps = {
   coverGraphicUrl: string;

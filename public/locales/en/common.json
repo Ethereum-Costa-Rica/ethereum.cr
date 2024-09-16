@@ -59,6 +59,7 @@
   },
   "ethPuraVida": {
     "buyTickets": "Buy tickets",
+    "venueGallery": "Venue <orange>Gallery</orange>",
     "eventDescription": "A web3 conference and hackathon in the <blue>heart of Costa Rica</blue>, to promote Ethereum adoption and educate the community, <blue>driving</blue> <orange>innovation</orange> <blue>and</blue> <orange>growth.</orange>",
     "exploreAgenda": "Explore agenda",
     "topEventActivities": "Top Event <orange>Activities</orange>",

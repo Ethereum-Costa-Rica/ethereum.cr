@@ -40,7 +40,9 @@ const CallForSpeakers = () => {
         flexDirection="column"
         justifyContent="space-between"
       >
-        <Text variant="h2-extra-bold-desktop">
+        <Text
+          variant={isMobile ? "h2-extra-bold-mobile" : "h2-extra-bold-desktop"}
+        >
           <Trans
             i18nKey="ethPuraVida.callForSpeakersTitle"
             components={{

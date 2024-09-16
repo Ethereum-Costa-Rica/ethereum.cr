@@ -6,10 +6,10 @@
       "eventNameGraphicUrl": "eth-pura-vida/eth-pv-event-name-graphic.svg",
       "description": "ethPuraVida.eventDescription",
       "venue": {
-        "img": "eth-pura-vida/eth-pv-venue.jpeg",
-        "name": "Sede Inter-Universitaria Alajuela",
-        "address": "Provincia de Alajuela, Desamparados",
-        "gMapsLink": "https://maps.app.goo.gl/9dwsS6Jjsy4GXC8f7"
+        "img": "eth-pura-vida/eth-pv-venue.jpg",
+        "name": "Cenfotec",
+        "address": "Avenida Central, San José.",
+        "gMapsLink": "https://maps.app.goo.gl/RBn1eowocKriRTaq6"
       }
     }
   ]

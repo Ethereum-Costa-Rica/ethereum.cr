@@ -19,7 +19,7 @@ import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
 const EventActivities = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const columnsWidth = useColumnsWidth();
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
   const theme = useTheme();
@@ -30,6 +30,8 @@ const EventActivities = () => {
     (t("ethPuraVida.activities", {
       returnObjects: true,
     }) as Array<any>) || [];
+
+  if (!ready) return null;
 
   return (
     <Grid

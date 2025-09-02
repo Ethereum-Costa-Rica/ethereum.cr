@@ -19,7 +19,9 @@ const CallForSpeakers = () => {
   const columnsWidth = useColumnsWidth();
   const ethPuraVidaColors = theme.colors.brand.ethPuraVida;
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return null;
 
   return (
     <Grid

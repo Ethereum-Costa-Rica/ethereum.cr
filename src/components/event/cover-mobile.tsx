@@ -10,7 +10,9 @@ type CoverProps = {
 
 const CoverMobile = ({ coverGraphicUrl }: CoverProps) => {
   const theme = useTheme();
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return null;
 
   return (
     <Flex

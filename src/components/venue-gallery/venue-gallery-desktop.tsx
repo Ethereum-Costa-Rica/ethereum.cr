@@ -19,7 +19,9 @@ const VenueGalleryDesktop = () => {
   const theme = useTheme();
   const columnsWidth = useColumnsWidth();
   const { paddingX } = theme.spacing.mobile;
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return null;
 
   return (
     <Grid

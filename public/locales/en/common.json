@@ -67,43 +67,85 @@
     "activities": [
       {
         "tag": {
-          "name": "Main Activity",
+          "name": "Main Event",
           "color": "red",
           "background": "lightOrange"
         },
-        "title": "Hackathon",
+        "title": "ETH Pura Vida Hackathon",
         "duration": "7 days",
-        "mode": "Bi-modal",
-        "eventMode": "Bi-modal event",
-        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "mode": "Hybrid",
+        "eventMode": "Hybrid event",
+        "description": "Build innovative blockchain solutions in our week-long hackathon. Choose your theme and compete for prizes while learning from experts.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>19-26th October</orange> 2024"
       },
       {
         "tag": {
-          "name": "Extra",
+          "name": "Workshop",
           "color": "blue",
+          "background": "lightBlue"
+        },
+        "title": "ZK Proofs Workshop",
+        "duration": "3 hours",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Deep dive into Zero-Knowledge proofs with hands-on exercises. Learn to build privacy-preserving applications.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>22nd October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Panel",
+          "color": "purple",
+          "background": "lightPurple"
+        },
+        "title": "DeFi Innovation Panel",
+        "duration": "1.5 hours",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Leading experts discuss the future of decentralized finance, emerging trends, and opportunities in Latin America.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>24th October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Workshop",
+          "color": "green",
+          "background": "lightGreen"
+        },
+        "title": "Smart Contract Security",
+        "duration": "2 hours",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Learn best practices for secure smart contract development and auditing techniques from security experts.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>23rd October</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Networking",
+          "color": "orange",
           "background": "lightOrange"
         },
-        "title": "Side Event",
+        "title": "Community Mixer",
         "duration": "2 hours",
-        "mode": "On site",
-        "eventMode": "On site event",
-        "description": "An intimate gathering to deep-dive into niche topics like ZK. Explanations and exercises to share ideas on next ZK apps to build.",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Connect with fellow developers, entrepreneurs, and blockchain enthusiasts in a relaxed networking environment.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>25th October</orange> 2024"
       },
       {
         "tag": {
-          "name": "Main Activity",
-          "color": "purple",
-          "background": "lightPurple"
+          "name": "Conference",
+          "color": "teal",
+          "background": "lightTeal"
         },
-        "title": "Keynote",
-        "duration": "1 hour",
-        "mode": "On site",
-        "eventMode": "On site event",
-        "description": "Get a very welcoming introduction to the conference, meet the speakers and get to know the agenda of the event.",
+        "title": "Main Conference Day",
+        "duration": "8 hours",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Full day of keynote speeches, technical talks, and presentations covering the latest in Ethereum development.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>26th October</orange> 2024"
       }

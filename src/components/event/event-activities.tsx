@@ -12,7 +12,7 @@ import {
   Button,
   useMediaQuery,
 } from "@chakra-ui/react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import Image from "next/image";
 import { MdArrowForward, MdComputer, MdOutlineTimelapse } from "react-icons/md";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";

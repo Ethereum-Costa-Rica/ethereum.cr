@@ -9,7 +9,7 @@ import Mailing from "./mailing";
 
 const FooterDesktop = () => {
   const columnsWidth = useColumnsWidth();
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const theme = useTheme();
 
   const scrollToTop = () => {
@@ -18,6 +18,8 @@ const FooterDesktop = () => {
       behavior: "smooth",
     });
   };
+
+  if (!ready) return null;
 
   return (
     <Grid

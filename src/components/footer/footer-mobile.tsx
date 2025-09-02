@@ -13,8 +13,10 @@ import FooterSocials from "./footer-socials";
 import Mailing from "./mailing";
 
 const FooterMobile = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const theme = useTheme();
+
+  if (!ready) return null;
 
   return (
     <Flex

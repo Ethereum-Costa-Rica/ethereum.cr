@@ -9,7 +9,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { MdOutlineKeyboardArrowDown, MdOutlineLanguage } from "react-icons/md";
 
 const LanguageSwitcher = () => {

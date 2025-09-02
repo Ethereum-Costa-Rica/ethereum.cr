@@ -18,7 +18,7 @@ import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
-  const HomeContent = () => {
+const HomeContent = () => {
   const { t, ready } = useTranslation();
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
   const columnsWidth = useColumnsWidth();

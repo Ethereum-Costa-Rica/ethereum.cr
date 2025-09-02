@@ -54,7 +54,10 @@
     "inThisSpace": "En este espacio podrás aprender, compartir y",
     "beAware": "estar al tanto de todas las actividades",
     "newDevelopments": "y nuevos desarrollos que la comunidad tiene para ti.",
-    "joinTgChannel": "Canal de Telegram"
+    "joinTgChannel": "Canal de Telegram",
+    "partners": {
+      "title": "Nuestros <red>Socios</red>"
+    }
   },
   "ethPuraVida": {
     "buyTickets": "Comprar boletos",
@@ -107,6 +110,9 @@
         "date": "<orange>21-26th October</orange> 2024"
       }
     ],
+    "partners": {
+      "title": "Socios del Evento"
+    },
     "callForSpeakersTitle": "Convocatoria de <orange>Speakers</orange>",
     "callForSpeakers": "Estamos emocionados de anunciar la <orange>Convocatoria de Speakers!</orange>. Si eres un apasionado de compartir tu conocimiento y expertise, te invitamos a aplicar para ser speaker en <orange>ETH Pura Vida 2024.</orange>"
   }

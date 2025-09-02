@@ -14,6 +14,7 @@ import {
 } from "@/constants/navbar";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import HeroDesktop from "@/components/hero/hero-desktop";
+import Partners from "@/components/event/partners";
 import FooterDesktop from "@/components/footer/footer-desktop";
 import EmailModal from "@/components/email-modal";
 import { generateUUID } from "@/utils/generateUid";

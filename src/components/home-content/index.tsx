@@ -17,6 +17,7 @@ import { HOME_CARD_FEATURES } from "@/constants/homeCardFeatures";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
+import Partners from "../event/partners";
 
 const HomeContent = () => {
   const { t } = useTranslation();
@@ -78,6 +79,7 @@ const HomeContent = () => {
           src="/assets/photos/texas-tech-auditorio.png"
           alt="Texas Tech Auditorio"
         />
+        
         {/* {isMobile && (
           <NextImage
             className=""
@@ -88,6 +90,11 @@ const HomeContent = () => {
             alt="Eth CR vertical graphic"
           />
         )} */}
+      </GridItem>
+      
+      {/* Partners Section */}
+      <GridItem colSpan={isMobile ? 4 : 12}>
+        <Partners context="home" />
       </GridItem>
 
       <GridItem colSpan={isMobile ? 4 : 8}>
@@ -101,6 +108,8 @@ const HomeContent = () => {
           {t("homeContent.youCanConnect")}
         </Text>
       </GridItem>
+      
+      
       <GridItem colSpan={isMobile ? 4 : 12}>
         <Flex
           w="100%"

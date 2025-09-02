@@ -55,7 +55,10 @@
     "inThisSpace": "In this space you will be able to learn, share and",
     "beAware": "be aware of all activities",
     "newDevelopments": "and new developments that the community has for you.",
-    "joinTgChannel": "Telegram channel"
+    "joinTgChannel": "Telegram channel",
+    "partners": {
+      "title": "Our <red>Partners</red>"
+    }
   },
   "ethPuraVida": {
     "buyTickets": "Buy tickets",
@@ -108,6 +111,9 @@
         "date": "<orange>26th October</orange> 2024"
       }
     ],
+    "partners": {
+      "title": "Event <red>Partners</red>"
+    },
     "callForSpeakersTitle": "Call for <blue>Speakers</blue>",
     "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange>. If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>"
   }

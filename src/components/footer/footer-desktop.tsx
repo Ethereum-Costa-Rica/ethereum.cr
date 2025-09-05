@@ -1,4 +1,4 @@
-import { Grid, GridItem, useTheme, Text, Button } from "@chakra-ui/react";
+import { Grid, GridItem, useTheme, Text, Button, Flex } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
@@ -39,25 +39,56 @@ const FooterDesktop = () => {
         />
         <FooterSocials style={{ marginBottom: "40px" }} />
         <Text variant="h3-semibold">{t("footer.workingWithLove")}</Text>
-        <Text variant="small-text-light" textAlign="center" mb="40px">
-          <Text
-            as="a"
-            href="https://www.linkedin.com/in/angie-herrera-aguilar/"
-            color="blue"
-            target="_blank"
-          >
-            Design | Angie Herrera
-          </Text>{" "}
-          &nbsp;&nbsp;{" "}
-          <Text
-            as="a"
-            href="https://www.linkedin.com/in/jacv/"
-            color="blue"
-            target="_blank"
-          >
-            Development | Justin Castillo
-          </Text>
-        </Text>
+        <Flex direction="column" alignItems="center" gap="10px" mb="40px">
+          <Flex direction="row" gap="24px" wrap="wrap" justifyContent="center">
+            <Text
+              variant="small-text-light"
+              as="a"
+              href="https://www.linkedin.com/in/santiagovillarrealarley/"
+              color="blue"
+              target="_blank"
+              w="45%"
+              textAlign="center"
+            >
+              Development | Santiago Villarreal
+            </Text>
+            <Text
+              variant="small-text-light"
+              as="a"
+              href="https://www.linkedin.com/in/fabian-sanchez-d/"
+              color="blue"
+              target="_blank"
+              w="45%"
+              textAlign="center"
+            >
+              Development | Fabián Sánchez
+            </Text>
+          </Flex>
+          <Flex direction="row" gap="24px" wrap="wrap" justifyContent="center">
+            <Text
+              variant="small-text-light"
+              as="a"
+              href="https://www.linkedin.com/in/angie-herrera-aguilar/"
+              color="blue"
+              target="_blank"
+              w="45%"
+              textAlign="center"
+            >
+              Design | Angie Herrera
+            </Text>
+            <Text
+              variant="small-text-light"
+              as="a"
+              href="https://www.linkedin.com/in/jacv/"
+              color="blue"
+              target="_blank"
+              w="45%"
+              textAlign="center"
+            >
+              Development | Justin Castillo
+            </Text>
+          </Flex>
+        </Flex>
       </GridItem>
       <GridItem
         colSpan={5}

@@ -69,45 +69,87 @@
     "activities": [
       {
         "tag": {
-          "name": "Main Activity",
+          "name": "Evento Principal",
           "color": "red",
           "background": "lightOrange"
         },
-        "title": "Hackathon",
-        "duration": "7 days",
-        "mode": "Bi-modal",
-        "eventMode": "Bi-modal event",
-        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "title": "Hackathon ETH Pura Vida",
+        "duration": "7 días",
+        "mode": "Híbrido",
+        "eventMode": "Evento híbrido",
+        "description": "Construye soluciones blockchain innovadoras en nuestro hackathon de una semana. Elige tu tema y compite por premios mientras aprendes de expertos.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>21-26th October</orange> 2024"
+        "date": "<orange>19-26 de Octubre</orange> 2024"
       },
       {
         "tag": {
-          "name": "Main Activity",
-          "color": "red",
-          "background": "lightOrange"
+          "name": "Taller",
+          "color": "blue",
+          "background": "lightBlue"
         },
-        "title": "Hackathon",
-        "duration": "7 days",
-        "mode": "Bi-modal",
-        "eventMode": "Bi-modal event",
-        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "title": "Taller de Pruebas ZK",
+        "duration": "3 horas",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Sumérgete en las pruebas de conocimiento cero con ejercicios prácticos. Aprende a construir aplicaciones que preserven la privacidad.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>21-26th October</orange> 2024"
+        "date": "<orange>22 de Octubre</orange> 2024"
       },
       {
         "tag": {
-          "name": "Main Activity",
-          "color": "red",
+          "name": "Panel",
+          "color": "purple",
+          "background": "lightPurple"
+        },
+        "title": "Panel de Innovación DeFi",
+        "duration": "1.5 horas",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Expertos líderes discuten el futuro de las finanzas descentralizadas, tendencias emergentes y oportunidades en América Latina.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>24 de Octubre</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Taller",
+          "color": "green",
+          "background": "lightGreen"
+        },
+        "title": "Seguridad de Contratos Inteligentes",
+        "duration": "2 horas",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Aprende las mejores prácticas para el desarrollo seguro de contratos inteligentes y técnicas de auditoría de expertos en seguridad.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>23 de Octubre</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Networking",
+          "color": "orange",
           "background": "lightOrange"
         },
-        "title": "Hackathon",
-        "duration": "7 days",
-        "mode": "Bi-modal",
-        "eventMode": "Bi-modal event",
-        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "title": "Mixer Comunitario",
+        "duration": "2 horas",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Conéctate con desarrolladores, emprendedores y entusiastas blockchain en un ambiente relajado de networking.",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>21-26th October</orange> 2024"
+        "date": "<orange>25 de Octubre</orange> 2024"
+      },
+      {
+        "tag": {
+          "name": "Conferencia",
+          "color": "teal",
+          "background": "lightTeal"
+        },
+        "title": "Día Principal de la Conferencia",
+        "duration": "8 horas",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Día completo de discursos principales, charlas técnicas y presentaciones cubriendo lo último en desarrollo de Ethereum.",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>26 de Octubre</orange> 2024"
       }
     ],
     "partners": {

@@ -65,7 +65,7 @@ const CallForSpeakers = () => {
             variant="eth-pura-vida-yellow"
             as="a"
             target="_blank"
-            href="https://forms.gle/9CskA7RXuZGrEpYPA"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc-ZPnCFWvjhe59p3Lb-cJZtxDslFjRa4JqR-ahdvrnBRBEng/viewform?usp=dialog"
           >
             {t("apply")}
           </Button>

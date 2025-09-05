@@ -63,7 +63,8 @@ const EventDescriptionDesktop = ({ event }: EventDescriptionProps) => {
             variant="outlined"
             as="a"
             // TODO: replace with Google Form actual link for sponsors
-            href="https://example.com"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfHYMa6uvt-7GcFekZ0bXa95Ammtta1VF2KIjH1IXxphHR3rg/viewform?usp=dialog
+"
           >
             {t("becomeSponsor")}
           </Button>

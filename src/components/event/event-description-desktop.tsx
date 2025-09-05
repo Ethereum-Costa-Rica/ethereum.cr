@@ -3,7 +3,7 @@ import { Grid, useTheme, GridItem, Text, Flex, Button } from "@chakra-ui/react";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import Image from "next/image";
 import { EventType } from "@/models/event.type";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import { MdArrowOutward } from "react-icons/md";
 
 type EventDescriptionProps = {

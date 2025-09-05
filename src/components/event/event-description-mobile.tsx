@@ -1,7 +1,7 @@
 import { EventType } from "@/models/event.type";
 import { Flex, Text, useTheme } from "@chakra-ui/react";
 import Image from "next/image";
-import { Trans } from "react-i18next";
+import { Trans } from "next-i18next";
 import { MdArrowOutward } from "react-icons/md";
 
 type EventDescriptionProps = {

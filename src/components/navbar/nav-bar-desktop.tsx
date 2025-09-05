@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 // import LanguageSwitcher from "../language-switcher";
 
 const NavBarDesktop = (props: NavbarProps) => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const {
     baseLogo,
     extendedLogo,
@@ -30,6 +30,8 @@ const NavBarDesktop = (props: NavbarProps) => {
   const theme = useTheme();
   const columnsWidth = useColumnsWidth();
   const pathname = usePathname();
+
+  if (!ready) return null;
 
   return (
     <Grid

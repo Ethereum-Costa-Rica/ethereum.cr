@@ -1,7 +1,7 @@
 import { useTheme, Flex, Button, Icon, Text } from "@chakra-ui/react";
-import { t } from "i18next";
+
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { MdArrowForward } from "react-icons/md";
 
 type CoverProps = {
@@ -10,7 +10,9 @@ type CoverProps = {
 
 const CoverMobile = ({ coverGraphicUrl }: CoverProps) => {
   const theme = useTheme();
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return null;
 
   return (
     <Flex

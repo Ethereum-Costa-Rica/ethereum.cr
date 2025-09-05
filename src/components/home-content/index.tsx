@@ -8,7 +8,7 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { MdArrowForward } from "react-icons/md";
 import Image from "next/image";
 
@@ -19,9 +19,11 @@ import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
 const HomeContent = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
   const columnsWidth = useColumnsWidth();
+
+  if (!ready) return null;
   const theme = useTheme();
 
   return (
@@ -60,7 +62,7 @@ const HomeContent = () => {
               href="https://x.com/EthereumCR"
               target="_blank"
             >
-              <Text>{t("learnMore")}</Text>
+              {/* <Text>{t("learnMore")}</Text> */}
             </Button>
           </GridItem>
         )}

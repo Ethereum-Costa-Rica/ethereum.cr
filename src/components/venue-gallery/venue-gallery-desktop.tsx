@@ -11,7 +11,7 @@ import {
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "next-i18next";
 
 const VenueGalleryDesktop = () => {
   const images = ["1", "3", "2"];
@@ -19,7 +19,9 @@ const VenueGalleryDesktop = () => {
   const theme = useTheme();
   const columnsWidth = useColumnsWidth();
   const { paddingX } = theme.spacing.mobile;
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return null;
 
   return (
     <Grid

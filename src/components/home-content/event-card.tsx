@@ -10,7 +10,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { MdArrowForward } from "react-icons/md";
 
 interface EventCardProps {
@@ -27,9 +27,11 @@ const EventCard = ({ cardFeature }: EventCardProps) => {
     bodyPart3,
     buttonCaption,
   } = cardFeature;
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const theme = useTheme();
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
+
+  if (!ready) return null;
 
   return (
     <Card

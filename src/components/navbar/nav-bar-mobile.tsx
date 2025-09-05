@@ -26,7 +26,7 @@ const NavBarMobile = ({
   baseMenuLogoColor,
   extendedMenuLogoColor,
 }: NavbarProps) => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const pathname = usePathname();
   const theme = useTheme();
   const { bgColor, logo, menuLogoColor, opened, setOpened } = useNavbar({
@@ -37,6 +37,8 @@ const NavBarMobile = ({
     baseMenuLogoColor,
     extendedMenuLogoColor,
   });
+
+  if (!ready) return null;
 
   return (
     <Box

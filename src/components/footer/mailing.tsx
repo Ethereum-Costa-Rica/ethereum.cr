@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Flex, Input, Button, Text, useToast } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import emailjs from "emailjs-com";
 
 import {
@@ -10,7 +10,7 @@ import {
 } from "@/constants/email";
 
 const Mailing = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -48,6 +48,9 @@ const Mailing = () => {
         setIsLoading(false);
       });
   };
+
+  if (!ready) return null;
+
   return (
     <Flex direction="column" gap="20px">
       <Text variant="h1-semibold">{t("footer.keepInTouch")}</Text>

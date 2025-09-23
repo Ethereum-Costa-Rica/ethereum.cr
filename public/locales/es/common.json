@@ -56,7 +56,15 @@
     "newDevelopments": "y nuevos desarrollos que la comunidad tiene para ti.",
     "joinTgChannel": "Canal de Telegram",
     "partners": {
-      "title": "Nuestros <red>Socios</red>"
+      "title": "Nuestros <red>Patrocinadores</red>"
+    }
+  },
+  "sponsors": {
+    "title": "Nuestros <red>Socios</red>",
+    "tiers": {
+      "diamond": "Socios Diamante",
+      "gold": "Socios Oro", 
+      "silver": "Socios Plata"
     }
   },
   "ethPuraVida": {

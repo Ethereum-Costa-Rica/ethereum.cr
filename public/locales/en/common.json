@@ -57,7 +57,15 @@
     "newDevelopments": "and new developments that the community has for you.",
     "joinTgChannel": "Telegram channel",
     "partners": {
-      "title": "Our <red>Partners</red>"
+      "title": "Our <red>Sponsors</red>"
+    }
+  },
+  "sponsors": {
+    "title": "Our <red>Partners</red>",
+    "tiers": {
+      "diamond": "Diamond Partners",
+      "gold": "Gold Partners", 
+      "silver": "Silver Partners"
     }
   },
   "ethPuraVida": {
@@ -157,6 +165,6 @@
       "title": "Event <red>Partners</red>"
     },
     "callForSpeakersTitle": "Call for <blue>Speakers</blue>",
-    "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange>. If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>"
+    "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange> If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>"
   }
 }

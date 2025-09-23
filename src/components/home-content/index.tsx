@@ -54,19 +54,6 @@ const HomeContent = () => {
         <Text variant="normal-text-regular">
           {t("homeContent.communityDescription")}
         </Text>
-        {isMobile && (
-          <GridItem colSpan={3} mt="24px">
-            <Button
-              variant="primary"
-              size="md"
-              as="a"
-              href="https://x.com/EthereumCR"
-              target="_blank"
-            >
-              {/* <Text>{t("learnMore")}</Text> */}
-            </Button>
-          </GridItem>
-        )}
       </GridItem>
       <GridItem
         display="flex"

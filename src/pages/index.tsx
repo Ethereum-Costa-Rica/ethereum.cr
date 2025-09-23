@@ -17,6 +17,7 @@ import HeroDesktop from "@/components/hero/hero-desktop";
 import Partners from "@/components/event/partners";
 import FooterDesktop from "@/components/footer/footer-desktop";
 import EmailModal from "@/components/email-modal";
+import SponsorsComponent from "@/components/sponsors";
 import { generateUUID } from "@/utils/generateUid";
 import { useEffect, useState } from "react";
 
@@ -75,6 +76,7 @@ export default function Home() {
       </Flex>
       {isMobile ? <HeroMobile /> : <HeroDesktop />}
       <HomeContent />
+      <SponsorsComponent />
       {isMobile ? <FooterMobile /> : <FooterDesktop />}
     </Flex>
   );

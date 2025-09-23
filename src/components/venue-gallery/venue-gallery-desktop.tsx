@@ -63,7 +63,7 @@ const VenueGalleryDesktop = () => {
           alignItems="center"
         >
           <Image
-            src={`/assets/eth-pv-venue/${image}.png`}
+            src={`/assets/eth-pv-venue/${image}.jpg`}
             width={668.39}
             height={200}
             alt="Venue Gallery"

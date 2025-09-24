@@ -29,37 +29,42 @@ const Partners = ({ context = "event" }: PartnersProps) => {
   const blueCR = theme.colors.brand.blueCR;
   const darkRedCR = theme.colors.brand.darkRedCR;
 
-  // placeholders, replace later
+  // Real partner logos
   const partners: Partner[] = [
     {
-      name: "Partner 1",
-      logo: "/assets/partners/partner1.svg",
-      website: "https://example.com",
+      name: "Ethereum Foundation",
+      logo: "/assets/partners/ethereumfoundation.svg",
+      website: "https://ethereum.org",
     },
     {
-      name: "Partner 2",
-      logo: "/assets/partners/partner2.svg",
-      website: "https://example.com",
+      name: "Texas Tech University",
+      logo: "/assets/partners/texastech.svg",
+      website: "https://www.ttu.edu",
     },
     {
-      name: "Partner 3",
-      logo: "/assets/partners/partner3.svg",
-      website: "https://example.com",
+      name: "886 Crypto",
+      logo: "/assets/partners/886crypto.svg",
+      website: "https://www.886crypto.com",
     },
     {
-      name: "Partner 4",
-      logo: "/assets/partners/partner4.svg",
-      website: "https://example.com",
+      name: "Impesa",
+      logo: "/assets/partners/impesa.svg",
+      website: "https://www.impesa.net",
     },
     {
-      name: "Partner 5",
-      logo: "/assets/partners/partner5.svg",
-      website: "https://example.com",
+      name: "Inbest",
+      logo: "/assets/partners/inbest.svg",
+      website: "https://www.skool.com/inbestprogram/about",
     },
     {
-      name: "Partner 6",
-      logo: "/assets/partners/partner6.svg",
-      website: "https://example.com",
+      name: "PagueloFacil",
+      logo: "/assets/partners/paguelofacil.svg",
+      website: "https://www.paguelofacil.com/",
+    },
+    {
+      name: "PizzaDAO",
+      logo: "/assets/partners/PizzaDao.svg",
+      website: "https://globalpizza.party/",
     },
   ];
 
@@ -121,8 +126,8 @@ const Partners = ({ context = "event" }: PartnersProps) => {
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
-                p={{ base: 3, md: 4 }}
-                bg="gray.50"
+                p={{ base: 4, md: 6 }}
+                bg="white"
                 borderRadius="lg"
                 border="1px solid"
                 borderColor="gray.200"
@@ -131,15 +136,19 @@ const Partners = ({ context = "event" }: PartnersProps) => {
                   borderColor: "blue.300",
                   boxShadow: "md",
                 }}
-                h={{ base: "80px", md: "100px" }}
+                h={{ base: "100px", md: "120px" }}
                 w="100%"
+                minH={{ base: "100px", md: "120px" }}
               >
                 <Image
                   src={partner.logo}
                   alt={partner.name}
                   maxH={{ base: "60px", md: "80px" }}
                   maxW="100%"
+                  w="auto"
+                  h="auto"
                   objectFit="contain"
+                  objectPosition="center"
                   fallbackSrc="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMTIwIDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjYwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjc3NDhCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UGFydG5lcjwvdGV4dD4KPC9zdmc+"
                 />
               </Link>

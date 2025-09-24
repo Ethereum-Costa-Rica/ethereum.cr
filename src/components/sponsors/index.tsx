@@ -24,51 +24,36 @@ const SPONSORS_DATA: Sponsor[] = [
   // Diamond Partners
   {
     name: "Ethereum Foundation",
-    logo: "/assets/partners/partner1.svg",
+    logo: "/assets/partners/ethereum_foundation.png",
     tier: "diamond"
   },
   {
-    name: "ConsenSys",
-    logo: "/assets/partners/partner2.svg", 
+    name: "Texas Tech University",
+    logo: "/assets/partners/texas_tech_university.png", 
     tier: "diamond"
   },
   
   // Gold Partners
   {
-    name: "Polygon",
-    logo: "/assets/partners/partner3.svg",
+    name: "Starknet",
+    logo: "/assets/partners/starknet.svg",
     tier: "gold"
   },
   {
     name: "Chainlink",
-    logo: "/assets/partners/partner4.svg",
+    logo: "/assets/partners/chainlink.png",
     tier: "gold"
   },
   {
-    name: "Uniswap",
-    logo: "/assets/partners/partner5.svg",
+    name: "Impesa",
+    logo: "/assets/partners/impesa.png",
     tier: "gold"
   },
   
   // Silver Partners
   {
-    name: "Aave",
-    logo: "/assets/partners/partner6.svg",
-    tier: "silver"
-  },
-  {
-    name: "OpenZeppelin",
-    logo: "/assets/partners/partner1.svg",
-    tier: "silver"
-  },
-  {
-    name: "The Graph",
-    logo: "/assets/partners/partner2.svg",
-    tier: "silver"
-  },
-  {
-    name: "IPFS",
-    logo: "/assets/partners/partner3.svg",
+    name: "Inbest",
+    logo: "/assets/partners/inbest.jpg",
     tier: "silver"
   }
 ];

@@ -25,6 +25,21 @@
     "noMatterWhereYouAre": "No importa donde estés",
     "youCanConnect": "Puedes conectarte con otras personas en nuestros eventos, talleres y meetups.",
     "onlineAndInPerson": "Eventos en línea y en persona",
+    "totalAttendees": "Total de participantes",
+    "totalAttendeesTitle": "TOTAL DE PARTICIPANTES",
+    "allEvents": "todos los eventos",
+    "attendees": "asistentes",
+    "participants": "participantes",
+    "participantsLabel": "participantes",
+    "speakers": "conferencistas",
+    "speakersLabel": "conferencistas",
+    "sponsors": "Patrocinadores",
+    "sponsorsLabel": "patrocinadores",
+    "educationalTechHub": "Hub Educativo & Tecnológico",
+    "educationalTechHubTitle": "HUB EDUCATIVO & TECNOLÓGICO",
+    "techHub": "hub tecnológico",
+    "techHubLabel": "hub",
+    "positioning": "POSICIONAMIENTO",
     "moreThan": "Más de",
     "lastYear": "el año pasado",
     "seeMoreEvents": "Ver más eventos",
@@ -56,7 +71,7 @@
     "newDevelopments": "y nuevos desarrollos que la comunidad tiene para ti.",
     "joinTgChannel": "Canal de Telegram",
     "partners": {
-      "title": "Nuestros <red>Patrocinadores</red>"
+      "title": "Pasados <red>Patrocinadores</red>"
     }
   },
   "sponsors": {

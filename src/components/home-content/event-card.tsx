@@ -38,41 +38,83 @@ const EventCard = ({ cardFeature }: EventCardProps) => {
       w="xs"
       minW="xs"
       maxW="sm"
-      minH="274px"
-      bg="#F7F8F8"
+      minH="150px"
+      bg="white"
+      borderRadius="12px"
+      boxShadow="0 2px 8px rgba(0, 0, 0, 0.1)"
+      border="1px solid #e2e8f0"
       my={theme.spacing.mobile.marginY}
+      transition="all 0.2s ease"
+      _hover={{
+        transform: "translateY(-2px)",
+        boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
+      }}
     >
-      <CardBody>
+      <CardBody p="24px">
         <Flex
           direction="column"
           justifyContent="space-between"
           h="100%"
           alignItems="center"
+          gap="20px"
         >
           <Flex direction="row" alignItems="center" justify="center" gap={2}>
-            <HeaderIcon size="25px" />
-            <Text variant="small-text-regular">{t(headerCaption)}</Text>
+            <HeaderIcon size="24px" color="#e53e3e" />
+            <Text 
+              variant="small-text-regular" 
+              color="gray.600"
+              fontSize="14px"
+            >
+              {t(headerCaption)}
+            </Text>
           </Flex>
-          <Flex direction="row">
-            <Text variant="h4-extra-bold-mobile" textTransform="uppercase">
+          
+          <Flex direction="column" alignItems="center" gap="8px">
+            <Text 
+              variant="h4-extra-bold-mobile" 
+              textTransform="uppercase"
+              color="gray.800"
+              fontSize="14px"
+              fontWeight="700"
+              letterSpacing="0.5px"
+            >
               {t(title)}
             </Text>
-          </Flex>
-          <Flex direction="row" gap="24px">
-            <Text variant="h1-extra-bold-desktop" color="brand.darkRedCR">
-              {bodyPart1}
-            </Text>
-            <Flex direction="column" justifyContent="center">
-              <Text variant="small-text-semibold">({t(bodyPart2)})</Text>
-              <Text variant="h2-semibold" color="brand.darkRedCR">
-                {t(bodyPart3)}
+            
+            <Flex direction="row" alignItems="baseline" gap="12px">
+              <Text 
+                variant="h1-extra-bold-desktop" 
+                color="#e53e3e"
+                fontSize="42px"
+                fontWeight="800"
+                lineHeight="1"
+              >
+                {bodyPart1}
               </Text>
+              {bodyPart2 && bodyPart3 && (
+                <Text 
+                  variant="h2-semibold" 
+                  color="#e53e3e"
+                  fontSize="16px"
+                  fontWeight="700"
+                >
+                  {t(bodyPart3)}
+                </Text>
+              )}
             </Flex>
           </Flex>
+          
           {isMobile && (
-            <Button variant="outlined" isDisabled>
+            <Button 
+              variant="outlined" 
+              isDisabled
+              borderRadius="6px"
+              borderColor="#e53e3e"
+              color="#e53e3e"
+              size="sm"
+            >
               {t(buttonCaption)}
-              <Icon w="24px" h="24px" ml="10px" as={MdArrowForward} />
+              <Icon w="16px" h="16px" ml="6px" as={MdArrowForward} />
             </Button>
           )}
         </Flex>

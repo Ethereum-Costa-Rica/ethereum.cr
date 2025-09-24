@@ -14,7 +14,7 @@ import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 import { Trans, useTranslation } from "next-i18next";
 
 const VenueGalleryDesktop = () => {
-  const images = ["1", "3", "2"];
+  const images = ["1", "4", "2"];
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
   const theme = useTheme();
   const columnsWidth = useColumnsWidth();

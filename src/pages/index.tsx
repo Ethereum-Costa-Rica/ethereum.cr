@@ -76,7 +76,7 @@ export default function Home() {
       </Flex>
       {isMobile ? <HeroMobile /> : <HeroDesktop />}
       <HomeContent />
-      <SponsorsComponent />
+      {/* <SponsorsComponent /> */}
       {isMobile ? <FooterMobile /> : <FooterDesktop />}
     </Flex>
   );

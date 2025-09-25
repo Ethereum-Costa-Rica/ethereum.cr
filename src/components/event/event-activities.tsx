@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { Trans, useTranslation } from "next-i18next";
 import Image from "next/image";
-import { MdArrowForward, MdComputer, MdOutlineTimelapse } from "react-icons/md";
+import { MdArrowForward, MdComputer, MdOutlineTimelapse, MdPerson } from "react-icons/md";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
@@ -77,6 +77,8 @@ const EventActivities = () => {
                   eventMode,
                   duration,
                   date,
+                  speaker,
+                  time,
                   tag: { name, color },
                 }: any) => (
                   <Card w="300px" minW="300px" p="16px" bg={neutralGray}>
@@ -116,23 +118,43 @@ const EventActivities = () => {
                           />
                           {duration}
                         </Text>
-                        <Text
-                          ml={7}
-                          as="span"
-                          textAlign="center"
-                          align="center"
-                          justifyContent="center"
-                          display="flex"
-                          gap="5px"
-                        >
-                          <Icon
-                            as={MdComputer}
-                            color={ethPuraVidaColors.lightOrange}
-                            w="24px"
-                            h="24px"
-                          />
-                          {mode}
-                        </Text>
+                        {speaker ? (
+                          <Text
+                            ml={7}
+                            as="span"
+                            textAlign="center"
+                            align="center"
+                            justifyContent="center"
+                            display="flex"
+                            gap="5px"
+                          >
+                            <Icon
+                              as={MdPerson}
+                              color={ethPuraVidaColors.lightOrange}
+                              w="24px"
+                              h="24px"
+                            />
+                            {speaker}
+                          </Text>
+                        ) : (
+                          <Text
+                            ml={7}
+                            as="span"
+                            textAlign="center"
+                            align="center"
+                            justifyContent="center"
+                            display="flex"
+                            gap="5px"
+                          >
+                            <Icon
+                              as={MdComputer}
+                              color={ethPuraVidaColors.lightOrange}
+                              w="24px"
+                              h="24px"
+                            />
+                            {mode}
+                          </Text>
+                        )}
                       </Flex>
                       <Text variant="normal-text-regular" noOfLines={2}>
                         {description}

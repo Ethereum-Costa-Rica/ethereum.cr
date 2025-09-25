@@ -92,17 +92,51 @@
     "activities": [
       {
         "tag": {
-          "name": "Evento Principal",
+          "name": "Keynote",
           "color": "red",
           "background": "lightOrange"
         },
-        "title": "Hackathon ETH Pura Vida",
-        "duration": "7 días",
-        "mode": "Híbrido",
-        "eventMode": "Evento híbrido",
-        "description": "Construye soluciones blockchain innovadoras en nuestro hackathon de una semana. Elige tu tema y compite por premios mientras aprendes de expertos.",
+        "title": "Web 3 & Descentralización",
+        "duration": "20 min",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Valores core, importancia de la descentralización.",
+        "speaker": "Andy Guzman",
+        "time": "9:30-9:50",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>19-26 de Octubre</orange> 2024"
+        "date": "<orange>1 de Noviembre</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Keynote",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "Trustless Work & Escrow Revolution",
+        "duration": "20 min",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Cómo eliminar intermediarios con contratos inteligentes.",
+        "speaker": "Alberto Chaves",
+        "time": "10:00-10:20",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>1 de Noviembre</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Keynote",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "zk-Proofs para Identidades Digitales",
+        "duration": "20 min",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Casos de uso de zero-knowledge.",
+        "speaker": "Andrés Gómez",
+        "time": "10:40-11:00",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>1 de Noviembre</orange> 2025"
       },
       {
         "tag": {
@@ -110,27 +144,15 @@
           "color": "blue",
           "background": "lightBlue"
         },
-        "title": "Taller de Pruebas ZK",
-        "duration": "3 horas",
+        "title": "Developer Onboarding (0 → Hero)",
+        "duration": "30 min",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
-        "description": "Sumérgete en las pruebas de conocimiento cero con ejercicios prácticos. Aprende a construir aplicaciones que preserven la privacidad.",
+        "description": "Guía paso-a-paso para nuevos desarrolladores.",
+        "speaker": "Daniel Bejarano",
+        "time": "11:10-11:40",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>22 de Octubre</orange> 2024"
-      },
-      {
-        "tag": {
-          "name": "Panel",
-          "color": "purple",
-          "background": "lightPurple"
-        },
-        "title": "Panel de Innovación DeFi",
-        "duration": "1.5 horas",
-        "mode": "Presencial",
-        "eventMode": "Evento presencial",
-        "description": "Expertos líderes discuten el futuro de las finanzas descentralizadas, tendencias emergentes y oportunidades en América Latina.",
-        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>24 de Octubre</orange> 2024"
+        "date": "<orange>1 de Noviembre</orange> 2025"
       },
       {
         "tag": {
@@ -138,41 +160,31 @@
           "color": "green",
           "background": "lightGreen"
         },
-        "title": "Seguridad de Contratos Inteligentes",
-        "duration": "2 horas",
+        "title": "Primera Inversión en DeFi",
+        "duration": "30 min",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
-        "description": "Aprende las mejores prácticas para el desarrollo seguro de contratos inteligentes y técnicas de auditoría de expertos en seguridad.",
+        "description": "Lleva a los asistentes a crear una wallet y ejecutar su primera operación DeFi.",
+        "speaker": "Alberto Galán",
+        "time": "11:30-12:00",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>23 de Octubre</orange> 2024"
+        "date": "<orange>1 de Noviembre</orange> 2025"
       },
       {
         "tag": {
-          "name": "Networking",
-          "color": "orange",
-          "background": "lightOrange"
+          "name": "Taller",
+          "color": "purple",
+          "background": "lightPurple"
         },
-        "title": "Mixer Comunitario",
-        "duration": "2 horas",
+        "title": "UX & Onboarding en Web 3",
+        "duration": "25 min",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
-        "description": "Conéctate con desarrolladores, emprendedores y entusiastas blockchain en un ambiente relajado de networking.",
+        "description": "Debate sobre experiencia de usuario y adopción masiva con ByteBeasts.",
+        "speaker": "Robert, Adrian, Daniel y Emmanuel",
+        "time": "11:50-12:15",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>25 de Octubre</orange> 2024"
-      },
-      {
-        "tag": {
-          "name": "Conferencia",
-          "color": "teal",
-          "background": "lightTeal"
-        },
-        "title": "Día Principal de la Conferencia",
-        "duration": "8 horas",
-        "mode": "Presencial",
-        "eventMode": "Evento presencial",
-        "description": "Día completo de discursos principales, charlas técnicas y presentaciones cubriendo lo último en desarrollo de Ethereum.",
-        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>26 de Octubre</orange> 2024"
+        "date": "<orange>1 de Noviembre</orange> 2025"
       }
     ],
     "partners": {

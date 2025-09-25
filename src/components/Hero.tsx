@@ -6,11 +6,8 @@ import {
   useBreakpoint,
   useToast,
   // useClipboard,
+  Box,
 } from "@chakra-ui/react";
-import { useEffect } from "react";
-import Nav from "./Nav";
-import BackgroundWrapper from "./BackgroundWrapper";
-
 const Hero = () => {
   const breakpoint = useBreakpoint();
   const _breakpoints = ["base", "xs", "sm", "md"];
@@ -28,7 +25,7 @@ const Hero = () => {
   // };
 
   return (
-    <BackgroundWrapper>
+    <Box>
       <Flex
         direction="row"
         alignItems="center"
@@ -58,7 +55,7 @@ const Hero = () => {
           </Button>
         </Flex>
       </Flex>
-    </BackgroundWrapper>
+      </Box>
   );
 };
 

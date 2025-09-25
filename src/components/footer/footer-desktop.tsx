@@ -28,7 +28,7 @@ const FooterDesktop = () => {
       justifyContent="center"
       w="100vw"
       maxW="100vw"
-      py="70px"
+      py="45px"
       bg={theme.colors.brand.footer}
     >
       <GridItem colSpan={5} flexDirection="column">
@@ -39,7 +39,7 @@ const FooterDesktop = () => {
           alt="EthCR footer"
           style={{ marginBottom: "32px" }}
         />
-        <FooterSocials style={{ marginBottom: "40px" }} />
+        <FooterSocials />
         <Text variant="h3-semibold">{t("footer.workingWithLove")}</Text>
         <Flex direction="column" alignItems="center" gap="10px" mb="40px">
           <Flex direction="row" gap="24px" wrap="wrap" justifyContent="center">
@@ -97,10 +97,12 @@ const FooterDesktop = () => {
         colStart={8}
         flexDirection="column"
         display="flex"
-        justifyContent="space-between"
+        justifyContent="flex-start"
         alignItems="flex-end"
+        gap="0"
+        pt="0"
       >
-        <Button variant="outlined" onClick={scrollToTop}>
+        <Button variant="outlined" onClick={scrollToTop} mb="20" mt="0">
           <Text mr="10px">{t("footer.goOnTop")}</Text>
           <MdKeyboardArrowUp />
         </Button>

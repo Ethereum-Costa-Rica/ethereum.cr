@@ -185,6 +185,51 @@
         "time": "11:50-12:15",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>1 de Noviembre</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Cowork",
+          "color": "teal",
+          "background": "lightTeal"
+        },
+        "title": "Networking Libre / Feedback Booths",
+        "duration": "1h 10min",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Asistentes visitan stands, conversan con speakers y reciben retroalimentación personalizada.",
+        "time": "15:50-17:00",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>1 de Noviembre</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Taller",
+          "color": "blue",
+          "background": "lightBlue"
+        },
+        "title": "Demo Jam – DApp Interaction Demos",
+        "duration": "40 min",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Equipos muestran flujos completos (registro → acción clave) y recogen opiniones de usuarios reales.",
+        "time": "14:30-15:10",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>1 de Noviembre</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Taller",
+          "color": "green",
+          "background": "lightGreen"
+        },
+        "title": "Demo Jam – On-Chain Game Demos",
+        "duration": "1h",
+        "mode": "Presencial",
+        "eventMode": "Evento presencial",
+        "description": "Hasta 3 equipos presentan sus juegos (≈ 20 min cada uno) y reciben feedback en tiempo real.",
+        "time": "13:40-14:40",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>1 de Noviembre</orange> 2025"
       }
     ],
     "partners": {

@@ -144,7 +144,7 @@
           "color": "blue",
           "background": "lightBlue"
         },
-        "title": "Developer Onboarding (0 → Hero)",
+        "title": "Onboarding de Desarrolladores (0 → Héroe)",
         "duration": "30 min",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
@@ -176,7 +176,7 @@
           "color": "purple",
           "background": "lightPurple"
         },
-        "title": "UX & Onboarding en Web 3",
+        "title": "UX y Onboarding en Web 3",
         "duration": "25 min",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
@@ -192,11 +192,11 @@
           "color": "teal",
           "background": "lightTeal"
         },
-        "title": "Networking Libre / Feedback Booths",
+        "title": "Networking Libre / Stands de Retroalimentación",
         "duration": "1h 10min",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
-        "description": "Asistentes visitan stands, conversan con speakers y reciben retroalimentación personalizada.",
+        "description": "Asistentes visitan stands, conversan con ponentes y reciben retroalimentación personalizada.",
         "time": "15:50-17:00",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>1 de Noviembre</orange> 2025"
@@ -207,7 +207,7 @@
           "color": "blue",
           "background": "lightBlue"
         },
-        "title": "Demo Jam – DApp Interaction Demos",
+        "title": "Demo Jam – Demos de Interacción DApp",
         "duration": "40 min",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
@@ -222,11 +222,11 @@
           "color": "green",
           "background": "lightGreen"
         },
-        "title": "Demo Jam – On-Chain Game Demos",
+        "title": "Demo Jam – Demos de Juegos On-Chain",
         "duration": "1h",
         "mode": "Presencial",
         "eventMode": "Evento presencial",
-        "description": "Hasta 3 equipos presentan sus juegos (≈ 20 min cada uno) y reciben feedback en tiempo real.",
+        "description": "Hasta 3 equipos presentan sus juegos (≈ 20 min cada uno) y reciben retroalimentación en tiempo real.",
         "time": "13:40-14:40",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
         "date": "<orange>1 de Noviembre</orange> 2025"
@@ -236,6 +236,14 @@
       "title": "Socios del Evento"
     },
     "callForSpeakersTitle": "Convocatoria de <orange>Speakers</orange>",
-    "callForSpeakers": "Estamos emocionados de anunciar la <orange>Convocatoria de Speakers!</orange>. Si eres un apasionado de compartir tu conocimiento y expertise, te invitamos a aplicar para ser speaker en <orange>ETH Pura Vida 2024.</orange>"
+    "callForSpeakers": "Estamos emocionados de anunciar la <orange>Convocatoria de Speakers!</orange> Si eres un apasionado de compartir tu conocimiento y experiencia, te invitamos a aplicar para ser speaker en <orange>ETH Pura Vida 2024.</orange>",
+    "pastSpeakers": "Ponentes <orange>Anteriores</orange>",
+    "moreSpeakers": "Y muchos más...",
+    "speakers": {
+      "albertoGalan": "Fundador del Programa InBest",
+      "karlaCordoba": "Presidenta Asoblockchain Costa Rica, ReFi Costa Rica",
+      "bradHarrison": "Fundador de Venus Labs, equipo de desarrollo detrás del Protocolo Venus",
+      "leoLara": "Ingeniero en Ethereum Foundation"
+    }
   }
 }

@@ -27,7 +27,7 @@
     "youCanConnect": "You can connect with other people in our on-site events, workshops, and meetups.",
     "onlineAndInPerson": "Online and in-person events",
     "totalAttendees": "Total participants",
-    "totalAttendeesTitle": "TOTAL PARTICIPANTS",
+    "totalAttendeesTitle": "MORE THAN",
     "allEvents": "all events",
     "attendees": "attendees",
     "participants": "participants",
@@ -35,7 +35,7 @@
     "speakers": "speakers",
     "speakersLabel": "speakers",
     "sponsors": "Sponsors",
-    "sponsorsLabel": "sponsors",
+    "sponsorsLabel": "organizations",
     "educationalTechHub": "Educational & Tech Hub",
     "educationalTechHubTitle": "EDUCATIONAL & TECH HUB",
     "techHub": "tech hub",
@@ -86,10 +86,10 @@
   "ethPuraVida": {
     "buyTickets": "Buy tickets",
     "venueGallery": "Venue <orange>Gallery</orange>",
-    "eventDescription": "A web3 conference and hackathon in the <blue>heart of Costa Rica</blue>, to promote Ethereum adoption and educate the community, <blue>driving</blue> <orange>innovation</orange> <blue>and</blue> <orange>growth.</orange>",
+    "eventDescription": "A web3 conference in the <blue>heart of Costa Rica</blue>, to promote Ethereum adoption and educate the community, <blue>driving</blue> <orange>innovation</orange> <blue>and</blue> <orange>growth.</orange>",
     "exploreAgenda": "Explore agenda",
     "topEventActivities": "Top Event <orange>Activities</orange>",
-    "activitiesDescription": "Our agenda is packed with various activities where you can learn about a wide range of topics before the conference; from workshops to hackathons, <orange>come and join us!</orange>",
+    "activitiesDescription": "Our agenda is packed with various activities where you can learn about a wide range of topics before the conference; from workshops to coworks, <orange>come and join us!</orange>",
     "activities": [
       {
         "tag": {
@@ -236,7 +236,15 @@
     "partners": {
       "title": "Event <red>Partners</red>"
     },
-    "callForSpeakersTitle": "Call for <blue>Speakers</blue>",
-    "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange> If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>"
+    "callForSpeakersTitle": "Call for <orange>Speakers</orange>",
+    "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange> If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>",
+    "pastSpeakers": "Past <orange>Speakers</orange>",
+    "moreSpeakers": "And many more...",
+    "speakers": {
+      "albertoGalan": "Founder of InBest Program",
+      "karlaCordoba": "President Asoblockchain Costa Rica, ReFi Costa Rica",
+      "bradHarrison": "Founder of Venus Labs, development team behind Venus Protocol",
+      "leoLara": "Engineer at Ethereum Foundation"
+    }
   }
 }

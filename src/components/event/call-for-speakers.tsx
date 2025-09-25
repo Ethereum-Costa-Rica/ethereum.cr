@@ -48,7 +48,7 @@ const CallForSpeakers = () => {
           <Trans
             i18nKey="ethPuraVida.callForSpeakersTitle"
             components={{
-              blue: <Text as="strong" color={theme.colors.brand.blueCR} />,
+              orange: <Text as="strong" color={theme.colors.brand.ethPuraVida.orange} />,
             }}
           />
         </Text>

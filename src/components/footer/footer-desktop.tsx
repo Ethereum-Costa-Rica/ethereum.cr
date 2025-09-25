@@ -39,7 +39,7 @@ const FooterDesktop = () => {
           alt="EthCR footer"
           style={{ marginBottom: "32px" }}
         />
-        <FooterSocials />
+        <FooterSocials style={{ marginBottom: "8px" }}/>
         <Text variant="h3-semibold">{t("footer.workingWithLove")}</Text>
         <Flex direction="column" alignItems="center" gap="10px" mb="40px">
           <Flex direction="row" gap="24px" wrap="wrap" justifyContent="center">
@@ -102,7 +102,7 @@ const FooterDesktop = () => {
         gap="0"
         pt="0"
       >
-        <Button variant="outlined" onClick={scrollToTop} mb="20" mt="0">
+        <Button variant="outlined" onClick={scrollToTop} mb="100px" mt="0">
           <Text mr="10px">{t("footer.goOnTop")}</Text>
           <MdKeyboardArrowUp />
         </Button>

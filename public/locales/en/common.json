@@ -241,10 +241,22 @@
     "pastSpeakers": "Past <orange>Speakers</orange>",
     "moreSpeakers": "And many more...",
     "speakers": {
-      "albertoGalan": "Founder of InBest Program",
-      "karlaCordoba": "President Asoblockchain Costa Rica, ReFi Costa Rica",
-      "bradHarrison": "Founder of Venus Labs, development team behind Venus Protocol",
-      "leoLara": "Engineer at Ethereum Foundation"
-    }
+      "edgarBarrantes": "Software Engineer, Nethermind",
+      "edgarBarrantesDesc": "Edgar is a blockchain developer specialized in building Ethereum's core infrastructure and tools. His focus is on improving the experience for new developers and Layer 2 solutions, making Ethereum more accessible. Through his work (and talks about development tools), Edgar inspires future engineers to innovate and contribute to the Ethereum ecosystem with confidence.",
+      "fabricioEspinoza": "CEO, enotar.io",
+      "fabricioEspinozaDesc": "Fabricio is a pioneer in applying blockchain technology to real-world services. As CEO of enotar.io (a digital notarization platform), he leverages Web3 to bring transparency and efficiency to notarial and legal processes. His trajectory demonstrates how innovation can modernize traditional industries. Fabricio's work inspires young entrepreneurs to use blockchain for practical and social impact purposes.",
+      "nathalyCortez": "Web3 Enthusiast & Community Educator, Ethereum Volcano",
+      "nathalyCortezDesc": "Nathaly is a curious learner who transformed into a community leader within the Ethereum scene in El Salvador. Fascinated by emerging economics and technology, she found her place in Web3 through local events. Today she helps integrate new participants, demonstrating that you don't need to be a developer to contribute to Web3. Nathaly drives education and practical mentoring, inspiring her peers to explore and grow alongside her in this new digital frontier.",
+      "danielRojas": "HyperCycle Ambassador & Content Creator",
+      "danielRojasDesc": "Daniel, known as 'CryptoReds', is a passionate advocate for decentralized technology in Latin America. He is a community ambassador for HyperCycle, a project that unites blockchain and artificial intelligence, where he helps explain advanced Web3 concepts. Daniel shares knowledge through workshops and online content, empowering Spanish-speaking audiences to dive into crypto and AI innovation. His close and enthusiastic style motivates young people to experiment, learn and build in Web3.",
+      "albertoChaves": "Founder & CEO, Trustless Work",
+      "albertoChavesDesc": "Alberto is an entrepreneur who is transforming the world of online work with blockchain. He founded Trustless Work, a platform that uses smart contracts to provide secure escrow services for freelancers and companies. By leveraging decentralized technology, Alberto makes work transactions more transparent. His trajectory – which includes winning a Web3 hackathon – inspires others to solve real problems with creative solutions, showing how passion and persistence generate positive change.",
+      "jerryHall": "Technology Entrepreneur & Advisor, HyperCycle",
+      "jerryHallDesc": "Jerry is a visionary with decades of experience in technology, now dedicated to connecting artificial intelligence with blockchain. He is an advisor to HyperCycle and CEO of a computing platform, contributing his knowledge to the Web3 world. His passion for innovation and mentoring is reflected in his talks about AI agents and decentralized systems. Jerry motivates students to be 'ready for the future', exploring how AI and Web3 can come together to create a more connected world.",
+      "karlaCordoba": "Co-founder of Cambiatus & ReFi Costa Rica; President, Blockchain Association of Costa Rica",
+      "karlaCordobaDesc": "Karla is a key leader driving social impact in Web3. As co-founder of Cambiatus (community currency platform) and ReFi Costa Rica, she uses blockchain to empower communities and promote regenerative finance. Currently, as president of the Blockchain Association of Costa Rica, she advocates for education, inclusion and innovation in the technology ecosystem. Her work exemplifies how blockchain can serve to build transparent and sustainable initiatives, inspiring young people to see Web3 as a tool for positive change."
+    },
+    "manyMoreSpeakers": "And many more speakers...",
+    "manyMoreSpeakersDesc": "These are just some of the amazing speakers who have shared their knowledge and passion with our community. Each event brings together diverse voices from the Web3 ecosystem to inspire and educate."
   }
 }

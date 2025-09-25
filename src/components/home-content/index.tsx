@@ -167,6 +167,8 @@ const HomeContent = () => {
           </Flex>
         </Flex>
         <Flex
+          height="361px"
+          paddingY={theme.spacing.mobile.paddingY}
           direction="column"
           maxW="500px"
           gap={theme.spacing.mobile.verticalGap}

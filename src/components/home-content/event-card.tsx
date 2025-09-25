@@ -104,19 +104,6 @@ const EventCard = ({ cardFeature }: EventCardProps) => {
             </Flex>
           </Flex>
           
-          {isMobile && (
-            <Button 
-              variant="outlined" 
-              isDisabled
-              borderRadius="6px"
-              borderColor="#e53e3e"
-              color="#e53e3e"
-              size="sm"
-            >
-              {t(buttonCaption)}
-              <Icon w="16px" h="16px" ml="6px" as={MdArrowForward} />
-            </Button>
-          )}
         </Flex>
       </CardBody>
     </Card>

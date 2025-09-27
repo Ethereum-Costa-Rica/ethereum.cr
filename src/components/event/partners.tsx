@@ -66,6 +66,21 @@ const Partners = ({ context = "event" }: PartnersProps) => {
       logo: "/assets/partners/PizzaDao.svg",
       website: "https://globalpizza.party/",
     },
+    {
+      name: "Starknet",
+      logo: "/assets/partners/starknet.svg",
+      website: "https://starknet.io/",
+    },
+    {
+      name: "Chainlink",
+      logo: "/assets/partners/chainlink.png",
+      website: "https://chain.link/",
+    },
+    {
+      name: "Scroll",
+      logo: "/assets/partners/scroll.png",
+      website: "https://scroll.io/",
+    }
   ];
 
   if (!ready) return null;

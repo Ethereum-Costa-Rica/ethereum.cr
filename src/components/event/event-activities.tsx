@@ -12,14 +12,14 @@ import {
   Button,
   useMediaQuery,
 } from "@chakra-ui/react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import Image from "next/image";
-import { MdArrowForward, MdComputer, MdOutlineTimelapse } from "react-icons/md";
+import { MdArrowForward, MdComputer, MdOutlineTimelapse, MdPerson } from "react-icons/md";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
 const EventActivities = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const columnsWidth = useColumnsWidth();
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
   const theme = useTheme();
@@ -30,6 +30,8 @@ const EventActivities = () => {
     (t("ethPuraVida.activities", {
       returnObjects: true,
     }) as Array<any>) || [];
+
+  if (!ready) return null;
 
   return (
     <Grid
@@ -75,6 +77,8 @@ const EventActivities = () => {
                   eventMode,
                   duration,
                   date,
+                  speaker,
+                  time,
                   tag: { name, color },
                 }: any) => (
                   <Card w="300px" minW="300px" p="16px" bg={neutralGray}>
@@ -114,23 +118,43 @@ const EventActivities = () => {
                           />
                           {duration}
                         </Text>
-                        <Text
-                          ml={7}
-                          as="span"
-                          textAlign="center"
-                          align="center"
-                          justifyContent="center"
-                          display="flex"
-                          gap="5px"
-                        >
-                          <Icon
-                            as={MdComputer}
-                            color={ethPuraVidaColors.lightOrange}
-                            w="24px"
-                            h="24px"
-                          />
-                          {mode}
-                        </Text>
+                        {speaker ? (
+                          <Text
+                            ml={7}
+                            as="span"
+                            textAlign="center"
+                            align="center"
+                            justifyContent="center"
+                            display="flex"
+                            gap="5px"
+                          >
+                            <Icon
+                              as={MdPerson}
+                              color={ethPuraVidaColors.lightOrange}
+                              w="24px"
+                              h="24px"
+                            />
+                            {speaker}
+                          </Text>
+                        ) : (
+                          <Text
+                            ml={7}
+                            as="span"
+                            textAlign="center"
+                            align="center"
+                            justifyContent="center"
+                            display="flex"
+                            gap="5px"
+                          >
+                            <Icon
+                              as={MdComputer}
+                              color={ethPuraVidaColors.lightOrange}
+                              w="24px"
+                              h="24px"
+                            />
+                            {mode}
+                          </Text>
+                        )}
                       </Flex>
                       <Text variant="normal-text-regular" noOfLines={2}>
                         {description}

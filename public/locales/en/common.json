@@ -26,6 +26,21 @@
     "noMatterWhereYouAre": "No matter where you are",
     "youCanConnect": "You can connect with other people in our on-site events, workshops, and meetups.",
     "onlineAndInPerson": "Online and in-person events",
+    "totalAttendees": "Total participants",
+    "totalAttendeesTitle": "MORE THAN",
+    "allEvents": "all events",
+    "attendees": "attendees",
+    "participants": "participants",
+    "participantsLabel": "participants",
+    "speakers": "speakers",
+    "speakersLabel": "speakers",
+    "sponsors": "Sponsors",
+    "sponsorsLabel": "organizations",
+    "educationalTechHub": "Educational & Tech Hub",
+    "educationalTechHubTitle": "EDUCATIONAL & TECH HUB",
+    "techHub": "tech hub",
+    "techHubLabel": "hub",
+    "positioning": "POSITIONING",
     "moreThan": "More than",
     "lastYear": "last year",
     "seeMoreEvents": "See more events",
@@ -55,60 +70,193 @@
     "inThisSpace": "In this space you will be able to learn, share and",
     "beAware": "be aware of all activities",
     "newDevelopments": "and new developments that the community has for you.",
-    "joinTgChannel": "Telegram channel"
+    "joinTgChannel": "Telegram channel",
+    "partners": {
+      "title": "Past <red>Sponsors</red>"
+    }
+  },
+  "sponsors": {
+    "title": "Our <red>Partners</red>",
+    "tiers": {
+      "diamond": "Diamond Partners",
+      "gold": "Gold Partners", 
+      "silver": "Silver Partners"
+    }
   },
   "ethPuraVida": {
     "buyTickets": "Buy tickets",
     "venueGallery": "Venue <orange>Gallery</orange>",
-    "eventDescription": "A web3 conference and hackathon in the <blue>heart of Costa Rica</blue>, to promote Ethereum adoption and educate the community, <blue>driving</blue> <orange>innovation</orange> <blue>and</blue> <orange>growth.</orange>",
+    "eventDescription": "A web3 conference in the <blue>heart of Costa Rica</blue>, to promote Ethereum adoption and educate the community, <blue>driving</blue> <orange>innovation</orange> <blue>and</blue> <orange>growth.</orange>",
     "exploreAgenda": "Explore agenda",
     "topEventActivities": "Top Event <orange>Activities</orange>",
-    "activitiesDescription": "Our agenda is packed with various activities where you can learn about a wide range of topics before the conference; from workshops to hackathons, <orange>come and join us!</orange>",
+    "activitiesDescription": "Our agenda is packed with various activities where you can learn about a wide range of topics before the conference; from workshops to coworks, <orange>come and join us!</orange>",
     "activities": [
       {
         "tag": {
-          "name": "Main Activity",
+          "name": "Keynote",
           "color": "red",
           "background": "lightOrange"
         },
-        "title": "Hackathon",
-        "duration": "7 days",
-        "mode": "Bi-modal",
-        "eventMode": "Bi-modal event",
-        "description": "A competition to develop different blockchain solutions, the theme of the competition is up to you but you have to keep in mind some rules.",
+        "title": "Web 3 & Decentralization",
+        "duration": "20 min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Core values, importance of decentralization.",
+        "speaker": "Andy Guzman",
+        "time": "9:30-9:50",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>19-26th October</orange> 2024"
+        "date": "<orange>November 1st</orange> 2025"
       },
       {
         "tag": {
-          "name": "Extra",
-          "color": "blue",
+          "name": "Keynote",
+          "color": "red",
           "background": "lightOrange"
         },
-        "title": "Side Event",
-        "duration": "2 hours",
-        "mode": "On site",
-        "eventMode": "On site event",
-        "description": "An intimate gathering to deep-dive into niche topics like ZK. Explanations and exercises to share ideas on next ZK apps to build.",
+        "title": "Trustless Work & Escrow Revolution",
+        "duration": "20 min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "How to eliminate intermediaries with smart contracts.",
+        "speaker": "Alberto Chaves",
+        "time": "10:00-10:20",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>25th October</orange> 2024"
+        "date": "<orange>November 1st</orange> 2025"
       },
       {
         "tag": {
-          "name": "Main Activity",
+          "name": "Keynote",
+          "color": "red",
+          "background": "lightOrange"
+        },
+        "title": "zk-Proofs for Digital Identities",
+        "duration": "20 min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Zero-knowledge use cases.",
+        "speaker": "Andrés Gómez",
+        "time": "10:40-11:00",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>November 1st</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Workshop",
+          "color": "blue",
+          "background": "lightBlue"
+        },
+        "title": "Developer Onboarding (0 → Hero)",
+        "duration": "30 min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Step-by-step guide for new developers.",
+        "speaker": "Daniel Bejarano",
+        "time": "11:10-11:40",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>November 1st</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Workshop",
+          "color": "green",
+          "background": "lightGreen"
+        },
+        "title": "Primera Inversión en DeFi",
+        "duration": "30 min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Guide attendees to create a wallet and execute their first DeFi operation.",
+        "speaker": "Alberto Galán",
+        "time": "11:30-12:00",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>November 1st</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Workshop",
           "color": "purple",
           "background": "lightPurple"
         },
-        "title": "Keynote",
-        "duration": "1 hour",
-        "mode": "On site",
-        "eventMode": "On site event",
-        "description": "Get a very welcoming introduction to the conference, meet the speakers and get to know the agenda of the event.",
+        "title": "UX & Onboarding en Web 3",
+        "duration": "25 min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Debate about user experience and mass adoption with ByteBeasts.",
+        "speaker": "Robert, Adrian, Daniel y Emmanuel",
+        "time": "11:50-12:15",
         "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
-        "date": "<orange>26th October</orange> 2024"
+        "date": "<orange>November 1st</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Cowork",
+          "color": "teal",
+          "background": "lightTeal"
+        },
+        "title": "Networking Libre / Feedback Booths",
+        "duration": "1h 10min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Attendees visit stands, talk with speakers and receive personalized feedback.",
+        "time": "15:50-17:00",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>November 1st</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Workshop",
+          "color": "blue",
+          "background": "lightBlue"
+        },
+        "title": "Demo Jam – DApp Interaction Demos",
+        "duration": "40 min",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Teams show complete flows (registration → key action) and collect opinions from real users.",
+        "time": "14:30-15:10",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>November 1st</orange> 2025"
+      },
+      {
+        "tag": {
+          "name": "Workshop",
+          "color": "green",
+          "background": "lightGreen"
+        },
+        "title": "Demo Jam – On-Chain Game Demos",
+        "duration": "1h",
+        "mode": "On-site",
+        "eventMode": "On-site event",
+        "description": "Up to 3 teams present their games (≈ 20 min each) and receive real-time feedback.",
+        "time": "13:40-14:40",
+        "imgUrl": "eth-pura-vida/hackathon-card-1.svg",
+        "date": "<orange>November 1st</orange> 2025"
       }
     ],
-    "callForSpeakersTitle": "Call for <blue>Speakers</blue>",
-    "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange>. If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>"
+    "partners": {
+      "title": "Event <red>Partners</red>"
+    },
+    "callForSpeakersTitle": "Call for <orange>Speakers</orange>",
+    "callForSpeakers": "We're excited to announce our <orange>Call for Speakers!</orange> If you're passionate about sharing your expertise, we invite you to submit your session proposals for our upcoming event. Join us in inspiring and educating our community with your unique insights. <orange>Apply now!</orange>",
+    "pastSpeakers": "Past <orange>Speakers</orange>",
+    "moreSpeakers": "And many more...",
+    "speakers": {
+      "edgarBarrantes": "Software Engineer, Nethermind",
+      "edgarBarrantesDesc": "Edgar is a blockchain developer specialized in building Ethereum's core infrastructure and tools. His focus is on improving the experience for new developers and Layer 2 solutions, making Ethereum more accessible. Through his work (and talks about development tools), Edgar inspires future engineers to innovate and contribute to the Ethereum ecosystem with confidence.",
+      "fabricioEspinoza": "CEO, enotar.io",
+      "fabricioEspinozaDesc": "Fabricio is a pioneer in applying blockchain technology to real-world services. As CEO of enotar.io (a digital notarization platform), he leverages Web3 to bring transparency and efficiency to notarial and legal processes. His trajectory demonstrates how innovation can modernize traditional industries. Fabricio's work inspires young entrepreneurs to use blockchain for practical and social impact purposes.",
+      "nathalyCortez": "Web3 Enthusiast & Community Educator, Ethereum Volcano",
+      "nathalyCortezDesc": "Nathaly is a curious learner who transformed into a community leader within the Ethereum scene in El Salvador. Fascinated by emerging economics and technology, she found her place in Web3 through local events. Today she helps integrate new participants, demonstrating that you don't need to be a developer to contribute to Web3. Nathaly drives education and practical mentoring, inspiring her peers to explore and grow alongside her in this new digital frontier.",
+      "danielRojas": "HyperCycle Ambassador & Content Creator",
+      "danielRojasDesc": "Daniel, known as 'CryptoReds', is a passionate advocate for decentralized technology in Latin America. He is a community ambassador for HyperCycle, a project that unites blockchain and artificial intelligence, where he helps explain advanced Web3 concepts. Daniel shares knowledge through workshops and online content, empowering Spanish-speaking audiences to dive into crypto and AI innovation. His close and enthusiastic style motivates young people to experiment, learn and build in Web3.",
+      "albertoChaves": "Founder & CEO, Trustless Work",
+      "albertoChavesDesc": "Alberto is an entrepreneur who is transforming the world of online work with blockchain. He founded Trustless Work, a platform that uses smart contracts to provide secure escrow services for freelancers and companies. By leveraging decentralized technology, Alberto makes work transactions more transparent. His trajectory – which includes winning a Web3 hackathon – inspires others to solve real problems with creative solutions, showing how passion and persistence generate positive change.",
+      "jerryHall": "Technology Entrepreneur & Advisor, HyperCycle",
+      "jerryHallDesc": "Jerry is a visionary with decades of experience in technology, now dedicated to connecting artificial intelligence with blockchain. He is an advisor to HyperCycle and CEO of a computing platform, contributing his knowledge to the Web3 world. His passion for innovation and mentoring is reflected in his talks about AI agents and decentralized systems. Jerry motivates students to be 'ready for the future', exploring how AI and Web3 can come together to create a more connected world.",
+      "karlaCordoba": "Co-founder of Cambiatus & ReFi Costa Rica; President, Blockchain Association of Costa Rica",
+      "karlaCordobaDesc": "Karla is a key leader driving social impact in Web3. As co-founder of Cambiatus (community currency platform) and ReFi Costa Rica, she uses blockchain to empower communities and promote regenerative finance. Currently, as president of the Blockchain Association of Costa Rica, she advocates for education, inclusion and innovation in the technology ecosystem. Her work exemplifies how blockchain can serve to build transparent and sustainable initiatives, inspiring young people to see Web3 as a tool for positive change."
+    },
+    "manyMoreSpeakers": "And many more speakers...",
+    "manyMoreSpeakersDesc": "These are just some of the amazing speakers who have shared their knowledge and passion with our community. Each event brings together diverse voices from the Web3 ecosystem to inspire and educate."
   }
 }

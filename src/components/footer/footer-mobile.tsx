@@ -13,8 +13,10 @@ import FooterSocials from "./footer-socials";
 import Mailing from "./mailing";
 
 const FooterMobile = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const theme = useTheme();
+
+  if (!ready) return null;
 
   return (
     <Flex
@@ -42,24 +44,46 @@ const FooterMobile = () => {
         />
 
         <Text variant="small-text-semibold">{t("footer.workingWithLove")}</Text>
-        <Text
-          variant="extra-small-text-light"
-          as="a"
-          href="https://www.linkedin.com/in/angie-herrera-aguilar/"
-          color="blue"
-          target="_blank"
-        >
-          Designed by Angie Herrera
-        </Text>
-        <Text
-          variant="extra-small-text-light"
-          as="a"
-          href="https://www.linkedin.com/in/jacv/"
-          color="blue"
-          target="_blank"
-        >
-          Developed by Justin Castillo
-        </Text>
+        <Flex direction="row" gap="16px" wrap="wrap" justifyContent="center">
+          <Text
+            variant="extra-small-text-light"
+            as="a"
+            href="https://www.linkedin.com/in/santiagovillarrealarley/"
+            color="blue"
+            target="_blank"
+          >
+            Developed by @Villarley
+          </Text>
+          <Text
+            variant="extra-small-text-light"
+            as="a"
+            href="https://www.linkedin.com/in/fabian-sanchez-d/"
+            color="blue"
+            target="_blank"
+          >
+            Developed by @FabianSanchezD
+          </Text>
+        </Flex>
+        <Flex direction="row" gap="16px" wrap="wrap" justifyContent="center">
+          <Text
+            variant="extra-small-text-light"
+            as="a"
+            href="https://www.linkedin.com/in/angie-herrera-aguilar/"
+            color="blue"
+            target="_blank"
+          >
+            Designed by Angie Herrera
+          </Text>
+          <Text
+            variant="extra-small-text-light"
+            as="a"
+            href="https://www.linkedin.com/in/jacv/"
+            color="blue"
+            target="_blank"
+          >
+            Developed by Justin Castillo
+          </Text>
+        </Flex>
       </Flex>
     </Flex>
   );

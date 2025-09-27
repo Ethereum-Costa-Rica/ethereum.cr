@@ -8,7 +8,7 @@ import {
   useTheme,
 } from "@chakra-ui/react";
 import { MdArrowForward } from "react-icons/md";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
 import HeroHightLightDesktop from "./subComponents/hero-highlight-desktop";
@@ -17,8 +17,10 @@ import useColumnsWidth from "@/utils/hooks/useGridColumns";
 const HeroDesktop = () => {
   const baseAssetsUrl = "assets/eth-pura-vida/";
   const columnsWidth = useColumnsWidth();
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const theme = useTheme();
+
+  if (!ready) return null;
 
   const children = (
     <>
@@ -37,7 +39,7 @@ const HeroDesktop = () => {
         >
           <Text>{t("learnMore")}</Text>
         </Button>
-        {/* <Button
+        <Button
           variant="eth-pura-vida-green"
           size="sm"
           as="a"
@@ -46,7 +48,7 @@ const HeroDesktop = () => {
         >
           <Text>{t("ethPuraVida.buyTickets")}</Text>
           <Icon w="24px" h="24px" as={MdArrowForward} />
-        </Button> */}
+        </Button>
       </Flex>
     </>
   );

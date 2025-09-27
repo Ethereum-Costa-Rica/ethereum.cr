@@ -29,14 +29,14 @@ const CoverDesktop = ({
         <Image
           width={659}
           height={352}
-          src={`../assets/${coverGraphicLeft}`}
+          src={`/assets/${coverGraphicLeft}`}
           alt="Eth Pura Vida Cover desktop"
         />
       </GridItem>
       <GridItem colSpan={4} colStart={9}>
         <Image
           width={359.72}
-          src={`../assets/${coverGraphicRight}`}
+          src={`/assets/${coverGraphicRight}`}
           height={540}
           alt="Event Graphic Right"
         />

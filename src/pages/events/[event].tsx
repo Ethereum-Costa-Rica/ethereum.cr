@@ -15,6 +15,7 @@ import EventDescriptionDesktop from "@/components/event/event-description-deskto
 import EventActivities from "@/components/event/event-activities";
 import FooterDesktop from "@/components/footer/footer-desktop";
 import VenueGalleryDesktop from "@/components/venue-gallery/venue-gallery-desktop";
+import PastSpeakers from "@/components/event/past-speakers";
 import FooterMobile from "@/components/footer/footer-mobile";
 import CallForSpeakers from "@/components/event/call-for-speakers";
 
@@ -80,6 +81,7 @@ const Event = (props: EventProps) => {
       )}
       <EventActivities />
       <VenueGalleryDesktop />
+      <PastSpeakers />
       <CallForSpeakers />
       {isMobile ? <FooterMobile /> : <FooterDesktop />}
     </Flex>
@@ -89,9 +91,15 @@ const Event = (props: EventProps) => {
 export default Event;
 
 export async function getStaticPaths() {
-  const paths = EventsData.events.map(({ event }) => ({
-    params: { event },
-  }));
+  const events = EventsData.events;
+  const locales = ['en', 'es'];
+  
+  const paths = events.flatMap(({ event }) =>
+    locales.map((locale) => ({
+      params: { event },
+      locale,
+    }))
+  );
 
   return {
     paths,

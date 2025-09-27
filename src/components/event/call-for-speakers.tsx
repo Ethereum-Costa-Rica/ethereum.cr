@@ -9,8 +9,8 @@ import {
 } from "@chakra-ui/react";
 
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
-import { Trans, useTranslation } from "react-i18next";
-import { t } from "i18next";
+import { Trans, useTranslation } from "next-i18next";
+
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
 
@@ -19,7 +19,9 @@ const CallForSpeakers = () => {
   const columnsWidth = useColumnsWidth();
   const ethPuraVidaColors = theme.colors.brand.ethPuraVida;
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
+
+  if (!ready) return null;
 
   return (
     <Grid
@@ -46,7 +48,7 @@ const CallForSpeakers = () => {
           <Trans
             i18nKey="ethPuraVida.callForSpeakersTitle"
             components={{
-              blue: <Text as="strong" color={theme.colors.brand.blueCR} />,
+              orange: <Text as="strong" color={theme.colors.brand.ethPuraVida.orange} />,
             }}
           />
         </Text>
@@ -63,7 +65,7 @@ const CallForSpeakers = () => {
             variant="eth-pura-vida-yellow"
             as="a"
             target="_blank"
-            href="https://forms.gle/9CskA7RXuZGrEpYPA"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc-ZPnCFWvjhe59p3Lb-cJZtxDslFjRa4JqR-ahdvrnBRBEng/viewform?usp=dialog"
           >
             {t("apply")}
           </Button>

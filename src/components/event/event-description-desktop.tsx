@@ -3,7 +3,7 @@ import { Grid, useTheme, GridItem, Text, Flex, Button } from "@chakra-ui/react";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import Image from "next/image";
 import { EventType } from "@/models/event.type";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import { MdArrowOutward } from "react-icons/md";
 
 type EventDescriptionProps = {
@@ -62,7 +62,9 @@ const EventDescriptionDesktop = ({ event }: EventDescriptionProps) => {
           <Button
             variant="outlined"
             as="a"
-            href="mailto:ethereumcostarica@gmail.com"
+            // TODO: replace with Google Form actual link for sponsors
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfHYMa6uvt-7GcFekZ0bXa95Ammtta1VF2KIjH1IXxphHR3rg/viewform?usp=dialog
+"
           >
             {t("becomeSponsor")}
           </Button>

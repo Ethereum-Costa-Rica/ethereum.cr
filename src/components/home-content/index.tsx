@@ -8,7 +8,7 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { MdArrowForward } from "react-icons/md";
 import Image from "next/image";
 
@@ -17,11 +17,14 @@ import { HOME_CARD_FEATURES } from "@/constants/homeCardFeatures";
 import { MOBILE_MEDIA_QUERY } from "@/constants/app";
 import useColumnsWidth from "@/utils/hooks/useGridColumns";
 import { MOBILE_GRID_COLUMNS } from "@/constants/mobileGridColumns";
+import Partners from "../event/partners";
 
 const HomeContent = () => {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const [isMobile] = useMediaQuery(MOBILE_MEDIA_QUERY);
   const columnsWidth = useColumnsWidth();
+
+  if (!ready) return null;
   const theme = useTheme();
 
   return (
@@ -51,19 +54,6 @@ const HomeContent = () => {
         <Text variant="normal-text-regular">
           {t("homeContent.communityDescription")}
         </Text>
-        {isMobile && (
-          <GridItem colSpan={3} mt="24px">
-            <Button
-              variant="primary"
-              size="md"
-              as="a"
-              href="https://x.com/EthereumCR"
-              target="_blank"
-            >
-              <Text>{t("learnMore")}</Text>
-            </Button>
-          </GridItem>
-        )}
       </GridItem>
       <GridItem
         display="flex"
@@ -78,6 +68,7 @@ const HomeContent = () => {
           src="/assets/photos/texas-tech-auditorio.png"
           alt="Texas Tech Auditorio"
         />
+        
         {/* {isMobile && (
           <NextImage
             className=""
@@ -88,6 +79,11 @@ const HomeContent = () => {
             alt="Eth CR vertical graphic"
           />
         )} */}
+      </GridItem>
+      
+      {/* Partners Section */}
+      <GridItem colSpan={isMobile ? 4 : 12}>
+        <Partners context="home" />
       </GridItem>
 
       <GridItem colSpan={isMobile ? 4 : 8}>
@@ -101,6 +97,8 @@ const HomeContent = () => {
           {t("homeContent.youCanConnect")}
         </Text>
       </GridItem>
+      
+      
       <GridItem colSpan={isMobile ? 4 : 12}>
         <Flex
           w="100%"
@@ -169,6 +167,8 @@ const HomeContent = () => {
           </Flex>
         </Flex>
         <Flex
+          height="361px"
+          paddingY={theme.spacing.mobile.paddingY}
           direction="column"
           maxW="500px"
           gap={theme.spacing.mobile.verticalGap}

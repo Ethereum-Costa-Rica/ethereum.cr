@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <link rel="icon" href="/ethcr-icon.svg" />
+      <link rel="icon" href="/favicon.svg" />
       <body>
         <Main />
         <NextScript />

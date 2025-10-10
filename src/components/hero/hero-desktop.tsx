@@ -43,7 +43,7 @@ const HeroDesktop = () => {
           variant="eth-pura-vida-green"
           size="sm"
           as="a"
-          href="/events/eth-pura-vida"
+          href="https://www.hallos.io/en/event/ethereum-pura-vida-2025"
           ml="24px"
         >
           <Text>{t("ethPuraVida.buyTickets")}</Text>

@@ -33,7 +33,7 @@ const CoverMobile = ({ coverGraphicUrl }: CoverProps) => {
       </Flex>
       <Button
         as="a"
-        href="https://www.hallos.io/event/ethereum-pura-vida-2024"
+        href="https://www.hallos.io/en/event/ethereum-pura-vida-2025"
         target="_blank"
         mt="4px"
         variant="eth-pura-vida-yellow"

@@ -59,8 +59,8 @@ export default function PuraVidaEcosystem() {
             {/* Hero */}
             <Box textAlign="center" mt={20}>
               <Image
-                src="/assets/eth-pura-vida/ethpv.svg"
-                alt="ETH Pura Vida 2025"
+                src="/assets/blog/blog-1.png"
+                alt="Blog "
                 maxH="260px"
                 mx="auto"
                 mb={6}

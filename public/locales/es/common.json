@@ -257,5 +257,112 @@
     },
     "manyMoreSpeakers": "Y muchos más speakers...",
     "manyMoreSpeakersDesc": "Estos son solo algunos de los increíbles speakers que han compartido su conocimiento y pasión con nuestra comunidad. Cada evento reúne voces diversas del ecosistema Web3 para inspirar y educar."
+  },
+  "puraVidaBlogTitle": "El Ecosistema Web3 Pura Vida, 2025",
+  "puraVidaBlogDesc": "El ecosistema Web3 verde y vibrante de Costa Rica — donde Ethereum se encuentra con Pura Vida.",
+  "puraVidaBlog": {
+    "heroSubtitle": "Construyendo una nación Web3 más verde, inteligente y abierta",
+    "tldrTitle": "1. TL;DR – Web3 llega a Costa Rica",
+    "tldrIntro": "Costa Rica está lista para el futuro Web3.",
+    "tldrStats": {
+      "mobile": "76% de los adultos usan SINPE Móvil",
+      "energy": "99% energía renovable",
+      "bitcoin": "Banco Nacional lanzó el primer ETF de Bitcoin",
+      "communities": "Comunidades como Ethereum CR y TicoBlockchain están creando una red vibrante de builders"
+    },
+    "regulatoryTitle": "2. Un paraíso regulatorio con sentido común",
+    "regulatoryIntro": "En Costa Rica, la regulación no prohíbe... acompaña.",
+    "regulatoryCards": {
+      "permissions": {
+        "title": "Permisos claros",
+        "desc": "Las criptomonedas no son de curso legal, pero sí están permitidas por acuerdo privado"
+      },
+      "framework": {
+        "title": "Marco regulatorio",
+        "desc": "BCCR, SUGEF y FIU definen reglas claras para exchanges y custodios"
+      }
+    },
+    "buildersTitle": "3. Builders, startups y energía pura vida",
+    "buildersIntro": "El enfoque educativo y comunitario: learn, build, ship",
+    "buildersCards": {
+      "ethPuraVida": {
+        "name": "ETH Pura Vida",
+        "desc": "Comunidad Ethereum"
+      },
+      "refiCostaRica": {
+        "name": "ReFi Costa Rica",
+        "desc": "Finanzas Regenerativas"
+      },
+      "criptoCantina": {
+        "name": "CriptoCantina",
+        "desc": "Comunidad Local"
+      }
+    },
+    "startupsNote": {
+      "title": "Más de 50 startups Web3 locales",
+      "desc": "CoinPay, Hallos, Enigma.art, CoFi Blocks y muchas más construyendo el futuro"
+    },
+    "academiaTitle": "4. Academia y talento",
+    "academiaQuote": "El conocimiento aquí no se guarda, se comparte.",
+    "academiaCards": {
+      "cenfotec": {
+        "title": "CENFOTEC + ETH CR",
+        "desc": "\"Ethereum Developer Pack\" - Pipeline de talento en Solidity"
+      },
+      "tec": {
+        "title": "TEC Project Rise",
+        "desc": "Tokenización de bienes raíces en acción"
+      },
+      "dojo": {
+        "title": "Dojo Coding",
+        "desc": "Talento joven en Starknet y L2s"
+      },
+      "hackerHouse": {
+        "title": "Hacker House",
+        "desc": "Espacios de colaboración y aprendizaje"
+      }
+    },
+    "eventsTitle": "5. Eventos y Momentum",
+    "eventsCards": {
+      "blockchainJungle": {
+        "year": "2023",
+        "name": "Blockchain Jungle",
+        "attendees": "3,000+ asistentes"
+      },
+      "ethPuraVida": {
+        "year": "2024",
+        "name": "ETH Pura Vida",
+        "attendees": "200+ builders"
+      },
+      "dojoHackathon": {
+        "year": "2025",
+        "name": "Dojo Hackathon",
+        "attendees": "300+ devs"
+      },
+      "ticoBlockchain": {
+        "year": "2025",
+        "name": "TicoBlockchain",
+        "attendees": "300+ expertos"
+      }
+    },
+    "upcoming": {
+      "title": "Próximamente",
+      "events": "ETH Pura Vida 2025 & Blockchain Jungle 2025",
+      "slogan": "\"Costa Rica is open for Web3\""
+    },
+    "roadAheadTitle": "6. Camino por delante",
+    "roadAheadIntro": "Costa Rica tiene todo para ser el testbed de Web3 en LATAM:",
+    "roadAheadPoints": {
+      "energy": "Energía verde",
+      "talent": "Talento bilingüe",
+      "politics": "Clima político estable",
+      "spirit": "Espíritu Pura Vida"
+    },
+    "roadAheadConclusion": "Desde café tokenizado hasta DeFi sostenible — el futuro se construye aquí.",
+    "cta": {
+      "text": "Descubre más en",
+      "link": "Ethereum Costa Rica",
+      "footer": "Construido con amor por la comunidad"
+    }
   }
 }

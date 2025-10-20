@@ -1,0 +1,173 @@
+{
+  "title": "The Pura Vida Web3 Ecosystem, 2025",
+  "metaDescription": "Overview of Costa Rica's Web3 ecosystem – regulation, talent, clean energy, and key players shaping the future of Ethereum & blockchain in Costa Rica.",
+  "authors": "Authors:",
+  "authorsText": "EM, Jaf & 0xdmrk",
+  "sections": {
+    "tldr": {
+      "heading": "TL;DR",
+      "items": [
+        "<b>National rail for Web3:</b> Nationwide instant payments via <b>SINPE Móvil</b> are mainstream (≈76% of adults). The Central Bank-backed <b>Financial Innovation Center (CIF)</b> gives fintechs a compliant path to integrate crypto.",
+        "<b>Pragmatic rules:</b> Crypto is permitted by private agreement (not legal tender). In 2025, congress advanced asset registration, the state-owned National Bank launched a Bitcoin ETF feeder, and the electoral authority (<b>TSE</b>) approved controlled crypto donations.",
+        "<b>Clean energy advantage:</b> Over 99% renewable power supply (2024) enables greener mining, infrastructure, and data ops.",
+        "<b>Soft landing for capital and talent:</b> <a href=\"https://investincr.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">PROCOMER</a> and <a href=\"https://cinde.org\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CINDE</a> are globally recognized FDI enablers; Digital Nomad Law attracts global builders with tax and residency perks; top English proficiency in Central America.",
+        "<b>Adoption & talent pipeline:</b> Circular economy payments in the <a href=\"https://map.bitcoinjungle.app\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Bitcoin Jungle</a> corridor; growing developer density through <a href=\"https://ethereum.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">ETH Pura Vida</a> hackathons and TicoBlockchain forums."
+      ]
+    },
+    "macro": {
+      "heading": "Macro & Local Roots: Pura Vida Web3 Talent Hub",
+      "intro": "Costa Rica is <i>Web3-ready</i>: high internet use, near-universal mobile, and a ubiquitous instant payments rail (<b>SINPE Móvil</b>) that already trains users on wallet-like habits. A pragmatic, non-prohibition stance from the Central Bank keeps the door open while rules mature.",
+      "items": [
+        "<b>Instant payments:</b> SINPE Móvil active users reached ≈76% of adults by <a href=\"https://www.notion.so/28d4e4c355ae806990e5cfaf804219f8?pvs=25\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">2024</a>.",
+        "<b>Clean energy narrative:</b> Small hydro plants have hosted mining since 2021–22, linking crypto with <a href=\"https://www.reuters.com/technology/costa-rica-hydro-plant-gets-new-lease-life-crypto-mining-2022-01-11/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">surplus renewables</a>.",
+        "<b>Open, service-driven economy:</b> <a href=\"https://investincr.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">PROCOMER</a> positions Costa Rica as a digital services hub helpful for global Web3 teams.",
+        "<b>Tourism + expats:</b> $5B tourism industry intersects with crypto; tourists and digital nomads pay in <a href=\"https://www.bitcoinjungle.app/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">BTC/ETH</a> in surf towns and eco destinations.",
+        "<b>Regional bridge:</b> ≈5M population, stable democracy, high HDI, and bilingual talent make it a credible LATAM node for Ethereum."
+      ]
+    },
+    "timeline": {
+      "heading": "From pandemic era to hands-on builders",
+      "items": [
+        "<b>2020:</b> ETH CR launched by <a href=\"https://www.linkedin.com/in/jafettsandi/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Jaf (EF)</a> and <a href=\"https://www.linkedin.com/in/ottomorac/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Otto (PrivadoID)</a>; inaugural gathering featured Santiago Siri (Democracy Earth, Proof of Humanity), setting an early civic tech and public goods tone.",
+        "<b>2022:</b> <a href=\"https://criptocantina.org/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Crypto Cantines</a> began weekly meetups shifting focus to builders (tooling, L2s, infra).",
+        "<b>Sept 2022:</b> ETH CR founders and <a href=\"https://www.linkedin.com/in/andyguzmantoledo/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Andy Guzman (EF)</a> hosted a Merge celebration aligned with the <a href=\"https://ethereum.org/es/roadmap/merge\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">global Ethereum Merge</a>.",
+        "<b>2023:</b> Ethereum Costa Rica Day at Texas Tech University; speakers from Nethermind, EF, Venus Protocol, ETH Latam.",
+        "<b>2024:</b> ETH Pura Vida expanded into a week of hackathons, university activations, L2 sessions, culminating in a 200+ person conference."
+      ]
+    },
+    "policy": {
+      "heading": "Policy & Regulatory Landscape",
+      "intro": "Costa Rica's regulatory approach is neutral and permissive, with growing clarity:",
+      "items": [
+        "<b>Legal status:</b> Crypto is not legal tender, but ownership and use are allowed under Central Bank (BCCR) guidance.",
+        "<b>Tax:</b> Classified as virtual/intangible assets (2023); returns taxed under existing capital gains and income rules.",
+        "<b>Regulators:</b>"
+      ],
+      "regulators": [
+        "<b>BCCR</b> – payments policy and public guidance",
+        "<b>SUGEF</b> – registration and supervision of VASPs",
+        "<b>FIU</b> – AML suspicious transaction reporting"
+      ],
+      "milestonesHeading": "Milestones:",
+      "milestones": [
+        "<b>BN Fondos (2025):</b> Bitcoin ETF — first bank-distributed crypto investment vehicle.",
+        "<b>2025 reforms:</b> Defined \"virtual assets\" and required exchanges, brokers, and custodial wallets to register with SUGEF and follow KYC/AML, aligning with FATF."
+      ]
+    },
+    "keyPlayers": {
+      "heading": "Key Players & Sectors",
+      "payments": {
+        "heading": "Payments & Merchant Rails",
+        "items": [
+          "<a href=\"https://coinpay.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CoinPay</a>: exchange, cards, remittance & merchant tools.",
+          "<a href=\"https://tilopay.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Tilopay</a>: multi-rail checkout with e-commerce plugins.",
+          "<a href=\"https://nimiq.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Nimiq</a> (OASIS & Pay): non-custodial payments; building a SINPE bridge for CRC/EUR swaps.",
+          "<a href=\"https://www.bitcoinjungle.app\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Bitcoin Jungle</a> (wallet + merchant map): live circular-economy pilot on Costa Rica's Pacific South."
+        ]
+      },
+      "liquidity": {
+        "heading": "Liquidity, Trading & On/Off-Ramps",
+        "items": [
+          "<a href=\"https://xypher.io\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Xypher</a>: alerts/market monitoring (CR-founded).",
+          "<a href=\"https://coinpay.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CoinPay</a>: also provides exchange/liquidity desks."
+        ]
+      },
+      "infrastructure": {
+        "heading": "Infrastructure, Dev Tooling & Validators",
+        "items": [
+          "<a href=\"https://edenia.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Edenia</a>: Web3 & AI infra/dev; validator.",
+          "<a href=\"https://github.com/hyperledger-labs/convector\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">WorldSibu</a>: OSS tooling for enterprise chains (Hyperledger Labs Convector)."
+        ]
+      },
+      "refi": {
+        "heading": "ReFi, Real-world Assets & Agri supply",
+        "items": [
+          "<a href=\"https://www.cofiblocks.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CoFi Blocks</a>: coffee co-op on Starknet; NFTs & on-chain commerce."
+        ]
+      },
+      "creator": {
+        "heading": "Creator Economy, Ticketing & Fan Tech",
+        "items": [
+          "<a href=\"https://enigma.art\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Enigma.art</a>: entertainment tech stack (tickets, wallet, marketplace).",
+          "<a href=\"https://hallos.io\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Hallos</a>: NFT ticketing platform (CR-founded)."
+        ]
+      },
+      "wallets": {
+        "heading": "Wallets, Currencies & Stable value experiments",
+        "items": [
+          "<a href=\"https://www.diviproject.org\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Divi Project/Wallet</a>: PoS chain & wallet brand with CR footprint.",
+          "<a href=\"https://www.nacion.com/tecnologia/innovaciones/lo-que-necesita-saber-de-vicu-la-nueva/USMIKOU56FENFBDBFIAEC4JZBM/story/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">VICU</a>: CR-launched USD-pegged stablecoin pilot."
+        ]
+      }
+    },
+    "community": {
+      "heading": "Community & Talent Pipeline",
+      "intro": "Costa Rica's Web3 scene blends education, onboarding, and flagship events, accelerating adoption and giving builders repeatable paths from meetup to shipped product.",
+      "items": [
+        "<a href=\"https://ethereum.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Ethereum Costa Rica</a>: country hub for Ethereum education and builder activation; runs ETH Pura Vida (national conference) and created the Ethereum Developer Pack with <a href=\"https://ucenfotec.ac.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CENFOTEC</a>.",
+        "<a href=\"https://asoblockchain.org/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">AsoBlockchain</a>: national non-profit convening industry, academia, and builders; co-hosts TicoBlockchain with AsoFintech; meets via CriptoCantina; hosted Hacker House Costa Rica (2025) for Celestia's Mammothon.",
+        "<a href=\"https://fintech.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">AsoFinTech</a>: fintech association aligning Web3 with payments, compliance, and bank rails.",
+        "<a href=\"https://criptociudad.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CriptoCiudad</a>: \"Cryptocity\" initiative mapping and onboarding crypto-accepting merchants (San José map and more).",
+        "<a href=\"https://x.com/reficostarica\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">ReFi CostaRica</a>: local node in the global ReFi movement; climate/impact use cases.",
+        "<a href=\"https://www.bitcoinjungle.app/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Bitcoin Jungle</a>: community-run, open payments lab in the Pacific South (Dominical/Uvita) with wallet, merchant network, and visitor guide."
+      ]
+    },
+    "academia": {
+      "heading": "Academia & Institutional Engagement",
+      "intro": "Web3 is growing in a very real and Pura Vida way: universities add programs, coding groups become communities, banks enter digital assets, and government starts to engage.",
+      "items": [
+        "<a href=\"https://ucenfotec.ac.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CENFOTEC</a>: partners with ETH CR and ETH Kipu on the \"Ethereum Developer Pack\" teaching Solidity and dApp development.",
+        "<a href=\"https://tec.ac.cr\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Tecnológico de Costa Rica (TEC)</a>: leads Project Rise, tokenizing real estate (potentially on Ethereum) to revitalize urban areas like San José's Historic Center.",
+        "<a href=\"https://dojocoding.io\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Dojo Coding</a>: Starknet-focused builder community; learn-by-doing, soft skills, and growth.",
+        "<a href=\"https://www.bnfondos.com/ETF_Bitcoin\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Banco Nacional (BN Fondos)</a>: Bitcoin ETF for regulated exposure.",
+        "<a href=\"https://www.nacion.com/politica/criptomonedas-en-la-campana-electoral-2026-que/D6U4J64VBVFD3ILTJZC7JGR67I/story\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Supreme Electoral Tribunal (TSE)</a>: approved crypto donations for political parties for 2026 under transparency and auditing."
+      ]
+    },
+    "acceleration": {
+      "heading": "Acceleration, Investment & Capital Flows",
+      "intro": "Costa Rica's capital stack blends a regulated retail on-ramp, active accelerators/VC, and strong investment promotion.",
+      "onRampsHeading": "Regulated on-ramps and liquidity access",
+      "onRampsItems": [
+        "<a href=\"https://www.bnfondos.com/ETF_Bitcoin\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">BN Fondos</a> enables compliant crypto investment and clear retail entry points."
+      ],
+      "acceleratorsHeading": "Accelerators and venture capital",
+      "acceleratorsItems": [
+        "<a href=\"https://caricaco.com/en\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Carícaco</a>: impact catalyst and venture platform.",
+        "<a href=\"https://caraov.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Carao Ventures</a>: early-stage VC for Central America.",
+        "<a href=\"https://newtopia.vc\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Newtopia VC</a>: pre-seed and seed across LATAM.",
+        "<a href=\"https://500.co\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">500 Global LatAm</a>: LATAM program; Costa Rican startups admitted in Batch 15.",
+        "<a href=\"https://startupcostarica.org\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Startup Costa Rica</a>: scouting and soft-landing for venture funding and US go-to-market."
+      ],
+      "promotionHeading": "Investment promotion and soft-landing enablers",
+      "promotionItems": [
+        "<a href=\"https://investincr.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">PROCOMER</a>: trade & investment promoter with FDI services and FTZ guidance.",
+        "<a href=\"https://cinde.org\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">CINDE</a>: private, non-profit investment promotion agency with a recognized FDI track record."
+      ]
+    },
+    "events": {
+      "heading": "Main Events & Momentum",
+      "intro": "Education programs and spaces keep growing, with meetups, talks, and workshops across the country.",
+      "items": [
+        "<b><a href=\"https://es.cointelegraph.com/news/costa-rica-blockchain-jungle-event-was-held-with-a-large-public-attendance\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Blockchain Jungle 2023</a>:</b> 3,000+ attendees at the National Convention Center; sustainability and real-world cases.",
+        "<b><a href=\"https://eth-pura-vida.devfolio.co/overview\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">ETH Pura Vida Hackathon 2024</a>:</b> first large Web3 hackathon; winners delivered an Ethereum microloan system and an agricultural traceability tool.",
+        "<b><a href=\"https://luma.com/dojocoding-hackathon\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Dojo Coding \"Starknet Hackathon\"</a> 2025:</b> 300+ builders, $32K in prizes, direct paths to funding; stronger dev density and L2 fluency.",
+        "<b><a href=\"https://www.ticoblockchain.cr/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">TicoBlockChain</a>:</b> 300+ professionals from fintech/crypto/Web3; topics included regulation, tokenization, and AI; local teams pitched to investors."
+      ],
+      "upcomingHeading": "Upcoming 2025:",
+      "upcomingItems": [
+        "<i><a href=\"https://ethereum.cr/events/eth-pura-vida\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">ETH Pura Vida 2025</a></i> (Nov): talks, workshops, and full-stack hacking at a leading engineering campus.",
+        "<i><a href=\"https://www.blockchainjungle.xyz/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #3182ce\">Blockchain Jungle 2025</a></i>: target 6,000+ participants and 150+ speakers across AI, blockchain, and future-tech."
+      ]
+    },
+    "roadAhead": {
+      "heading": "Road Ahead",
+      "items": [
+        "Costa Rica can be the preferred testbed for Web3 pilots due to size and adoption; friendly regulation and ≈75% payment adoption make it attractive for building, incubating, and shipping to LATAM.",
+        "Green and credible: existing hydropowered mining capacity and a national sustainability brand make a natural home for ReFi, tokenized conservation, low-carbon validators, and ESG-oriented capital.",
+        "Coffee, agriculture, and experience-based tourism can be wrapped as RWAs on Ethereum (pre-financing, loyalty), creating exemplary practical cases from global demand to local producers.",
+        "Multinationals already trust Costa Rica for shared services; growing institutional participation (banks, regulators) lowers perceived jurisdictional risk, positioning Costa Rica as the compliance-grade nearshore for global firms' Web3 adoption."
+      ]
+    }
+  },
+  "footer": "© 2025 The Pura Vida Ecosystem"
+}

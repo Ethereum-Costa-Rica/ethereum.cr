@@ -80,7 +80,8 @@ This project is licensed under the [MIT](https://github.com/Ethereum-Costa-Rica/
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/aguzmant103"><img src="https://avatars.githubusercontent.com/u/67167307?v=4" width="100px;" alt="Andy Guzman"/><br /><sub><b>aguzmant103 </b></sub></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/villarley"><img src="https://github.com/user-attachments/assets/0f2bac50-dd1c-44d9-b99e-b73c3380ff0b" width="100px;" alt="Santiago Villarreal"/><br /><sub><b>Villarley </b></sub></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/JustinCast"><img src="https://avatars.githubusercontent.com/u/17890146?v=4" width="100px;" alt="Justin Castillo"/><br /><sub><b>Villarley </b></sub></a><br /></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/JustinCast"><img src="https://avatars.githubusercontent.com/u/17890146?v=4" width="100px;" alt="Justin Castillo"/><br /><sub><b>JustinCast </b></sub></a><br /></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Coderoostr"><img src="https://avatars.githubusercontent.com/u/103231131?v=4" width="100px;" alt="Marcos González"/><br /><sub><b>Coderoostr </b></sub></a><br /></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/brolag"><img src="https://avatars.githubusercontent.com/u/1393385?v=4" width="100px;" alt="Alfredo Bonilla"/><br /><sub><b>brolag </b></sub></a><br /></td>

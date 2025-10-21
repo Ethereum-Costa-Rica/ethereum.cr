@@ -7,5 +7,4 @@ export const WHITE_BG_COLOR = "#ffffff";
 export const NAVBAR_LINKS = [
   { label: "home", href: "/" },
   { label: "events", href: "/events/eth-pura-vida" },
-  { label: "blog", href: "/blog" },
 ];

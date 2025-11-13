@@ -70,8 +70,8 @@ export default function PuraVidaEcosystem() {
                   LinkedIn - Jafet T. Sandi
                 </Link>{" "}
                 ·{" "}
-                <Link href="https://x.com/0xDmrk" isExternal color="blue.500">
-                  X - 0xDmrk
+                <Link href="https://x.com/0xSelvaGrowth" isExternal color="blue.500">
+                  X - 0xSelvaGrowth
                 </Link>
               </Text>
             </Box>

@@ -17,7 +17,12 @@
     "consent": "By subscribing, you agree to receive EthCR emails",
     "subscribe": "Subscribe",
     "workingWithLove": "Working with love for the community",
-    "goOnTop": "Go on top"
+    "goOnTop": "Go on top",
+    "blogSectionTitle": "From the blog",
+    "blogSectionSubtitle": "Stay close to the stories shaping the community.",
+    "blogSectionCta": "See all posts",
+    "featuredPosts": "Featured Posts",
+    "noFeaturedPosts": "No featured posts for now!"
   },
   "learnMore": "Learn more",
   "homeContent": {
@@ -261,6 +266,8 @@
   },
   "puraVidaBlogTitle": "The Pura Vida Web3 Ecosystem, 2025",
   "puraVidaBlogDesc": "Costa Rica's green and vibrant Web3 ecosystem — where Ethereum meets Pura Vida.",
+  "puraVidaBlogAuthor": "Ethereum Costa Rica",
+  "puraVidaBlogDate": "11/1/25",
   "puraVidaBlog": {
     "heroSubtitle": "Building a greener, smarter and more open Web3 nation",
     "tldrTitle": "1. TL;DR – Web3 arrives in Costa Rica",

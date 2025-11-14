@@ -16,7 +16,12 @@
     "consent": "Al suscribirte, aceptas recibir correos electrónicos de EthCR",
     "subscribe": "Suscribirse",
     "workingWithLove": "Trabajando con amor por la comunidad",
-    "goOnTop": "Ir arriba"
+    "goOnTop": "Ir arriba",
+    "blogSectionTitle": "Desde el blog",
+    "blogSectionSubtitle": "Mantente cerca de las historias que mueven a la comunidad.",
+    "blogSectionCta": "Ver todas las publicaciones",
+    "featuredPosts": "Publicaciones Destacadas",
+    "noFeaturedPosts": "¡No hay publicaciones destacadas por ahora!"
   },
   "learnMore": "Ver más",
   "homeContent": {
@@ -260,6 +265,8 @@
   },
   "puraVidaBlogTitle": "El Ecosistema Web3 Pura Vida, 2025",
   "puraVidaBlogDesc": "El ecosistema Web3 verde y vibrante de Costa Rica — donde Ethereum se encuentra con Pura Vida.",
+  "puraVidaBlogAuthor": "Ethereum Costa Rica",
+  "puraVidaBlogDate": "1/11/25",
   "puraVidaBlog": {
     "heroSubtitle": "Construyendo una nación Web3 más verde, inteligente y abierta",
     "tldrTitle": "1. TL;DR – Web3 llega a Costa Rica",

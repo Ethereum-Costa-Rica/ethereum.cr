@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FooterSocials } from "./footer-socials";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import Mailing from "./mailing";
+import FooterBlogPreview from "./blog-preview";
 
 const FooterDesktop = () => {
   const columnsWidth = useColumnsWidth();
@@ -26,9 +27,9 @@ const FooterDesktop = () => {
       templateColumns={`repeat(12, ${columnsWidth})`}
       gap={theme.spacing.desktop.gridGap}
       justifyContent="center"
-      w="100vw"
-      maxW="100vw"
-      py="45px"
+      w="100%"
+      maxW="100%"
+      py="2.8125em"
       bg={theme.colors.brand.footer}
     >
       <GridItem colSpan={5} flexDirection="column">
@@ -37,12 +38,12 @@ const FooterDesktop = () => {
           width={454}
           height={216.6}
           alt="EthCR footer"
-          style={{ marginBottom: "32px" }}
+          style={{ marginBottom: "2em", width: "100%", maxWidth: "28.375em", height: "auto" }}
         />
-        <FooterSocials style={{ marginBottom: "8px" }}/>
+        <FooterSocials style={{ marginBottom: "0.5em" }}/>
         <Text variant="h3-semibold">{t("footer.workingWithLove")}</Text>
-        <Flex direction="column" alignItems="center" gap="10px" mb="40px">
-          <Flex direction="row" gap="24px" wrap="wrap" justifyContent="center">
+        <Flex direction="column" alignItems="center" gap="0.625em" mb="2.5em">
+          <Flex direction="row" gap="1.5em" wrap="wrap" justifyContent="center">
             <Text
               variant="small-text-light"
               as="a"
@@ -66,7 +67,7 @@ const FooterDesktop = () => {
               Development | Fabián Sánchez
             </Text>
           </Flex>
-          <Flex direction="row" gap="24px" wrap="wrap" justifyContent="center">
+          <Flex direction="row" gap="1.5em" wrap="wrap" justifyContent="center">
             <Text
               variant="small-text-light"
               as="a"
@@ -98,15 +99,28 @@ const FooterDesktop = () => {
         flexDirection="column"
         display="flex"
         justifyContent="flex-start"
-        alignItems="flex-end"
-        gap="0"
+        alignItems="stretch"
+        gap="2em"
         pt="0"
       >
-        <Button variant="outlined" onClick={scrollToTop} mb="100px" mt="0">
-          <Text mr="10px">{t("footer.goOnTop")}</Text>
+        <Button
+          variant="outlined"
+          onClick={scrollToTop}
+          mb="0"
+          mt="0"
+          alignSelf="flex-end"
+        >
+          <Text mr="0.625em">{t("footer.goOnTop")}</Text>
           <MdKeyboardArrowUp />
         </Button>
         <Mailing />
+      </GridItem>
+      <GridItem
+        colSpan={12}
+        colStart={1}
+        mt="2em"
+      >
+        <FooterBlogPreview />
       </GridItem>
     </Grid>
   );

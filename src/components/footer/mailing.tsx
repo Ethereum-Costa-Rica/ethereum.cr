@@ -52,7 +52,7 @@ const Mailing = () => {
   if (!ready) return null;
 
   return (
-    <Flex direction="column" gap="20px">
+  <Flex direction="column" gap="1.25em">
       <Text variant="h1-semibold">{t("footer.keepInTouch")}</Text>
       <Text variant="normal-text-regular">
         {t("footer.subscribeForUpdates")}
@@ -60,19 +60,18 @@ const Mailing = () => {
       <Input
         bg="white"
         placeholder={t("footer.yourEmailPlaceholder")}
-        h="54px"
+        h="3.375em"
         fontWeight={400}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <Flex direction="row" wrap="nowrap">
+      <Flex direction="row" wrap="wrap" columnGap="0.625em" rowGap="0.5em" alignItems="center">
         <Text variant="small-text-light">*{t("footer.consent")}</Text>
         <Button
           variant="outlined"
           onClick={sendEmail}
           isLoading={isLoading}
           size="sm"
-          minW="127px"
-          ml="10px"
+          minW="7.9375em"
         >
           {t("footer.subscribe")}
         </Button>

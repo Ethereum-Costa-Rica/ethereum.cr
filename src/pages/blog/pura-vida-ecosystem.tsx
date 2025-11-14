@@ -70,8 +70,8 @@ export default function PuraVidaEcosystem() {
                   LinkedIn - Jafet T. Sandi
                 </Link>{" "}
                 ·{" "}
-                <Link href="https://x.com/0xDmrk" isExternal color="blue.500">
-                  X - 0xDmrk
+                <Link href="https://x.com/0xSelvaGrowth" isExternal color="blue.500">
+                  X - 0xSelvaGrowth
                 </Link>
               </Text>
             </Box>
@@ -119,13 +119,11 @@ export default function PuraVidaEcosystem() {
                 {(t("sections.policy.items", { returnObjects: true }) as any[]).map((item, idx) => (
                   <Box key={idx} as="li" dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
-                <Box as="li">{t("sections.policy.items.2")}
-                  <VStack as="ul" pl={6} align="stretch" spacing={1} mt={1}>
-                    {(t("sections.policy.regulators", { returnObjects: true }) as any[]).map((item, idx) => (
-                      <Box key={idx} as="li" dangerouslySetInnerHTML={{ __html: item }} />
-                    ))}
-                  </VStack>
-                </Box>
+                <VStack as="ul" pl={6} align="stretch" spacing={1} mt={1}>
+                  {["BCCR", "SUGEF", "FIU"].map((item, idx) => (
+                    <Box key={idx} as="li"><b>{item}</b></Box>
+                  ))}
+                </VStack>
               </VStack>
               <Text fontWeight="semibold" mb={2}>{t("sections.policy.milestonesHeading")}</Text>
               <VStack as="ul" align="stretch" pl={6} spacing={1}>

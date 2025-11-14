@@ -114,6 +114,12 @@ const FooterDesktop = () => {
           <MdKeyboardArrowUp />
         </Button>
         <Mailing />
+      </GridItem>
+      <GridItem
+        colSpan={12}
+        colStart={1}
+        mt="2em"
+      >
         <FooterBlogPreview />
       </GridItem>
     </Grid>

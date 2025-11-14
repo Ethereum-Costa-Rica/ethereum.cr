@@ -119,13 +119,11 @@ export default function PuraVidaEcosystem() {
                 {(t("sections.policy.items", { returnObjects: true }) as any[]).map((item, idx) => (
                   <Box key={idx} as="li" dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
-                <Box as="li">{t("sections.policy.items.2")}
-                  <VStack as="ul" pl={6} align="stretch" spacing={1} mt={1}>
-                    {(t("sections.policy.regulators", { returnObjects: true }) as any[]).map((item, idx) => (
-                      <Box key={idx} as="li" dangerouslySetInnerHTML={{ __html: item }} />
-                    ))}
-                  </VStack>
-                </Box>
+                <VStack as="ul" pl={6} align="stretch" spacing={1} mt={1}>
+                  {["BCCR", "SUGEF", "FIU"].map((item, idx) => (
+                    <Box key={idx} as="li"><b>{item}</b></Box>
+                  ))}
+                </VStack>
               </VStack>
               <Text fontWeight="semibold" mb={2}>{t("sections.policy.milestonesHeading")}</Text>
               <VStack as="ul" align="stretch" pl={6} spacing={1}>
